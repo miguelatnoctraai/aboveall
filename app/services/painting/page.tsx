@@ -1,0 +1,362 @@
+"use client"
+
+import type React from "react"
+import Link from "next/link"
+import {
+  Phone,
+  Paintbrush,
+  Palette,
+  Shield,
+  CheckCircle,
+  Clock,
+  MapPin,
+  ChevronDown,
+  Droplets,
+  Sparkles,
+} from "lucide-react"
+import { Button } from "@/components/ui/button"
+import { Input } from "@/components/ui/input"
+import { Textarea } from "@/components/ui/textarea"
+import { useState } from "react"
+
+export default function PaintingServicePage() {
+  const [formData, setFormData] = useState({
+    name: "",
+    phone: "",
+    issue: "",
+  })
+  const [expandedFaq, setExpandedFaq] = useState<number | null>(null)
+
+  const capabilities = [
+    { title: "Interior Commercial Painting", icon: Paintbrush },
+    { title: "Exterior Building Painting", icon: Palette },
+    { title: "Surface Prep & Repair", icon: Sparkles },
+    { title: "Graffiti Removal", icon: Droplets },
+    { title: "Pressure Washing", icon: Droplets },
+    { title: "Color Consultation", icon: Palette },
+  ]
+
+  const process = [
+    {
+      step: "1",
+      title: "Surface Assessment",
+      description: "Thorough inspection of surfaces to determine prep work needed for optimal adhesion.",
+    },
+    {
+      step: "2",
+      title: "Preparation & Protection",
+      description: "Proper surface prep, repairs, and masking to ensure clean lines and lasting finish.",
+    },
+    {
+      step: "3",
+      title: "Professional Application",
+      description: "Expert painting using commercial-grade materials with minimal disruption to operations.",
+    },
+  ]
+
+  const faqs = [
+    {
+      question: "Can you work after business hours?",
+      answer: "Yes, we offer evening and weekend painting services to minimize disruption to your business operations.",
+    },
+    {
+      question: "Do you provide warranties on your work?",
+      answer: "Yes, we warranty our workmanship and use premium paints that come with manufacturer warranties.",
+    },
+    {
+      question: "How long does commercial painting take?",
+      answer:
+        "Timeline depends on project size, but we provide detailed schedules and work efficiently to minimize downtime.",
+    },
+    {
+      question: "Do you offer color consultation services?",
+      answer:
+        "We can help you choose colors that align with your brand and create the right atmosphere for your space.",
+    },
+  ]
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault()
+    console.log("Quick request form submitted:", formData)
+  }
+
+  return (
+    <div className="min-h-screen bg-slate-50">
+      {/* Hero Section */}
+      <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden">
+        <div className="absolute inset-0">
+          <img
+            src="/images/2023-02-16.jpg"
+            alt="Professional painting services"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-slate-900/95 via-slate-900/90 to-slate-900/85" />
+        </div>
+
+        <div className="relative z-10 container mx-auto px-4 text-center">
+          <div className="max-w-4xl mx-auto">
+            <div className="relative">
+              <div className="absolute inset-0 bg-purple-500/20 blur-3xl rounded-full" />
+              <div className="relative bg-slate-900/50 backdrop-blur-sm border border-purple-500/30 rounded-2xl p-12">
+                <div className="flex justify-center mb-6">
+                  <div className="w-20 h-20 rounded-full bg-gradient-to-br from-purple-400 to-indigo-600 flex items-center justify-center shadow-lg shadow-purple-500/50">
+                    <Paintbrush className="w-10 h-10 text-white" strokeWidth={1.5} />
+                  </div>
+                </div>
+
+                <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 text-balance">
+                  Professional Commercial Painting
+                </h1>
+
+                <p className="text-xl md:text-2xl text-purple-100 mb-8 max-w-3xl mx-auto text-pretty">
+                  Interior and exterior painting with premium materials and expert application. Transform your space.
+                </p>
+
+                <div className="flex flex-wrap gap-4 justify-center">
+                  <Link href="/contact">
+                    <Button
+                      size="lg"
+                      className="bg-[#C29828] hover:bg-[#d4a745] text-slate-950 font-semibold px-8 py-6 text-lg shadow-lg shadow-[#C29828]/50"
+                    >
+                      Get a Free Quote
+                    </Button>
+                  </Link>
+                  <a href="tel:951-330-6963">
+                    <Button
+                      size="lg"
+                      variant="outline"
+                      className="border-2 border-purple-400 text-purple-400 hover:bg-purple-400 hover:text-slate-950 px-8 py-6 text-lg bg-transparent"
+                    >
+                      <Phone className="mr-2 h-5 w-5" />
+                      Call Now: 951-330-6963
+                    </Button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Main Content */}
+      <section className="py-16 lg:py-24">
+        <div className="container mx-auto px-4">
+          <div className="grid lg:grid-cols-3 gap-12">
+            <div className="lg:col-span-2 space-y-16">
+              {/* Capabilities */}
+              <div>
+                <h2 className="text-4xl font-bold text-slate-950 mb-8">Our Capabilities</h2>
+                <div className="grid md:grid-cols-2 gap-6">
+                  {capabilities.map((capability, index) => {
+                    const Icon = capability.icon
+                    return (
+                      <div
+                        key={index}
+                        className="group bg-white rounded-xl p-6 border-2 border-slate-200 hover:border-purple-400 transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/10"
+                      >
+                        <div className="flex items-start gap-4">
+                          <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-purple-400 to-indigo-600 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                            <Icon className="w-6 h-6 text-white" strokeWidth={1.5} />
+                          </div>
+                          <h3 className="text-lg font-semibold text-slate-950 group-hover:text-purple-600 transition-colors">
+                            {capability.title}
+                          </h3>
+                        </div>
+                      </div>
+                    )
+                  })}
+                </div>
+              </div>
+
+              {/* Process */}
+              <div>
+                <h2 className="text-4xl font-bold text-slate-950 mb-8">The Process</h2>
+                <div className="space-y-8">
+                  {process.map((item, index) => (
+                    <div key={index} className="flex gap-6">
+                      <div className="flex-shrink-0">
+                        <div className="w-16 h-16 rounded-full bg-gradient-to-br from-purple-400 to-indigo-600 flex items-center justify-center shadow-lg shadow-purple-500/30">
+                          <span className="text-2xl font-bold text-white">{item.step}</span>
+                        </div>
+                      </div>
+                      <div className="flex-1 bg-white rounded-xl p-6 border-2 border-slate-200 hover:border-purple-400 transition-all duration-300">
+                        <h3 className="text-2xl font-bold text-slate-950 mb-3">{item.title}</h3>
+                        <p className="text-slate-600 text-lg leading-relaxed">{item.description}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* FAQs */}
+              <div>
+                <h2 className="text-4xl font-bold text-slate-950 mb-8">Common Painting Questions</h2>
+                <div className="space-y-4">
+                  {faqs.map((faq, index) => (
+                    <div
+                      key={index}
+                      className="bg-white rounded-xl border-2 border-slate-200 overflow-hidden hover:border-purple-400 transition-all duration-300"
+                    >
+                      <button
+                        onClick={() => setExpandedFaq(expandedFaq === index ? null : index)}
+                        className="w-full flex items-center justify-between p-6 text-left hover:bg-slate-50 transition-colors"
+                      >
+                        <span className="text-lg font-semibold text-slate-950 pr-4">{faq.question}</span>
+                        <ChevronDown
+                          className={`w-6 h-6 text-purple-600 flex-shrink-0 transition-transform duration-300 ${
+                            expandedFaq === index ? "rotate-180" : ""
+                          }`}
+                        />
+                      </button>
+                      {expandedFaq === index && (
+                        <div className="px-6 pb-6 pt-2">
+                          <p className="text-slate-600 leading-relaxed">{faq.answer}</p>
+                        </div>
+                      )}
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Local SEO Banner */}
+              <div className="bg-gradient-to-r from-purple-50 to-indigo-50 rounded-2xl p-8 border-2 border-purple-200">
+                <div className="flex items-start gap-4">
+                  <MapPin className="w-8 h-8 text-purple-600 flex-shrink-0 mt-1" strokeWidth={1.5} />
+                  <div>
+                    <h3 className="text-2xl font-bold text-slate-950 mb-3">Serving Southern California</h3>
+                    <p className="text-lg text-slate-700 mb-4">
+                      Proudly providing painting services across San Bernardino, Riverside, San Diego, and Orange
+                      Counties.
+                    </p>
+                    <div className="flex items-center gap-2 text-slate-600">
+                      <Shield className="w-5 h-5 text-purple-600" />
+                      <span className="font-medium">
+                        Licensed #
+                        <a
+                          href="https://www.cslb.ca.gov/onlineservices/checklicenseII/LicenseDetail.aspx?LicNum=1075924"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-purple-600 hover:text-purple-700 underline"
+                        >
+                          1075924
+                        </a>{" "}
+                        | Bonded | Insured
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Sidebar */}
+            <div className="lg:col-span-1">
+              <div className="sticky top-24 space-y-6">
+                {/* CTA Card */}
+                <div className="bg-gradient-to-br from-purple-50 to-indigo-50 rounded-2xl p-6 border-2 border-purple-300 shadow-lg">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-12 h-12 rounded-full bg-purple-500 flex items-center justify-center">
+                      <Palette className="w-6 h-6 text-white" />
+                    </div>
+                    <h3 className="text-xl font-bold text-slate-950">Transform Your Space</h3>
+                  </div>
+                  <p className="text-slate-700 mb-6">
+                    Ready for a fresh look? Get a free color consultation and estimate.
+                  </p>
+                  <a href="tel:951-330-6963" className="block">
+                    <Button
+                      size="lg"
+                      className="w-full bg-purple-600 hover:bg-purple-700 text-white font-bold text-xl py-8 shadow-lg shadow-purple-500/50"
+                    >
+                      <Phone className="mr-3 h-6 w-6" />
+                      951-330-6963
+                    </Button>
+                  </a>
+                  <div className="mt-4 flex items-center gap-2 text-sm text-slate-600">
+                    <Clock className="w-4 h-4" />
+                    <span>Free estimates within 48 hours</span>
+                  </div>
+                </div>
+
+                {/* Quick Request Form */}
+                <div className="bg-white rounded-2xl p-6 border-2 border-slate-200 shadow-lg">
+                  <h3 className="text-xl font-bold text-slate-950 mb-4">Quick Request</h3>
+                  <p className="text-slate-600 mb-6">Get a callback from our team within 24 hours.</p>
+                  <form onSubmit={handleSubmit} className="space-y-4">
+                    <div>
+                      <label htmlFor="name" className="block text-sm font-medium text-slate-700 mb-2">
+                        Name
+                      </label>
+                      <Input
+                        id="name"
+                        type="text"
+                        placeholder="Your name"
+                        value={formData.name}
+                        onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                        required
+                        className="border-2 border-slate-300 focus:border-purple-400 focus:ring-purple-400"
+                      />
+                    </div>
+                    <div>
+                      <label htmlFor="phone" className="block text-sm font-medium text-slate-700 mb-2">
+                        Phone
+                      </label>
+                      <Input
+                        id="phone"
+                        type="tel"
+                        placeholder="(951) 330-6963"
+                        value={formData.phone}
+                        onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                        required
+                        className="border-2 border-slate-300 focus:border-purple-400 focus:ring-purple-400"
+                      />
+                    </div>
+                    <div>
+                      <label htmlFor="issue" className="block text-sm font-medium text-slate-700 mb-2">
+                        Project Description
+                      </label>
+                      <Textarea
+                        id="issue"
+                        placeholder="Describe your painting project..."
+                        rows={4}
+                        value={formData.issue}
+                        onChange={(e) => setFormData({ ...formData, issue: e.target.value })}
+                        required
+                        className="border-2 border-slate-300 focus:border-purple-400 focus:ring-purple-400"
+                      />
+                    </div>
+                    <Button
+                      type="submit"
+                      size="lg"
+                      className="w-full bg-[#C29828] hover:bg-[#d4a745] text-slate-950 font-semibold shadow-lg shadow-[#C29828]/30"
+                    >
+                      Request Estimate
+                    </Button>
+                  </form>
+                </div>
+
+                {/* Why Choose Us */}
+                <div className="bg-gradient-to-br from-slate-100 to-slate-50 rounded-2xl p-6 border-2 border-slate-300">
+                  <h3 className="text-lg font-bold text-slate-950 mb-4">Why Choose Us</h3>
+                  <ul className="space-y-3">
+                    {[
+                      "Licensed & Insured",
+                      "20+ Years Experience",
+                      "Premium Materials",
+                      "Minimal Disruption",
+                      "Satisfaction Guaranteed",
+                    ].map((item, index) => (
+                      <li key={index} className="flex items-center gap-3">
+                        <CheckCircle className="w-5 h-5 text-purple-600 flex-shrink-0" strokeWidth={2} />
+                        <span className="text-slate-700">{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  )
+}
