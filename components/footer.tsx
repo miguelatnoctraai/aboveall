@@ -19,6 +19,11 @@ export function Footer() {
     { name: "Careers", href: "/careers" },
   ]
 
+  const legalLinks = [
+    { name: "Privacy Policy", href: "/privacy-policy" },
+    { name: "Terms of Service", href: "/terms-of-service" },
+  ]
+
   const serviceAreas = ["San Bernardino County", "Riverside County", "San Diego County", "Orange County"]
 
   const socialLinks = [
@@ -262,6 +267,13 @@ export function Footer() {
             © 2025 Above All Maintenance & Repair. All rights reserved. Serving San Bernardino County, Riverside County,
             San Diego County, and Orange County.
           </p>
+          <div className="mb-4 flex flex-wrap items-center justify-center gap-4 text-sm text-slate-400">
+            {legalLinks.map((link) => (
+              <Link key={link.name} href={link.href} className="hover:text-[#C29828] transition-colors">
+                {link.name}
+              </Link>
+            ))}
+          </div>
           <div className="flex flex-wrap justify-center items-center gap-3 text-xs text-slate-500 mb-4">
             <span>Member of:</span>
             <a href="https://www.cslb.ca.gov/" target="_blank" rel="noopener noreferrer" className="hover:text-[#C29828] transition-colors">CSLB Licensed</a>

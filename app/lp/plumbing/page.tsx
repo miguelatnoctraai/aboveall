@@ -1,5 +1,7 @@
 import type { Metadata } from "next"
 import Image from "next/image"
+import Link from "next/link"
+import Script from "next/script"
 import { Button } from "@/components/ui/button"
 import {
   ArrowRight,
@@ -82,6 +84,14 @@ const testimonials = [
 export default function PlumbingLandingPage() {
   return (
     <main className="min-h-screen bg-slate-950 text-white">
+      <Script
+        id="ghl-chat-widget"
+        src="https://widgets.leadconnectorhq.com/loader.js"
+        strategy="afterInteractive"
+        data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js"
+        data-widget-id="69df0ad89f3b6f4b27afdf6a"
+      />
+
       <div className="fixed inset-x-0 bottom-0 z-50 border-t border-slate-700/80 bg-slate-950/95 px-4 py-3 backdrop-blur md:hidden">
         <div className="mx-auto flex max-w-md gap-3">
           <Button asChild className="h-12 flex-1 bg-[#C29828] text-slate-950 hover:bg-[#A67F20]">
@@ -410,6 +420,14 @@ export default function PlumbingLandingPage() {
           <div className="space-y-1">
             <p className="font-semibold text-slate-200">Above All Maintenance & Repair</p>
             <p>License #1075924 | Bonded | Insured</p>
+            <div className="flex flex-wrap items-center gap-4 pt-2">
+              <Link href="/privacy-policy" className="hover:text-[#C29828] transition-colors">
+                Privacy Policy
+              </Link>
+              <Link href="/terms-of-service" className="hover:text-[#C29828] transition-colors">
+                Terms of Service
+              </Link>
+            </div>
           </div>
           <div className="space-y-1 md:text-right">
             <p className="text-slate-200">951-330-6963</p>
