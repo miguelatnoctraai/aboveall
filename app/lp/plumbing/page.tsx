@@ -9,7 +9,7 @@ import {
   Clock3,
   Droplets,
   Mail,
-  MapPin,
+  MessageSquare,
   Phone,
   ShieldCheck,
   Sparkles,
@@ -363,8 +363,8 @@ export default function PlumbingLandingPage() {
               <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#C29828]">Contact us</p>
               <h2 className="mt-4 text-4xl font-black tracking-tight sm:text-5xl">Call now, or email us to schedule service.</h2>
               <p className="mt-5 text-lg leading-8 text-slate-600">
-                This section is built to support online scheduling later. For now, the page works as a clean call-first
-                and email-backup landing experience.
+                Call for the fastest response, email if needed, or use the live chat on this page to start the
+                conversation without leaving the landing page.
               </p>
 
               <div className="mt-8 space-y-4">
@@ -393,22 +393,26 @@ export default function PlumbingLandingPage() {
               </div>
             </div>
 
-            <div className="rounded-[2rem] border border-dashed border-[#C29828]/40 bg-slate-950 p-8 text-white">
+            <div className="rounded-[2rem] border border-[#C29828]/25 bg-slate-950 p-8 text-white">
               <div className="flex items-center gap-3">
                 <div className="rounded-2xl bg-[#C29828]/15 p-3">
-                  <MapPin className="h-7 w-7 text-[#C29828]" />
+                  <MessageSquare className="h-7 w-7 text-[#C29828]" />
                 </div>
                 <div>
-                  <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#C29828]">Online booking</p>
-                  <h3 className="text-2xl font-bold">Booking widget placement area</h3>
+                  <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#C29828]">Live Chat</p>
+                  <h3 className="text-2xl font-bold">Use the chat widget in the bottom corner</h3>
                 </div>
               </div>
 
               <div className="mt-8 rounded-[1.5rem] border border-slate-800 bg-slate-900/70 p-8">
                 <p className="text-base leading-8 text-slate-300">
-                  Reserve this area for the GHL embed. The layout and spacing are already in place, so replacing the
-                  placeholder with the live widget should be straightforward.
+                  The GHL chat widget is live on this page. Visitors can use it to ask questions, request service, and
+                  start scheduling without navigating away.
                 </p>
+                <div className="mt-6 grid gap-3 text-sm text-slate-300 sm:grid-cols-2">
+                  <div className="rounded-xl border border-slate-800 bg-slate-950/60 p-4">Ask about leaks, drains, or water heaters</div>
+                  <div className="rounded-xl border border-slate-800 bg-slate-950/60 p-4">Request a callback or next available appointment</div>
+                </div>
               </div>
             </div>
           </div>
