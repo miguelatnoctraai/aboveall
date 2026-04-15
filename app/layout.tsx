@@ -2,10 +2,8 @@ import type React from "react"
 import type { Metadata } from "next"
 import { Inter, Roboto_Slab } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
-import { Navbar } from "@/components/navbar"
-import { Footer } from "@/components/footer"
 import { ScrollToTop } from "@/components/scroll-to-top"
-import { PromoPopup } from "@/components/promo-popup"
+import { SiteShell } from "@/components/site-shell"
 import "./globals.css"
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" })
@@ -56,10 +54,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.variable} ${robotoSlab.variable} font-sans antialiased`}>
         <ScrollToTop />
-        <Navbar />
-        {children}
-        <Footer />
-        <PromoPopup />
+        <SiteShell>{children}</SiteShell>
         <Analytics />
       </body>
     </html>
