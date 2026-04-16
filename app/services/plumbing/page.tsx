@@ -3,6 +3,7 @@
 import type React from "react"
 import Link from "next/link"
 import {
+  ArrowRight,
   Phone,
   Droplet,
   Wind,
@@ -17,6 +18,7 @@ import {
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
+import { plumbingCities, plumbingCitySlugs, plumbingServiceSlugs, plumbingServices } from "@/lib/location-content"
 import { useState } from "react"
 
 export default function PlumbingServicePage() {
@@ -76,6 +78,10 @@ export default function PlumbingServicePage() {
         "Yes, we are fully licensed (CA License #1075924), bonded, and insured. You can verify our license status on the CSLB website.",
     },
   ]
+
+  const plumbingSpecialties = plumbingServiceSlugs.map((serviceSlug) => plumbingServices[serviceSlug])
+
+  const plumbingCitiesList = plumbingCitySlugs.map((citySlug) => plumbingCities[citySlug])
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
@@ -177,6 +183,29 @@ export default function PlumbingServicePage() {
                 </div>
               </div>
 
+              <div>
+                <h2 className="text-4xl font-bold text-slate-950 mb-8">Specialized Plumbing Service Hubs</h2>
+                <div className="grid md:grid-cols-2 gap-6">
+                  {plumbingSpecialties.map((service) => (
+                    <Link
+                      key={service.slug}
+                      href={`/services/plumbing/${service.slug}`}
+                      className="group rounded-2xl border-2 border-slate-200 bg-white p-6 transition-all duration-300 hover:-translate-y-1 hover:border-cyan-400 hover:shadow-lg hover:shadow-cyan-500/10"
+                    >
+                      <div className="flex items-start justify-between gap-4">
+                        <div>
+                          <h3 className="text-2xl font-bold text-slate-950 transition-colors group-hover:text-cyan-600">
+                            {service.name}
+                          </h3>
+                          <p className="mt-4 text-slate-600 leading-7">{service.heroSummary}</p>
+                        </div>
+                        <ArrowRight className="h-5 w-5 shrink-0 text-cyan-600 transition-transform group-hover:translate-x-1" />
+                      </div>
+                    </Link>
+                  ))}
+                </div>
+              </div>
+
               {/* The Process - Timeline */}
               <div>
                 <h2 className="text-4xl font-bold text-slate-950 mb-8">The Process</h2>
@@ -227,6 +256,36 @@ export default function PlumbingServicePage() {
                         </div>
                       )}
                     </div>
+                  ))}
+                </div>
+              </div>
+
+              <div className="bg-white rounded-2xl p-8 border-2 border-slate-200">
+                <h2 className="text-4xl font-bold text-slate-950 mb-4">Areas We Serve For Plumbing</h2>
+                <p className="text-lg text-slate-600 leading-8 mb-8">
+                  These city hubs connect local search intent with the right plumbing service page. Start with the city,
+                  then jump into the exact issue.
+                </p>
+                <div className="grid md:grid-cols-2 gap-6">
+                  {plumbingCitiesList.map((city) => (
+                    <Link
+                      key={city.slug}
+                      href={`/locations/${city.slug}`}
+                      className="group rounded-2xl border-2 border-slate-200 bg-slate-50 p-6 transition-all duration-300 hover:border-cyan-400 hover:bg-white hover:shadow-lg hover:shadow-cyan-500/10"
+                    >
+                      <div className="flex items-start justify-between gap-4">
+                        <div>
+                          <h3 className="text-2xl font-bold text-slate-950 transition-colors group-hover:text-cyan-600">
+                            {city.name}
+                          </h3>
+                          <p className="mt-2 text-sm font-semibold uppercase tracking-[0.18em] text-cyan-600">
+                            {city.county}
+                          </p>
+                          <p className="mt-4 text-slate-600 leading-7">{city.shortDescription}</p>
+                        </div>
+                        <ArrowRight className="h-5 w-5 shrink-0 text-cyan-600 transition-transform group-hover:translate-x-1" />
+                      </div>
+                    </Link>
                   ))}
                 </div>
               </div>
