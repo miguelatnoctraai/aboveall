@@ -8,6 +8,7 @@ import {
   isPlumbingCitySlug,
   plumbingCities,
   plumbingCitySlugs,
+  plumbingServices,
 } from "@/lib/location-content"
 
 export const dynamicParams = false
@@ -46,6 +47,17 @@ export default async function CityHubPage({ params }: CityPageProps) {
 
   const cityContent = plumbingCities[city]
   const serviceCards = getCityServiceCards(city)
+  const overviewParagraphs = [
+    `${cityContent.name} is set up as a true local plumbing hub, not just a catch-all location page. The goal is to route people from city intent into the exact service they need, whether that is drain cleaning, toilet repair and installation, emergency plumbing, or water heater work.`,
+    cityContent.localAngle,
+    `This matters for ${cityContent.name} because the strongest local pages are the ones that match real property types, real service patterns, and a clear conversion path. For this city, that means speaking directly to ${cityContent.propertyTypes.slice(0, 2).join(" and ").toLowerCase()} while still covering nearby areas like ${cityContent.nearbyAreas.slice(0, 2).join(" and ")}.`,
+  ]
+
+  const cityHighlights = [
+    `Primary property focus: ${cityContent.propertyTypes[0]}`,
+    `Nearby service relevance: ${cityContent.nearbyAreas.slice(0, 2).join(" and ")}`,
+    `Core conversion path: city hub to service page to direct quote request`,
+  ]
 
   return (
     <main className="min-h-screen bg-slate-50">
@@ -141,6 +153,41 @@ export default async function CityHubPage({ params }: CityPageProps) {
 
       <section className="border-y border-slate-200 bg-white py-16 md:py-20">
         <div className="container mx-auto px-4">
+          <div className="grid gap-8 lg:grid-cols-[1.15fr_0.85fr]">
+            <div className="rounded-[2rem] border border-slate-200 bg-slate-50 p-8">
+              <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#C29828]">How This Hub Works</p>
+              <h2 className="mt-4 text-3xl font-black tracking-tight text-slate-950">
+                Why {cityContent.name} has its own plumbing hub
+              </h2>
+              <div className="mt-6 space-y-5">
+                {overviewParagraphs.map((paragraph) => (
+                  <p key={paragraph} className="text-base leading-8 text-slate-600">
+                    {paragraph}
+                  </p>
+                ))}
+              </div>
+            </div>
+
+            <div className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-lg shadow-slate-200/70">
+              <p className="text-sm font-semibold uppercase tracking-[0.22em] text-cyan-600">City Signals</p>
+              <h2 className="mt-4 text-3xl font-black tracking-tight text-slate-950">
+                What makes this local page set useful
+              </h2>
+              <div className="mt-6 space-y-4">
+                {cityHighlights.map((item) => (
+                  <div key={item} className="flex items-start gap-3 rounded-2xl bg-slate-50 px-5 py-4">
+                    <CheckCircle2 className="mt-1 h-5 w-5 shrink-0 text-cyan-600" />
+                    <p className="text-base leading-7 text-slate-700">{item}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="border-y border-slate-200 bg-white py-16 md:py-20">
+        <div className="container mx-auto px-4">
           <div className="mb-10 max-w-3xl">
             <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#C29828]">City + service pages</p>
             <h2 className="mt-4 text-3xl font-black tracking-tight text-slate-950 sm:text-4xl">
@@ -159,6 +206,16 @@ export default async function CityHubPage({ params }: CityPageProps) {
               >
                 <h3 className="text-2xl font-bold text-slate-950">{card.name}</h3>
                 <p className="mt-4 text-base leading-7 text-slate-600">{card.blurb}</p>
+                <div className="mt-5 flex flex-wrap gap-2">
+                  {plumbingServices[card.slug].quickPoints.slice(0, 2).map((item) => (
+                    <span
+                      key={item}
+                      className="rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-medium text-slate-600"
+                    >
+                      {item}
+                    </span>
+                  ))}
+                </div>
                 <Link
                   href={card.href}
                   className="mt-6 inline-flex items-center gap-2 font-semibold text-cyan-600 transition-colors hover:text-cyan-700"

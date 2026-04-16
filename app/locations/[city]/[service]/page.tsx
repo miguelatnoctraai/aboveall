@@ -66,6 +66,22 @@ export default async function CityServicePage({ params }: CityServicePageProps) 
 
   const { city: cityContent, service: serviceContent, override, faqs } = getCityServicePageContent(city, service)
   const siblingServices = plumbingServiceSlugs.filter((serviceSlug) => serviceSlug !== service)
+  const overviewParagraphs = [
+    `${serviceContent.name} in ${cityContent.name} is built as a local service page, not a generic city-name swap. ${override.heroSummary}`,
+    `${override.whyCopy} ${override.offerBody}`,
+    `This page is especially relevant for ${cityContent.propertyTypes.slice(0, 2).join(" and ").toLowerCase()} in ${cityContent.name} and nearby areas such as ${cityContent.nearbyAreas.slice(0, 2).join(" and ")}. ${override.proofBody}`,
+  ]
+  const pageFitPoints = [
+    `Best fit for ${cityContent.propertyTypes[0].toLowerCase()}`,
+    `Built around ${serviceContent.quickPoints[0].toLowerCase()}`,
+    `Nearby coverage around ${cityContent.nearbyAreas.slice(0, 2).join(" and ")}`,
+    `Direct path from local search to service scheduling`,
+  ]
+  const decisionPoints = [
+    "Whether the problem is isolated or part of a larger plumbing issue",
+    "Whether this needs repair, replacement, or a deeper diagnostic step",
+    `How the service fits the property types most common in ${cityContent.name}`,
+  ]
 
   const schema = {
     "@context": "https://schema.org",
@@ -197,6 +213,37 @@ export default async function CityServicePage({ params }: CityServicePageProps) 
                 <p className="mt-5 text-lg leading-8 text-slate-600">{override.whyCopy}</p>
               </div>
 
+              <div className="grid gap-6 xl:grid-cols-[1.1fr_0.9fr]">
+                <div className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-lg shadow-slate-200/70">
+                  <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#C29828]">Overview</p>
+                  <h2 className="mt-4 text-3xl font-black tracking-tight text-slate-950">
+                    What this {cityContent.name} page is trying to answer
+                  </h2>
+                  <div className="mt-6 space-y-5">
+                    {overviewParagraphs.map((paragraph) => (
+                      <p key={paragraph} className="text-base leading-8 text-slate-600">
+                        {paragraph}
+                      </p>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="rounded-[2rem] border border-cyan-200 bg-cyan-50 p-8">
+                  <p className="text-sm font-semibold uppercase tracking-[0.22em] text-cyan-700">Good Fit</p>
+                  <h2 className="mt-4 text-3xl font-black tracking-tight text-slate-950">
+                    When this local service page is the right destination
+                  </h2>
+                  <div className="mt-6 space-y-4">
+                    {pageFitPoints.map((item) => (
+                      <div key={item} className="flex items-start gap-3 rounded-2xl bg-white px-5 py-4 shadow-sm">
+                        <BadgeCheck className="mt-1 h-5 w-5 shrink-0 text-cyan-600" />
+                        <p className="text-base leading-7 text-slate-700">{item}</p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+
               <div className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-lg shadow-slate-200/70">
                 <p className="text-sm font-semibold uppercase tracking-[0.22em] text-cyan-600">Capabilities</p>
                 <h2 className="mt-4 text-3xl font-black tracking-tight text-slate-950">
@@ -211,6 +258,21 @@ export default async function CityServicePage({ params }: CityServicePageProps) 
                       <h3 className="text-xl font-bold text-slate-950">{item.title}</h3>
                       <p className="mt-3 text-sm leading-7 text-slate-600">{item.description}</p>
                     </article>
+                  ))}
+                </div>
+              </div>
+
+              <div className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-lg shadow-slate-200/70">
+                <p className="text-sm font-semibold uppercase tracking-[0.22em] text-cyan-600">Decision Support</p>
+                <h2 className="mt-4 text-3xl font-black tracking-tight text-slate-950">
+                  What customers in {cityContent.name} usually need to figure out
+                </h2>
+                <div className="mt-6 space-y-4">
+                  {decisionPoints.map((item) => (
+                    <div key={item} className="flex items-start gap-3 rounded-[1.5rem] border border-slate-200 bg-slate-50 px-5 py-4">
+                      <CheckCircle2 className="mt-1 h-5 w-5 shrink-0 text-cyan-600" />
+                      <p className="text-base leading-7 text-slate-600">{item}</p>
+                    </div>
                   ))}
                 </div>
               </div>
