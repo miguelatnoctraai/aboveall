@@ -82,6 +82,9 @@ export default async function CityServicePage({ params }: CityServicePageProps) 
     "Whether this needs repair, replacement, or a deeper diagnostic step",
     `How the service fits the property types most common in ${cityContent.name}`,
   ]
+  const detailParagraphs = override.detailParagraphs ?? []
+  const warningSigns = override.warningSigns ?? []
+  const proofPoints = override.proofPoints ?? []
 
   const schema = {
     "@context": "https://schema.org",
@@ -213,6 +216,22 @@ export default async function CityServicePage({ params }: CityServicePageProps) 
                 <p className="mt-5 text-lg leading-8 text-slate-600">{override.whyCopy}</p>
               </div>
 
+              {detailParagraphs.length > 0 && (
+                <div className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-lg shadow-slate-200/70">
+                  <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#C29828]">Local Detail</p>
+                  <h2 className="mt-4 text-3xl font-black tracking-tight text-slate-950">
+                    {override.detailTitle ?? `What matters most about ${serviceContent.name.toLowerCase()} in ${cityContent.name}`}
+                  </h2>
+                  <div className="mt-6 space-y-5">
+                    {detailParagraphs.map((paragraph) => (
+                      <p key={paragraph} className="text-base leading-8 text-slate-600">
+                        {paragraph}
+                      </p>
+                    ))}
+                  </div>
+                </div>
+              )}
+
               <div className="grid gap-6 xl:grid-cols-[1.1fr_0.9fr]">
                 <div className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-lg shadow-slate-200/70">
                   <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#C29828]">Overview</p>
@@ -310,6 +329,23 @@ export default async function CityServicePage({ params }: CityServicePageProps) 
                 </div>
 
                 <div className="space-y-6">
+                  {warningSigns.length > 0 && (
+                    <div className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-lg shadow-slate-200/70">
+                      <p className="text-sm font-semibold uppercase tracking-[0.22em] text-cyan-600">Warning Signs</p>
+                      <h2 className="mt-4 text-2xl font-black tracking-tight text-slate-950">
+                        {override.warningSignsTitle ?? `When ${cityContent.name} customers usually decide to call`}
+                      </h2>
+                      <div className="mt-6 space-y-4">
+                        {warningSigns.map((item) => (
+                          <div key={item} className="flex items-start gap-3">
+                            <CheckCircle2 className="mt-1 h-5 w-5 shrink-0 text-cyan-600" />
+                            <p className="text-base leading-7 text-slate-600">{item}</p>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+
                   <div className="rounded-[2rem] border border-cyan-200 bg-cyan-50 p-8">
                     <p className="text-sm font-semibold uppercase tracking-[0.22em] text-cyan-700">Offer focus</p>
                     <h2 className="mt-4 text-2xl font-black tracking-tight text-slate-950">{override.offerTitle}</h2>
@@ -320,6 +356,16 @@ export default async function CityServicePage({ params }: CityServicePageProps) 
                     <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#C29828]">Local proof and trust</p>
                     <h2 className="mt-4 text-2xl font-black tracking-tight text-slate-950">{override.proofTitle}</h2>
                     <p className="mt-5 text-base leading-8 text-slate-600">{override.proofBody}</p>
+                    {proofPoints.length > 0 && (
+                      <div className="mt-6 space-y-3">
+                        {proofPoints.map((item) => (
+                          <div key={item} className="flex items-start gap-3 rounded-2xl bg-slate-50 px-5 py-4">
+                            <BadgeCheck className="mt-1 h-5 w-5 shrink-0 text-[#C29828]" />
+                            <p className="text-sm leading-7 text-slate-700">{item}</p>
+                          </div>
+                        ))}
+                      </div>
+                    )}
                     <div className="mt-6 rounded-[1.5rem] border border-slate-200 bg-slate-50 p-5">
                       <div className="flex items-start gap-3">
                         <ShieldCheck className="mt-1 h-5 w-5 shrink-0 text-cyan-600" />

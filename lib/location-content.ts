@@ -55,12 +55,17 @@ export type CityServiceOverride = {
   heroSummary: string
   whyTitle: string
   whyCopy: string
+  detailTitle?: string
+  detailParagraphs?: string[]
   localProblemsIntro: string
   localProblems: string[]
+  warningSignsTitle?: string
+  warningSigns?: string[]
   offerTitle: string
   offerBody: string
   proofTitle: string
   proofBody: string
+  proofPoints?: string[]
   locationCardBlurb: string
   cityFaqs: FAQItem[]
   ctaTitle: string
@@ -504,10 +509,16 @@ export const cityServiceOverrides: Record<
         "Drain cleaning in Menifee, CA for slow drains, recurring clogs, hydro jetting, and main line troubleshooting.",
       heroTitle: "Drain Cleaning in Menifee, CA",
       heroSummary:
-        "Fast drain cleaning for Menifee kitchens, bathrooms, and main lines when clogs keep coming back or backups start affecting the whole home.",
+        "Fast drain cleaning for Menifee kitchens, bathrooms, laundry lines, and main drains when clogs keep coming back, water starts backing up, or a slow line is turning into a bigger plumbing problem.",
       whyTitle: "Why Menifee customers call us for drain cleaning",
       whyCopy:
-        "Menifee drain calls are often about repeat clogs in active households. The page stays focused on fast recognition, clean clearing, and the next step if the line keeps failing.",
+        "Menifee drain calls are often tied to busy households where a slow kitchen sink, shower drain, or main line problem goes from manageable to disruptive fast. The page needs to help people recognize when this is just a simple clog and when it is a recurring drain issue that deserves a better diagnosis.",
+      detailTitle: "What drain-cleaning calls look like in Menifee homes",
+      detailParagraphs: [
+        "In Menifee, drain-cleaning calls are often driven by daily household volume. A family may be dealing with back-to-back kitchen use, repeated bathroom traffic, and a laundry line that is already starting to slow down. By the time they search for help, they are not really looking for generic plumbing content. They want to know whether the line can be cleared cleanly and whether the clog is likely to come right back.",
+        "That is why this page needs stronger context than a basic clogged-drain pitch. It should speak directly to repeat slowdowns, drain odors, gurgling fixtures, and the type of backup symptoms that show up before a true main line problem fully takes over the house. Menifee customers should leave the page feeling like they understand both the symptom and the next move.",
+        "It should also make clear that Above All handles both the immediate clearing work and the deeper diagnostic path when the same drain issue keeps returning. That is the difference between a page that simply lists services and a page that actually helps convert the right local customer.",
+      ],
       localProblemsIntro: "Common Menifee drain issues this page is built around:",
       localProblems: [
         "Kitchen drains that slow down after high household use",
@@ -515,12 +526,24 @@ export const cityServiceOverrides: Record<
         "Guest bathroom stoppages that spread to more than one fixture",
         "Main line symptoms that need camera inspection before the problem grows",
       ],
+      warningSignsTitle: "When Menifee homeowners usually stop waiting and call",
+      warningSigns: [
+        "More than one drain is starting to slow down at the same time",
+        "The same kitchen or shower drain works for a few days and then clogs again",
+        "There is standing water, bubbling, or odor coming back after a temporary clearing",
+        "A toilet flush starts affecting a nearby shower, tub, or sink",
+      ],
       offerTitle: "Menifee drain-cleaning emphasis",
       offerBody:
-        "This page leans into fast scheduling and recurring-clog diagnosis so Menifee visitors can identify the problem quickly and move straight to service.",
+        "This page leans into fast scheduling, recurring-clog diagnosis, and the ability to explain whether the customer needs a simple clearing, hydro jetting, or a camera inspection before the line becomes a bigger repair issue.",
       proofTitle: "Built for high-use residential plumbing",
       proofBody:
-        "The Menifee version of this page is written for busy homes, move-ins, and routine maintenance needs where repeated drain issues cause immediate disruption.",
+        "The Menifee version of this page is written for busy homes, move-ins, and routine maintenance situations where repeated drain issues quickly become a household disruption instead of a minor inconvenience.",
+      proofPoints: [
+        "Written around active family-home usage, not generic commercial-only drain copy",
+        "Explains the difference between a one-time clog and a deeper recurring-line issue",
+        "Supports the handoff from local search intent into direct scheduling",
+      ],
       locationCardBlurb: "Drain cleaning for repeat clogs, slow drains, and main line backups in Menifee.",
       cityFaqs: [
         {
@@ -618,10 +641,16 @@ export const cityServiceOverrides: Record<
         "Water heater repair and installation in Menifee, CA for no hot water, leaking tanks, tankless issues, and replacement planning.",
       heroTitle: "Water Heater Installation & Repair in Menifee, CA",
       heroSummary:
-        "Repair or replace Menifee water heaters when hot water drops out, the unit starts leaking, or recovery no longer keeps up with daily use.",
+        "Repair or replace Menifee water heaters when hot water drops out, the unit starts leaking, recovery can no longer keep up with daily use, or the system is becoming too unreliable to ignore.",
       whyTitle: "Why Menifee customers call us for water heater service",
       whyCopy:
-        "Menifee water heater calls usually need a quick decision between repair and replacement. This page keeps the message focused on hot-water reliability and practical next steps.",
+        "Menifee water heater calls usually come from households that need a quick answer on reliability. The page should help people understand whether they are dealing with a repairable issue, a unit that is wearing out, or a replacement decision that should be made before the system fails completely.",
+      detailTitle: "What water-heater problems look like in Menifee",
+      detailParagraphs: [
+        "For many Menifee homes, the water heater issue starts as weak recovery rather than total failure. Hot water runs out sooner, the shower temperature drops inconsistently, or a unit that used to keep up with the household no longer matches daily demand. Those are strong conversion signals because the customer is already feeling the disruption even if the system technically still works.",
+        "The second group of calls comes from visible leak risk. Customers notice moisture around the unit, a leaking fitting, rust signs, or a tank that is clearly becoming less trustworthy. At that point the page needs to help them move quickly without overselling panic. The goal is to explain why some water heater issues can be repaired while others need a cleaner replacement path.",
+        "This local page also has to work for customers planning around move-ins, tenant turnover, or proactive home updates. In Menifee, that means writing for both urgent no-hot-water calls and the quieter replacement decisions where the customer wants a dependable system in place before it becomes an emergency.",
+      ],
       localProblemsIntro: "Common Menifee water heater problems include:",
       localProblems: [
         "Hot water running out too quickly in active households",
@@ -629,12 +658,24 @@ export const cityServiceOverrides: Record<
         "Newer homes needing clean replacement planning without guesswork",
         "Tankless systems with inconsistent temperature performance",
       ],
+      warningSignsTitle: "Signs the Menifee water heater issue is getting harder to ignore",
+      warningSigns: [
+        "Hot water runs out much faster than it used to",
+        "There is visible moisture, corrosion, or leaking near the unit",
+        "The system still runs, but recovery is too weak for normal household use",
+        "The customer is trying to decide whether to replace the unit before a move-in, turnover, or heavier family use",
+      ],
       offerTitle: "Menifee water-heater emphasis",
       offerBody:
-        "This page puts no-hot-water urgency and replacement clarity front and center so Menifee visitors can decide faster and move into scheduling.",
+        "This page puts no-hot-water urgency, leak triage, and repair-versus-replacement clarity front and center so Menifee visitors can decide faster and move into scheduling with less uncertainty.",
       proofTitle: "A strong fit for home comfort and turnover timing",
       proofBody:
-        "Menifee customers often need water heater work that fits busy family routines, move-in timelines, and straightforward replacement decisions.",
+        "Menifee customers often need water heater work that fits busy family routines, move-in timelines, and straightforward replacement decisions where reliability matters more than dragging the system along.",
+      proofPoints: [
+        "Built for real household hot-water demand rather than generic equipment copy",
+        "Speaks to repair, leak triage, and proactive replacement in the same local page",
+        "Supports both urgent service calls and cleaner scheduled replacement decisions",
+      ],
       locationCardBlurb: "Water heater repair and replacement for no hot water, leaks, and tankless issues in Menifee.",
       cityFaqs: [
         {
@@ -734,10 +775,16 @@ export const cityServiceOverrides: Record<
         "Emergency plumbing in Riverside, CA for burst pipes, active leaks, drain backups, shutoff problems, and urgent plumbing calls.",
       heroTitle: "Emergency Plumbing in Riverside, CA",
       heroSummary:
-        "Urgent plumbing response for Riverside leaks, burst pipes, backups, and failures that need fast triage across homes, rentals, and commercial properties.",
+        "Urgent plumbing response for Riverside leaks, burst pipes, backups, shutoff failures, overflowing fixtures, and other plumbing problems that need fast triage across homes, rentals, and commercial properties.",
       whyTitle: "Why Riverside customers call us for emergency plumbing",
       whyCopy:
-        "Riverside emergency calls often come from mixed-age properties where a simple symptom can point to a larger plumbing problem. The page is built to support that urgency without losing clarity.",
+        "Riverside emergency calls often come from mixed-age properties where one visible symptom can point to a larger plumbing problem behind the walls, under the slab, or somewhere deeper in the drain system. The page needs to support urgency without losing the sense of professional triage.",
+      detailTitle: "Why Riverside emergency pages need more depth",
+      detailParagraphs: [
+        "Riverside is not just a simple city-name overlay for emergency plumbing. The local mix of older homes, apartments, restaurants, and office properties means the emergency page has to account for more than one kind of urgent call. A burst supply line in an older home, a restroom overflow in a commercial space, and a drain backup affecting multiple units all create different decision points even if they all feel urgent in the moment.",
+        "That is why this page needs stronger context than a generic after-hours plumbing pitch. It should show that Above All understands how emergency triage works in Riverside: stop the immediate damage, isolate the risk, figure out whether the issue is local or system-wide, and then move into the cleanest repair path available.",
+        "The page also has to reassure the customer that calling now is reasonable even if they are not fully sure what failed. Emergency plumbing pages convert best when they reduce uncertainty. In Riverside, that means explaining what counts as urgent, what can be stabilized, and why older or mixed-use properties often need a sharper diagnostic eye once the immediate danger is under control.",
+      ],
       localProblemsIntro: "Common Riverside emergency plumbing calls include:",
       localProblems: [
         "Burst or leaking supply lines in older sections of the property",
@@ -745,12 +792,24 @@ export const cityServiceOverrides: Record<
         "Commercial restroom overflows that interrupt operations",
         "Water heater leaks that need immediate shutdown and next-step planning",
       ],
+      warningSignsTitle: "What usually turns a Riverside plumbing issue into an emergency call",
+      warningSigns: [
+        "Water is actively spreading through cabinets, walls, floors, or ceilings",
+        "A drain backup is affecting more than one fixture or more than one unit",
+        "A shutoff is not behaving the way it should during an active leak",
+        "The property cannot use a bathroom, kitchen, or hot-water system safely until the issue is triaged",
+      ],
       offerTitle: "Riverside emergency-service emphasis",
       offerBody:
-        "This page balances call-first urgency with clearer triage language for Riverside visitors who may be dealing with more complex plumbing conditions.",
+        "This page balances call-first urgency with clearer triage language for Riverside visitors who may be dealing with more complex plumbing conditions, older infrastructure, or higher-risk mixed-use properties.",
       proofTitle: "Built for higher-triage emergency calls",
       proofBody:
-        "Riverside emergency service copy needs to handle both simple active leaks and plumbing failures that require a stronger diagnosis before the full repair path is obvious.",
+        "Riverside emergency service copy needs to handle both simple active leaks and plumbing failures that require a stronger diagnosis before the full repair path is obvious. The page should feel useful to a homeowner, property manager, or commercial operator who needs both urgency and competence.",
+      proofPoints: [
+        "Written for mixed-age homes, rentals, and commercial properties in Riverside",
+        "Supports active-leak triage without oversimplifying bigger plumbing failures",
+        "Designed to reduce hesitation when the customer knows something is wrong but not yet exactly where the failure is",
+      ],
       locationCardBlurb: "Emergency plumbing response for leaks, burst lines, and urgent backups in Riverside.",
       cityFaqs: [
         {
