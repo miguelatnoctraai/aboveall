@@ -161,280 +161,336 @@ export const plumbingServices: Record<PlumbingServiceSlug, ServiceContent> = {
     name: "Drain Cleaning",
     hubTitle: "Drain Cleaning Services",
     hubDescription:
-      "Drain cleaning service pages for slow drains, backups, hydro jetting, and recurring line problems across Southern California.",
+      "Professional drain cleaning for slow drains, stubborn clogs, sewer backups, hydro jetting, and recurring blockage diagnosis across Southern California.",
     heroSummary:
-      "Fast support for slow drains, repeat clogs, drain odors, sewer line backups, and camera-verified blockage diagnosis.",
+      "Clear the blockage, diagnose why it keeps coming back, and protect the line before a slow drain turns into a backup. Above All handles fixture drains, branch lines, and main line problems for homes and commercial properties across Southern California.",
     intro:
-      "This service hub explains what Above All handles for clogged drains, main line issues, and repeat blockages before visitors choose a city-specific page.",
+      "This page is the main service hub for drain cleaning. It is where visitors should understand the difference between a simple fixture clog, a recurring line problem, and a main line backup before they move into a city-specific page. The message needs to make it clear that Above All is not just snaking drains at random. The value is in recognizing the symptom, choosing the right clearing method, and explaining whether the customer needs a maintenance fix, a camera inspection, or a larger repair plan.",
     image: "/plumber-fixing-pipe-leak-under-sink.jpg",
     capabilities: [
       {
         title: "Kitchen and bathroom drain clearing",
-        description: "Fast help for sinks, tubs, showers, and utility drains that are slow, blocked, or backing up.",
+        description:
+          "Clear sinks, tubs, showers, floor drains, and utility drains that are running slow, fully clogged, or backing up into the space.",
       },
       {
         title: "Main line stoppage diagnosis",
-        description: "Identify whether the issue is isolated to one fixture or affecting the wider drainage system.",
+        description:
+          "Determine whether the problem is limited to one fixture, one branch line, or the building’s larger drainage system before recommending the next step.",
       },
       {
         title: "Hydro jetting",
-        description: "Use high-pressure cleaning when buildup or repeat clogs need more than basic cable work.",
+        description:
+          "Use high-pressure cleaning when grease, sludge, scale, or recurring buildup needs a deeper line cleaning than basic cable work can provide.",
       },
       {
         title: "Camera inspections",
-        description: "Inspect the line when recurring symptoms suggest a deeper blockage or damaged piping.",
+        description:
+          "Inspect the drain or sewer line when the same symptoms keep returning and the customer needs a better answer before approving repair work.",
       },
       {
         title: "Recurring clog troubleshooting",
-        description: "Move beyond a one-time unclog and determine why the same drain keeps failing.",
+        description:
+          "Move beyond the temporary unclog and identify the usage pattern, line condition, or blockage source that keeps creating the same problem.",
       },
       {
         title: "Commercial drain service",
-        description: "Support for restrooms, break rooms, and service sinks that interrupt property operations.",
+        description:
+          "Handle restroom, break room, kitchen, and service-area drains when backups or slow flow begin affecting staff, customers, or building operations.",
       },
     ],
     process: [
       {
         title: "Inspect the blockage",
-        description: "Confirm whether the issue is isolated, shared, or part of a larger line problem before starting work.",
+        description:
+          "Start by identifying whether the symptom is fixture-specific, shared across multiple drains, or connected to a deeper main line issue.",
       },
       {
         title: "Clear the line safely",
-        description: "Use the right drain-cleaning method for the symptom, fixture, and likely source of the blockage.",
+        description:
+          "Use the right method for the actual problem, whether that means fixture clearing, line cleaning, or deeper work such as hydro jetting or camera inspection.",
       },
       {
         title: "Recommend the next move",
-        description: "Flag recurring-clog risks, maintenance options, or follow-up repairs when the line needs more than a quick clearing.",
+        description:
+          "Explain what was found, what was cleared, and whether the customer should plan for maintenance, further inspection, or pipe repair.",
       },
     ],
     faqs: [
       {
         question: "Do you handle recurring drain clogs?",
         answer:
-          "Yes. Recurring clogs usually need more than a basic clearing, so we focus on diagnosing why the line keeps slowing down or backing up.",
+          "Yes. Recurring clogs are usually a sign that the line needs more than a quick surface-level clearing. We focus on what is causing the repeat failure so the same drain is not clogging again a week later.",
       },
       {
         question: "Is hydro jetting always necessary?",
         answer:
-          "No. We use the cleaning method that fits the line condition and the symptom. Some drains need cable work, while repeat buildup may justify hydro jetting.",
+          "No. Some drains can be handled with standard clearing, while others need heavier cleaning because the line has grease, scale, or recurring buildup. Hydro jetting is a tool, not the automatic answer for every clog.",
       },
       {
         question: "Can you inspect the line before bigger repairs?",
         answer:
-          "Yes. Camera inspections help confirm whether the issue is grease, roots, scale, or pipe damage before moving into larger recommendations.",
+          "Yes. Camera inspections are one of the best ways to confirm whether the issue is buildup, roots, scale, offset pipe sections, or other line damage before moving into larger repair recommendations.",
+      },
+      {
+        question: "Do you handle drain cleaning for commercial properties?",
+        answer:
+          "Yes. We handle drain issues for homes and commercial properties, including restrooms, break rooms, service sinks, and other plumbing that affects day-to-day operations.",
       },
     ],
-    quickPoints: ["Slow drains", "Recurring clogs", "Hydro jetting", "Camera inspections"],
+    quickPoints: ["Slow or backed-up drains", "Recurring clog diagnosis", "Hydro jetting when needed", "Camera inspections before bigger repairs"],
   },
   "toilet-repair-installation": {
     slug: "toilet-repair-installation",
     name: "Toilet Repair & Installation",
     hubTitle: "Toilet Repair & Installation",
     hubDescription:
-      "Toilet repair and toilet installation pages for leaks, weak flushes, repeated clogs, and fixture replacements.",
+      "Toilet repair and installation for leaks, running toilets, repeated clogs, weak flushes, fixture upgrades, and commercial restroom replacements.",
     heroSummary:
-      "Repair leaking, running, or clogged toilets and install new fixtures for homes, rentals, and commercial restrooms.",
+      "Fix leaking, running, rocking, weak-flushing, or repeatedly clogged toilets and install clean replacement fixtures when repair is no longer the best value. Above All handles residential bathrooms, rentals, and commercial restrooms.",
     intro:
-      "This service hub explains how Above All handles toilet repairs, replacements, and new installations before visitors choose a city-specific page.",
+      "This page is the main service hub for toilet repair and toilet installation. It should help visitors quickly figure out whether they are dealing with a basic repair, a leak at the base, a recurring clog problem, or a fixture that is simply ready to be replaced. The copy needs to reassure the customer that Above All can handle both the repair-first path and the replacement path without forcing them into a bigger bathroom project than they actually need.",
     image: "/plumber-fixing-pipe-leak-under-sink.jpg",
     capabilities: [
       {
         title: "Running toilet repair",
-        description: "Fix fill valves, flappers, internal tank parts, and persistent water waste issues.",
+        description:
+          "Repair fill valves, flappers, supply issues, and worn internal tank parts that cause constant running, phantom flushing, or water waste.",
       },
       {
         title: "Toilet clog removal",
-        description: "Address fixture-level stoppages and determine when the issue points to the branch line or main line.",
+        description:
+          "Clear fixture-level stoppages and determine whether the repeated clog is coming from the toilet itself or from the connected drain line.",
       },
       {
         title: "Leak and wax ring repair",
-        description: "Stop leaks at the base, supply line, shutoff, or tank connection before water damage spreads.",
+        description:
+          "Stop leaks at the base, supply line, shutoff, tank bolts, or internal connections before moisture turns into flooring or subfloor damage.",
       },
       {
         title: "New toilet installation",
-        description: "Install replacement or upgraded fixtures with proper sealing, testing, and cleanup.",
+        description:
+          "Install replacement or upgraded toilets with proper sealing, alignment, shutoff testing, and a clean finished setup.",
       },
       {
         title: "Commercial restroom fixture replacement",
-        description: "Replace worn units in customer or staff restrooms with minimal operational disruption.",
+        description:
+          "Replace worn, unreliable, or damaged restroom fixtures in customer-facing or staff restrooms with minimal disruption to the property.",
       },
       {
         title: "Water-saving upgrades",
-        description: "Swap older fixtures for newer models when efficiency and reliability matter more than repeated repair calls.",
+        description:
+          "Upgrade older toilets to newer, more efficient models when the existing fixture is using too much water or repeatedly failing.",
       },
     ],
     process: [
       {
         title: "Confirm repair or replacement needs",
-        description: "Check the fixture condition, leak source, clog pattern, and overall install quality before recommending work.",
+        description:
+          "Check the toilet condition, leak source, clog history, and installation quality before deciding whether a repair or replacement is the better move.",
       },
       {
         title: "Repair or replace cleanly",
-        description: "Handle the repair or installation with the right seal, hardware, alignment, and fixture testing.",
+        description:
+          "Complete the repair or installation with the proper seal, connection hardware, alignment, and flush testing so the fixture is stable and dependable.",
       },
       {
         title: "Verify flush and finish",
-        description: "Test for leaks, flush quality, shutoff function, and a clean final setup before wrapping up.",
+        description:
+          "Confirm leak-free performance, proper flushing, shutoff response, and a clean final setup before the job is closed out.",
       },
     ],
     faqs: [
       {
         question: "Should I repair or replace my toilet?",
         answer:
-          "If the issue is isolated to parts or a seal, repair often makes sense. If the fixture is older, cracked, or repeatedly failing, replacement can be the stronger value.",
+          "If the problem is limited to internal parts, a shutoff, or a simple seal issue, repair often makes sense. If the toilet is older, cracked, poorly seated, or failing repeatedly, replacement is often the better long-term value.",
       },
       {
         question: "Can you install customer-supplied toilets?",
         answer:
-          "Yes. We can install customer-supplied fixtures when the model is a good fit for the space and rough-in requirements.",
+          "Yes. We can install customer-supplied toilets as long as the fixture is the right fit for the space, rough-in, and plumbing setup.",
       },
       {
         question: "Do you work on commercial restroom toilets?",
         answer:
-          "Yes. We handle both residential and commercial restroom toilet repairs and replacements.",
+          "Yes. We handle both residential and commercial restroom toilet repairs, replacements, and fixture updates.",
+      },
+      {
+        question: "Can a toilet leak at the base without needing a full replacement?",
+        answer:
+          "Yes. A base leak can come from the seal, flange condition, loose mounting, or the toilet body itself. We inspect that before recommending replacement.",
       },
     ],
-    quickPoints: ["Running toilets", "Leak repairs", "Fixture replacement", "Commercial restroom work"],
+    quickPoints: ["Running and leaking toilets", "Repair-versus-replace guidance", "New toilet installation", "Commercial restroom fixture work"],
   },
   "emergency-plumbing": {
     slug: "emergency-plumbing",
     name: "Emergency Plumbing",
     hubTitle: "Emergency Plumbing Services",
     hubDescription:
-      "Emergency plumbing service pages for burst pipes, active leaks, backups, overflowing toilets, and urgent water heater issues.",
+      "Emergency plumbing response for burst pipes, active leaks, drain backups, overflowing toilets, shutoff failures, and urgent water heater problems.",
     heroSummary:
-      "Fast plumbing response for active leaks, burst pipes, backups, shutoff problems, and urgent plumbing situations that cannot wait.",
+      "When water is actively leaking, a toilet is overflowing, a drain line is backing up, or a water heater has failed, the goal is simple: stop the damage, stabilize the system, and move into the cleanest repair path as fast as possible.",
     intro:
-      "This service hub explains how Above All handles urgent plumbing calls before visitors jump to the city page that matches where they need service.",
+      "This page is the main service hub for emergency plumbing. It should make it obvious what counts as an actual plumbing emergency, what a customer can safely do before help arrives, and how Above All approaches urgent calls. The page needs to feel immediate and useful, not dramatic for the sake of drama. The value is fast triage, damage control, and a clear path from emergency symptom to repair plan.",
     image: "/emergency-plumbing-service-call.jpg",
     capabilities: [
       {
         title: "Burst pipe response",
-        description: "Move quickly on active pipe failures that threaten walls, flooring, or daily operations.",
+        description:
+          "Respond quickly to active pipe failures that threaten walls, cabinets, flooring, ceilings, or daily building operations.",
       },
       {
         title: "Leak triage",
-        description: "Find the leak source, limit damage, and determine whether the repair can be completed immediately.",
+        description:
+          "Identify the leak source, control the water if possible, and determine whether the repair can be completed immediately or staged safely.",
       },
       {
         title: "Overflowing toilet emergencies",
-        description: "Handle fixture overflows and confirm whether the issue is isolated or tied to a broader drain problem.",
+        description:
+          "Handle overflowing toilet situations and verify whether the problem is limited to the fixture or tied to a larger branch or main line blockage.",
       },
       {
         title: "Drain and sewer backups",
-        description: "Address backup conditions that make bathrooms, kitchens, or tenant spaces unusable.",
+        description:
+          "Address drain and sewer backup conditions that make bathrooms, kitchens, tenant spaces, or service areas unusable.",
       },
       {
         title: "Water shutoff troubleshooting",
-        description: "Help when the main shutoff, angle stop, or fixture isolation point is not working as expected.",
+        description:
+          "Help when the main shutoff, angle stop, or fixture isolation valve is not behaving the way it should during an urgent plumbing problem.",
       },
       {
         title: "Urgent water heater issues",
-        description: "Respond when a leaking or failed water heater needs immediate attention to limit disruption or damage.",
+        description:
+          "Respond when a leaking, failed, or unsafe water heater needs immediate attention to limit downtime or property damage.",
       },
     ],
     process: [
       {
         title: "Call and triage",
-        description: "Prioritize the situation by phone so the response matches the actual urgency and likely plumbing risk.",
+        description:
+          "Triage the call quickly so the response matches the real risk level, the visible symptom, and the likelihood of property damage.",
       },
       {
         title: "Stop damage first",
-        description: "Stabilize the plumbing issue, isolate the affected area, and protect the property where possible.",
+        description:
+          "Focus first on stopping or reducing active damage by isolating the plumbing issue, limiting water spread, and protecting the area where possible.",
       },
       {
         title: "Repair or stage the next step",
-        description: "Complete the fix when possible or set up the cleanest follow-up path when larger work is needed.",
+        description:
+          "Complete the repair if the situation allows, or set up the cleanest and safest follow-up path if the emergency reveals a larger underlying issue.",
       },
     ],
     faqs: [
       {
         question: "What counts as a plumbing emergency?",
         answer:
-          "Active leaks, burst pipes, backups, overflowing toilets, no shutoff control, and water heater failures that threaten damage or loss of function are common emergency calls.",
+          "Active leaks, burst pipes, backups, overflowing toilets, loss of shutoff control, and leaking or failed water heaters that threaten damage or loss of function are common emergency situations.",
       },
       {
         question: "Do you offer after-hours response?",
         answer:
-          "Yes. Emergency plumbing support is available for urgent situations that cannot reasonably wait for standard scheduling.",
+          "Yes. Emergency plumbing response is available for situations that cannot reasonably wait for standard scheduling without risking more damage or major loss of use.",
       },
       {
         question: "What should I do before the plumber arrives?",
         answer:
-          "If it is safe, shut off the local or main water supply, clear the affected area, and document active leaking or overflow conditions for faster triage.",
+          "If it is safe, shut off the local or main water supply, stop using the affected fixtures, clear valuables out of the wet area, and document the visible problem for faster triage.",
+      },
+      {
+        question: "Can you help even if I am not sure the problem is a true emergency?",
+        answer:
+          "Yes. We can help you triage the symptom by phone and decide whether the issue needs immediate service or can be scheduled normally.",
       },
     ],
-    quickPoints: ["Active leaks", "Burst pipes", "Backup response", "Urgent shutoff help"],
+    quickPoints: ["Burst pipes and active leaks", "Overflows and backups", "After-hours emergency response", "Immediate damage-control triage"],
   },
   "water-heater-installation-repair": {
     slug: "water-heater-installation-repair",
     name: "Water Heater Installation & Repair",
     hubTitle: "Water Heater Installation & Repair",
     hubDescription:
-      "Water heater service pages for repair, replacement, installation, tankless troubleshooting, and hot water failures.",
+      "Water heater repair, replacement, and installation for no hot water, leaking units, weak recovery, and tankless troubleshooting across Southern California.",
     heroSummary:
-      "Repair or replace standard and tankless water heaters when hot water drops out, recovery slows down, or the unit starts leaking.",
+      "Restore reliable hot water, stop leaks before they spread, and make the right call on repair versus replacement. Above All handles standard tank units, tankless systems, and installation planning for homes and commercial properties.",
     intro:
-      "This service hub explains how Above All handles water heater repairs and replacements before visitors choose the city page that matches their property.",
+      "This page is the main service hub for water heater repair and water heater installation. It should help visitors understand whether they are dealing with a repairable issue, an aging unit that is nearing replacement, or an urgent leak that needs immediate attention. The page needs to feel grounded and practical. Customers are usually looking for a fast answer on how to get reliable hot water back without overpaying for the wrong fix.",
     image: "/emergency-plumbing-service-call.jpg",
     capabilities: [
       {
         title: "Tank water heater repair",
-        description: "Handle common repair issues such as no hot water, poor recovery, pilot problems, and leaking fittings.",
+        description:
+          "Handle common tank water heater issues such as no hot water, slow recovery, pilot problems, thermostat concerns, and leaking fittings or valves.",
       },
       {
         title: "Tankless water heater service",
-        description: "Troubleshoot tankless performance issues, ignition problems, and inconsistent temperature complaints.",
+        description:
+          "Troubleshoot tankless water heater performance problems, ignition issues, inconsistent temperatures, and other reliability complaints.",
       },
       {
         title: "Water heater replacement",
-        description: "Replace failing units when repair is no longer the cleanest or most cost-effective path.",
+        description:
+          "Replace failing or aging units when repair no longer makes sense financially or when the existing unit is no longer dependable.",
       },
       {
         title: "New water heater installation",
-        description: "Install properly sized systems for homes, rentals, and smaller commercial applications.",
+        description:
+          "Install properly sized water heaters for homes, rentals, and light commercial applications with clean setup and system testing.",
       },
       {
         title: "Safety and shutoff component updates",
-        description: "Address valves, expansion components, and connection issues that affect safe operation.",
+        description:
+          "Address valves, expansion components, shutoffs, and related connection issues that affect safe and reliable operation.",
       },
       {
         title: "Performance diagnosis",
-        description: "Check the system before recommending replacement so the next step is tied to the real failure point.",
+        description:
+          "Check the system carefully before recommending replacement so the next step is based on the real failure point, not guesswork.",
       },
     ],
     process: [
       {
         title: "Evaluate the system",
-        description: "Review the unit age, symptom pattern, visible condition, and expected hot water demand before recommending work.",
+        description:
+          "Review the unit age, visible condition, symptom pattern, and the property’s hot water demand before recommending repair or replacement.",
       },
       {
         title: "Repair or recommend replacement",
-        description: "Choose the cleanest path based on condition, urgency, and whether the existing unit is worth saving.",
+        description:
+          "Choose the cleanest path based on the actual failure, the urgency of the situation, and whether the existing unit is still worth saving.",
       },
       {
         title: "Install, test, and confirm",
-        description: "Verify safe startup, hot water delivery, and a clean final handoff before the job is closed out.",
+        description:
+          "Verify safe startup, proper hot water delivery, connection integrity, and a clean final handoff before the job is complete.",
       },
     ],
     faqs: [
       {
         question: "Should I repair or replace my water heater?",
         answer:
-          "That depends on the age of the unit, the failure point, and whether the repair meaningfully extends reliable service. We assess that before recommending replacement.",
+          "That depends on the unit age, the exact failure point, the leak risk, and whether the repair would actually extend reliable service. We assess those factors before pushing replacement.",
       },
       {
         question: "Do you work on tank and tankless systems?",
         answer:
-          "Yes. We handle both standard tank water heaters and tankless units.",
+          "Yes. We work on both standard tank water heaters and tankless systems.",
       },
       {
         question: "How long does installation take?",
         answer:
-          "Many replacements can be completed the same day once the scope and unit fit are confirmed, though exact timing depends on the property and setup.",
+          "Many water heater replacements can be completed the same day once the system fit and scope are confirmed, though exact timing depends on access, setup, and whether related plumbing updates are needed.",
+      },
+      {
+        question: "Can you help if the unit still works but hot water does not last?",
+        answer:
+          "Yes. Weak recovery, inconsistent temperature, or short hot-water duration are all valid reasons to inspect the system before it turns into a complete failure.",
       },
     ],
-    quickPoints: ["No hot water", "Leaking tanks", "Tankless troubleshooting", "Same-day replacement paths"],
+    quickPoints: ["No hot water diagnosis", "Tank and tankless repair", "Leaking-unit triage", "Repair-versus-replacement guidance"],
   },
 }
 
