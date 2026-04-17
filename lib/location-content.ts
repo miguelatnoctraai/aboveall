@@ -841,59 +841,59 @@ export const cityServiceOverrides: Record<
     },
     "toilet-repair-installation": {
       metaDescription:
-        "Toilet repair and installation in Riverside, CA for leaks, running toilets, repeated clogs, and restroom fixture replacement.",
+        "Toilet repair and installation in Riverside, CA. Above All Maintenance & Repair fixes leaks, running toilets, clogs, and broken fixtures for homes, rentals, and businesses.",
       heroTitle: "Toilet Repair & Installation in Riverside, CA",
       heroSummary:
-        "Repair or replace toilets in Riverside homes, rentals, restaurants, and offices when leaks, repeat clogs, worn shutoffs, or aging fixtures start creating daily problems that need more than a quick parts swap.",
-      whyTitle: "Why Riverside customers call us for toilet work",
+        "Above All Maintenance & Repair fixes and replaces toilets in Riverside. Leaks, running toilets, clogs, broken parts, or a full swap — we handle it for homes, rentals, restaurants, and offices.",
+      whyTitle: "Why Riverside calls Above All for toilet work",
       whyCopy:
-        "Riverside has a lot of older homes and buildings. A toilet problem here is not always just the toilet. Old shutoffs, worn supply lines, and drain issues can all be connected. We check everything and give you the right fix.",
-      detailTitle: "Why Riverside toilet problems are not always just fixture problems",
+        "Riverside has a lot of older homes and buildings. Sometimes the toilet is the problem. Sometimes it is the shutoff, the supply line, or the drain. We check all of it so you get the right fix the first time.",
+      detailTitle: "Toilet problems in Riverside are not always just the toilet",
       detailParagraphs: [
-        "Most toilet problems seem simple at first. The toilet runs, rocks, clogs too often, or leaks. But in older homes and busy buildings, the toilet is not always the only problem. An old shutoff valve, a worn supply line, or a drain issue can change what the right fix looks like.",
-        "We handle simple repairs and full replacements. If the toilet is old, keeps failing, or is not worth fixing again, we tell you. You get the right answer the first time.",
-        "This matters a lot for rentals, restaurants, and offices. A broken restroom costs time and money. We get it fixed or replaced fast with as little disruption as possible.",
+        "Most toilet calls start the same way — it runs, rocks, clogs, or leaks. In Riverside's older homes and busy buildings, the toilet is sometimes just the start. Old shutoff valves, worn supply lines, and slow drains can all be part of the same problem.",
+        "We fix what needs fixing and replace what does not make sense to keep. If the toilet is too old or too far gone, we tell you straight and help you pick the right replacement.",
+        "For rentals, restaurants, and offices, a broken restroom costs money every day it sits. We get it done fast with as little disruption as possible.",
       ],
-      localProblemsIntro: "Common Riverside toilet issues include:",
+      localProblemsIntro: "Common toilet problems we fix in Riverside:",
       localProblems: [
-        "Older fixtures with recurring internal tank failures",
-        "Toilet leaks that spread into older flooring or finish materials",
-        "Commercial restroom units that need replacement with minimal downtime",
-        "Repeated clogs where the branch line may be part of the issue",
+        "Old fixtures that keep failing inside the tank",
+        "Leaks at the base that get into the floor",
+        "Commercial restrooms that need a fast replacement",
+        "Toilets that clog over and over because of a drain line issue",
       ],
-      warningSignsTitle: "When a Riverside toilet issue usually needs more than a quick repair guess",
+      warningSignsTitle: "Signs your toilet needs more than a quick fix",
       warningSigns: [
-        "The toilet has already been repaired once or twice but keeps failing in a similar way",
-        "There is water at the base, movement in the fixture, or visible wear around older flooring",
-        "The toilet clogs repeatedly even when usage has not changed much",
-        "A restroom in a rental or commercial property cannot stay dependable enough for normal daily use",
+        "You have already had it repaired and it keeps breaking the same way",
+        "There is water at the base or the toilet moves when you sit on it",
+        "It clogs regularly even when nothing has changed",
+        "A rental or business restroom cannot stay reliable for daily use",
       ],
-      offerTitle: "Riverside toilet-service focus",
+      offerTitle: "Toilet repair and installation in Riverside",
       offerBody:
-        "Riverside toilet customers often need a direct repair-versus-replace path and clearer guidance around older fixtures, shared plumbing variables, and higher-use restroom demands.",
-      proofTitle: "Strong fit for older homes and active restrooms",
+        "We fix leaks, replace worn parts, and swap out old toilets that are not worth repairing anymore. Homes, rentals, restaurants, and offices — we handle all of it.",
+      proofTitle: "We work with older homes and busy restrooms",
       proofBody:
-        "Riverside properties often need more than a basic parts swap. Older fixtures, higher-use restrooms, and cleaner replacement planning matter when reliability is more important than squeezing one more temporary fix out of the toilet.",
+        "Riverside has a mix of older homes, apartments, restaurants, and offices. We handle toilet work for all of them — from a simple flapper swap to a full fixture replacement.",
       proofPoints: [
         "We serve older homes, rentals, restaurants, and office restrooms in Riverside",
-        "Supports repair-versus-replacement decisions without assuming the fixture is the only problem",
-        "Helps customers move from a frustrating symptom to the cleanest plumbing recommendation faster",
+        "We check the shutoff, supply line, and drain — not just the toilet itself",
+        "We tell you whether to repair or replace so you are not guessing",
       ],
-      locationCardBlurb: "Toilet repair and toilet installation for older fixtures, leaks, and restroom upgrades in Riverside.",
+      locationCardBlurb: "Toilet repair and installation in Riverside for leaks, clogs, and fixture replacements.",
       cityFaqs: [
         {
-          question: "Can you replace an older Riverside toilet without a full bathroom remodel?",
+          question: "Can you replace a toilet in Riverside without a full bathroom remodel?",
           answer:
-            "Yes. Toilet replacement can usually be handled as a focused plumbing job when the surrounding floor and connection points are still in workable condition.",
+            "Yes. Toilet replacement is usually a focused plumbing job. As long as the floor and connection points are in good shape, you do not need a full remodel.",
         },
         {
-          question: "Do you troubleshoot whether a Riverside toilet clog is really a drain-line issue?",
+          question: "What if my Riverside toilet keeps clogging?",
           answer:
-            "Yes. If clogs keep returning, we look beyond the fixture so the same problem does not keep coming back.",
+            "Repeat clogs are often a drain line issue, not just the toilet. We check beyond the fixture so the problem does not keep coming back.",
         },
       ],
       ctaTitle: "Need toilet repair in Riverside?",
-      ctaBody: "Call now for a cleaner repair-versus-replacement decision and faster toilet service in Riverside.",
+      ctaBody: "Call Above All Maintenance & Repair. We fix leaks, clogs, and broken fixtures fast.",
     },
     "emergency-plumbing": {
       metaDescription:
