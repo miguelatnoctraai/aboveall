@@ -26,6 +26,12 @@ export function Footer() {
     { name: "Terms of Service", href: "/terms-of-service" },
   ]
 
+  const featuredPlumbingLinks = [
+    { name: "Riverside, CA plumbing services", href: "/locations/riverside" },
+    { name: "Homeland, CA plumbing services", href: "/locations/homeland" },
+    { name: "Emergency plumbing services", href: "/services/plumbing/emergency-plumbing" },
+  ]
+
   const serviceAreas = [businessInfo.homeBase, ...businessInfo.counties]
 
   const socialLinks = [
@@ -205,6 +211,23 @@ export function Footer() {
                 </li>
               ))}
             </ul>
+            <div className="mt-8">
+              <h4 className="mb-3 text-sm font-semibold uppercase tracking-[0.18em] text-[#C29828]">
+                Popular Plumbing Pages
+              </h4>
+              <ul className="space-y-3">
+                {featuredPlumbingLinks.map((link) => (
+                  <li key={link.href}>
+                    <Link
+                      href={link.href}
+                      className="text-slate-300 hover:text-[#C29828] transition-all duration-300 hover:translate-x-1 inline-block text-sm leading-6"
+                    >
+                      {link.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
 
           <div>

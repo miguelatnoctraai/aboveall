@@ -12,13 +12,13 @@ const localLinks = [
   },
   {
     href: "/locations/riverside",
-    title: "Riverside plumbing pages",
+    title: "Riverside, CA plumbing services",
     body: "Use the Riverside city hub when the job needs stronger diagnosis for older homes or mixed-use properties.",
     icon: MapPin,
   },
   {
     href: "/locations/homeland",
-    title: "Homeland plumbing pages",
+    title: "Homeland, CA plumbing services",
     body: "Use the Homeland city hub for the most local fit around the company's home base and nearby communities.",
     icon: ShieldCheck,
   },

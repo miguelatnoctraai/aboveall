@@ -103,18 +103,6 @@ export function Hero() {
               </Button>
             </Link>
           </div>
-
-          <div className="flex flex-wrap items-center justify-center gap-6 text-sm font-semibold text-slate-300">
-            <Link href="/locations/riverside" className="hover:text-white">
-              Riverside plumbing pages
-            </Link>
-            <Link href="/locations/homeland" className="hover:text-white">
-              Homeland plumbing pages
-            </Link>
-            <Link href="/services/plumbing/emergency-plumbing" className="hover:text-white">
-              Emergency plumbing hub
-            </Link>
-          </div>
         </div>
 
         <div className="absolute bottom-8 left-1/2 z-20 -translate-x-1/2 animate-bounce">
