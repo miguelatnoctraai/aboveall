@@ -785,59 +785,59 @@ export const cityServiceOverrides: Record<
   riverside: {
     "drain-cleaning": {
       metaDescription:
-        "Drain cleaning in Riverside, CA for clogged drains, slow lines, hydro jetting, sewer camera inspections, and recurring backups.",
+        "Drain cleaning in Riverside, CA for slow drains, repeat clogs, sewer backups, and main line problems in homes, apartments, and commercial properties.",
       heroTitle: "Drain Cleaning in Riverside, CA",
       heroSummary:
-        "Drain cleaning for Riverside homes, apartments, restaurants, and offices when repeat clogs, shared drain symptoms, or deeper line problems need more than a quick unclog.",
+        "Slow drain? Keeps clogging? We clear it and tell you why it keeps coming back. We work on homes, apartments, restaurants, and offices in Riverside.",
       whyTitle: "Why Riverside customers call us for drain cleaning",
       whyCopy:
-        "Riverside has a lot of older homes and buildings. A drain problem here can be more than a simple clog. We look deeper to find out if it is a branch line or main line issue before we start work.",
-      detailTitle: "Why Riverside drain calls often need a sharper diagnosis",
+        "A drain that clogs once might just need a quick clear. A drain that clogs again and again has a deeper problem. We find out which one you are dealing with and fix it right.",
+      detailTitle: "Drain problems in Riverside homes and buildings",
       detailParagraphs: [
-        "Riverside has all kinds of properties. An older home, a restaurant, and an apartment building all look different when a drain clogs. The same symptom can mean different things. We look at the whole picture before picking the fix.",
-        "We check if the problem is just one drain, a branch line, or the main sewer line. If more than one drain is slow, or the same drain keeps clogging, that tells us something important. We find out what the drain is trying to tell us about the line.",
-        "Older buildings and mixed-use properties need more careful work. We handle repeat-clog problems, camera inspections, and hydro jetting when the line needs a deeper clean. You get a clear answer about what the drain needs — not a one-size guess.",
+        "Riverside has a lot of older homes and buildings. Old pipes get slow. Grease, hair, and buildup pile up over time. A drain that worked fine for years can suddenly stop draining properly.",
+        "When more than one drain starts backing up, the problem is usually deeper in the line. We check the whole system, not just the one drain that is acting up.",
+        "We use the right tool for each job. Sometimes it's a simple snake. Sometimes it's a hydro jet or a camera. We tell you what we're doing and why.",
       ],
-      localProblemsIntro: "Common Riverside drain issues include:",
+      localProblemsIntro: "Common drain problems we handle in Riverside:",
       localProblems: [
-        "Older drain lines that clog again after basic clearing",
-        "Restaurant and office drain complaints that disrupt operations",
-        "Multiple fixtures backing up in mixed-age properties",
-        "Main line problems that need camera verification before repair planning",
+        "Kitchen drains clogged with grease and food buildup",
+        "Shower and tub drains that back up repeatedly",
+        "Main line blockages affecting the whole house",
+        "Restaurant and office drains that slow down or back up",
       ],
-      warningSignsTitle: "When Riverside drain symptoms usually point to a bigger line issue",
+      warningSignsTitle: "Signs your Riverside drain needs service now",
       warningSigns: [
-        "A sink, tub, or floor drain was cleared recently but is already slowing down again",
-        "More than one drain is gurgling, backing up, or reacting when another fixture is used",
-        "The property has an older drain system and the clog pattern keeps changing rooms",
-        "A restaurant, office, or rental unit cannot keep operating normally because the drain issue keeps returning",
+        "Water drains very slowly or not at all",
+        "The same drain clogs every few weeks",
+        "You hear gurgling from other drains when you flush",
+        "Multiple drains are slow at the same time",
       ],
-      offerTitle: "Riverside drain-cleaning focus",
+      offerTitle: "Drain cleaning in Riverside",
       offerBody:
-        "Riverside drain customers often need stronger diagnosis, recurring-line troubleshooting, and a clear path from the symptom to the right cleaning or inspection service.",
-      proofTitle: "A strong fit for older and higher-use drain systems",
+        "We clear the drain, find out why it's clogging, and tell you if it needs more than a basic cleaning. Fast scheduling for homes, rentals, and commercial properties.",
+      proofTitle: "Why Riverside homeowners call Above All Maintenance & Repair",
       proofBody:
-        "Riverside drain calls often involve older lines, heavier commercial use, and repeat clog patterns that are not solved by surface-level unclogging alone. Customers may need clearing, hydro jetting, camera inspection, or a stronger repair plan next.",
+        "We show up, fix the problem, and tell you what we found. No mystery charges, no guessing.",
       proofPoints: [
-        "We work with Riverside homes, rentals, restaurants, and office properties",
-        "Explains when recurring clogs may need a deeper cleaning or sewer camera inspection",
-        "Helpful for customers who already know the line problem is not fully solved",
+        "We clear drains in homes, apartments, restaurants, and offices",
+        "We find the cause, not just the clog",
+        "We offer camera inspections when the problem keeps coming back",
       ],
-      locationCardBlurb: "Drain cleaning for older lines, repeat clogs, and sewer troubleshooting in Riverside.",
+      locationCardBlurb: "Drain cleaning for slow drains, repeat clogs, and main line backups in Riverside.",
       cityFaqs: [
         {
-          question: "Do Riverside drain issues often need more than a standard unclog?",
+          question: "My Riverside drain keeps clogging even after being cleared. What's wrong?",
           answer:
-            "They can. When the line is older or the problem keeps coming back, a deeper cleaning or camera inspection may be the better next step.",
+            "A repeat clog usually means there is buildup deeper in the line, a partial blockage, or a bigger drain issue. We can inspect the line and find the real cause.",
         },
         {
-          question: "Can you handle drain cleaning for Riverside restaurants or offices?",
+          question: "Do you handle drain cleaning for Riverside restaurants and commercial properties?",
           answer:
-            "Yes. We handle residential and commercial drain service where backups or slow drainage interrupt normal use.",
+            "Yes. We clear drains in kitchens, restrooms, and commercial spaces where backups affect daily operations.",
         },
       ],
       ctaTitle: "Need drain cleaning in Riverside?",
-      ctaBody: "Call now to move from repeat drain symptoms to a clearer diagnosis and the right cleaning path.",
+      ctaBody: "Call 951-330-6963 and we'll get your drains cleared fast.",
     },
     "toilet-repair-installation": {
       metaDescription:
