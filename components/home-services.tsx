@@ -57,14 +57,14 @@ export function HomeServices() {
             Homeland-based plumbers for calls that need a clean fix, not guesswork.
           </h2>
           <p className="mt-5 max-w-3xl text-lg leading-8 text-slate-300">
-            {businessInfo.name} is based in {businessInfo.homeBase} and handles plumbing calls across{" "}
-            {businessInfo.primaryCounty} homes, rentals, restaurants, offices, and other local properties. That
-            includes emergency leaks, drain problems, toilet repairs, water heater issues, and everyday plumbing
-            work that needs a licensed pro.
+            {businessInfo.name} is based in {businessInfo.homeBase} and handles plumbing across{" "}
+            {businessInfo.primaryCounty} homes, rentals, restaurants, offices, and commercial properties.
+            Emergency leaks, drain problems, toilet repairs, water heaters, and everyday plumbing work that needs
+            a licensed pro.
           </p>
           <p className="mt-5 max-w-3xl text-base leading-8 text-slate-400">
-            If the plumbing problem turns into a larger repair situation, the team can also help with related
-            maintenance work instead of leaving you to sort out the next contractor on your own.
+            Beyond plumbing, the same team covers electrical, construction, painting, welding, and parking lot
+            work. One company, one call. No need to find a separate contractor when the job grows.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Button asChild size="lg" className="bg-[#C29828] text-slate-950 hover:bg-[#A67F20]">
