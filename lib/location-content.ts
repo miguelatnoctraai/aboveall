@@ -897,59 +897,59 @@ export const cityServiceOverrides: Record<
     },
     "emergency-plumbing": {
       metaDescription:
-        "Emergency plumbing in Riverside, CA for burst pipes, active leaks, drain backups, shutoff problems, and urgent plumbing calls.",
+        "Emergency plumbing in Riverside, CA for burst pipes, active leaks, drain backups, overflowing toilets, and urgent plumbing calls.",
       heroTitle: "Emergency Plumbing in Riverside, CA",
       heroSummary:
-        "Urgent plumbing response for Riverside leaks, burst pipes, backups, shutoff failures, overflowing fixtures, and other plumbing problems that need fast triage across homes, rentals, and commercial properties.",
+        "If water is leaking, a drain is backing up, or something failed and you don't know what to do — call us. We respond fast and get to work right away.",
       whyTitle: "Why Riverside customers call us for emergency plumbing",
       whyCopy:
-        "In Riverside, older homes and mixed buildings mean one leak can hide a bigger problem. We move fast, but we also take time to find out what is really going on behind the walls or under the slab.",
-      detailTitle: "What makes Riverside emergency plumbing calls different",
+        "Emergencies don't wait. When a pipe bursts or a toilet overflows, you need someone on the phone now. We help you figure out what to do and get there fast.",
+      detailTitle: "What to do when you have a plumbing emergency in Riverside",
       detailParagraphs: [
-        "Riverside has older homes, apartments, restaurants, and offices. One problem can look like another but need a different fix. A burst pipe in an old house is different from a drain backup in an apartment building. We figure out what is actually wrong before we start work.",
-        "We stop the damage first. Then we find out if the problem is just one spot or something bigger. After that, we give you a clear path forward. No guessing.",
-        "If you are not sure whether to call, call anyway. We can help you figure out if it is urgent. Older buildings and mixed-use properties often need a closer look even after the immediate problem is under control.",
+        "First, shut off the water if you can. The main shutoff is usually near the water meter or where the main line comes into your home. If you can't find it, call us and we'll walk you through it.",
+        "Then call us. We help you figure out how serious the problem is and what to do next. Some issues can wait a few hours. Others need help right now. We tell you which.",
+        "Riverside has a lot of older homes and buildings. Older pipes can fail fast. We know what to look for and how to stop the damage before it spreads.",
       ],
-      localProblemsIntro: "Common Riverside emergency plumbing calls include:",
+      localProblemsIntro: "Common Riverside plumbing emergencies we handle:",
       localProblems: [
-        "Burst or leaking supply lines in older sections of the property",
-        "Drain backups that affect multiple units or fixtures",
-        "Commercial restroom overflows that interrupt operations",
-        "Water heater leaks that need immediate shutdown and next-step planning",
+        "Burst or leaking pipes in older homes and buildings",
+        "Toilets overflowing and won't stop",
+        "Drain backups affecting multiple rooms or fixtures",
+        "Water heater leaks that need immediate attention",
       ],
-      warningSignsTitle: "What usually turns a Riverside plumbing issue into an emergency call",
+      warningSignsTitle: "Signs you need to call right now",
       warningSigns: [
-        "Water is actively spreading through cabinets, walls, floors, or ceilings",
-        "A drain backup is affecting more than one fixture or more than one unit",
-        "A shutoff is not behaving the way it should during an active leak",
-        "The property cannot use a bathroom, kitchen, or hot-water system safely until the issue is triaged",
+        "Water is actively spreading across the floor, walls, or ceiling",
+        "A toilet or drain will not stop overflowing",
+        "You cannot shut off the water and it keeps getting worse",
+        "Multiple drains are backing up at the same time",
       ],
-      offerTitle: "Riverside emergency-service focus",
+      offerTitle: "Emergency plumbing in Riverside",
       offerBody:
-        "Riverside emergency customers often need fast help with clear triage when older infrastructure, mixed-use properties, or more complex plumbing conditions make the next step less obvious.",
-      proofTitle: "Why Riverside emergency customers call Above All",
+        "We pick up the phone, help you triage the problem, and get to your property fast. We work on homes, rentals, restaurants, and offices.",
+      proofTitle: "Why Riverside homeowners call Above All Maintenance & Repair",
       proofBody:
-        "Riverside emergency calls can involve simple active leaks or larger plumbing failures that need a stronger diagnosis before the full repair path is obvious. Homeowners, property managers, and commercial operators usually need both urgency and competence.",
+        "We respond fast, speak plainly, and fix the problem. No runaround. Just the right help when you need it most.",
       proofPoints: [
-        "We serve older homes, rentals, and commercial properties in Riverside",
-        "Supports active-leak triage without oversimplifying bigger plumbing failures",
-        "Helps customers act quickly even when they know something is wrong but do not yet know exactly where the failure is",
+        "We answer calls for active leaks, backups, and plumbing failures",
+        "We serve homes, rentals, restaurants, and offices in Riverside",
+        "We tell you exactly what is wrong and what it will take to fix it",
       ],
-      locationCardBlurb: "Emergency plumbing response for leaks, burst lines, and urgent backups in Riverside.",
+      locationCardBlurb: "Emergency plumbing response for leaks, backups, and urgent failures in Riverside.",
       cityFaqs: [
         {
-          question: "Can you help with a Riverside apartment or commercial plumbing emergency?",
+          question: "What should I do first if a pipe bursts in my Riverside home?",
           answer:
-            "Yes. We handle urgent plumbing problems in residential and commercial properties where the issue cannot wait.",
+            "Shut off the water at the main valve, then call us. We can walk you through finding the shutoff on the phone if you need help.",
         },
         {
-          question: "If I shut off the water, should I still call for a Riverside emergency visit?",
+          question: "Do you handle plumbing emergencies in Riverside apartments and commercial buildings?",
           answer:
-            "Often yes. Turning off the water can stabilize the problem, but the underlying leak, burst section, or backup still needs professional repair planning.",
+            "Yes. We work on homes, apartments, rentals, restaurants, and offices in Riverside.",
         },
       ],
       ctaTitle: "Need an emergency plumber in Riverside?",
-      ctaBody: "Call now for urgent plumbing triage and a faster path to stabilizing the problem.",
+      ctaBody: "Call 951-330-6963 now. We pick up and we get there fast.",
     },
     "water-heater-installation-repair": {
       metaDescription:
