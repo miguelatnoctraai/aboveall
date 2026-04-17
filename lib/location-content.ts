@@ -586,7 +586,7 @@ export const cityServiceOverrides: Record<
         "Menifee homes get heavy daily use. A slow drain can turn into a big problem fast. We help you find out if it is a simple clog or something deeper that keeps coming back.",
       detailTitle: "What drain-cleaning calls look like in Menifee homes",
       detailParagraphs: [
-        "In Menifee, drain-cleaning calls are often driven by daily household volume. A family may be dealing with back-to-back kitchen use, repeated bathroom traffic, and a laundry line that is already starting to slow down. By that point, they usually want to know whether the line can be cleared cleanly and whether the clog is likely to come right back.",
+        "Busy homes in Menifee use a lot of water every day. Kitchen sinks, bathroom drains, and laundry lines can all slow down at once. When that happens, you want to know if the drain can be fixed and if it will stay clear.",
         "If the same drain keeps slowing down, something is wrong deeper in the line. We check for repeat slowdowns, drain odors, gurgling sounds, and backup signs before the problem gets worse.",
         "Above All handles both the immediate clearing work and the deeper diagnostic path when the same drain issue keeps returning. That matters when the customer wants a real answer, not just a temporary opening in the line.",
       ],
