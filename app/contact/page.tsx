@@ -12,6 +12,7 @@ import { SimpleToast } from "@/components/simple-toast"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 import { ReCaptcha, type ReCaptchaRef } from "@/components/recaptcha"
+import { businessInfo } from "@/lib/business-info"
 
 export default function ContactPage() {
   const [isSubmitting, setIsSubmitting] = useState(false)
@@ -191,7 +192,8 @@ export default function ContactPage() {
               Get Your <span className="text-[#C29828]">Free Quote</span>
             </h1>
             <p className="text-xl text-slate-300 leading-relaxed">
-              Requests reviewed immediately. For emergencies, call us 24/7.
+              Homeland-based service for Riverside County and surrounding Southern California communities. For
+              emergencies, call us directly.
             </p>
           </div>
         </div>
@@ -561,18 +563,18 @@ export default function ContactPage() {
                   <h3 className="font-bold text-xl text-white mb-4">Our Service Area</h3>
                   <div className="rounded-xl overflow-hidden border border-slate-700">
                     <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52956.55845837682!2d-117.33!3d34.11!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c353c8a2b8b8b1%3A0x8b8b8b8b8b8b8b8b!2sI-210%20%26%20I-215%2C%20San%20Bernardino%2C%20CA!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
+                      src="https://www.google.com/maps?q=Homeland,CA&output=embed"
                       width="100%"
                       height="250"
                       style={{ border: 0 }}
                       allowFullScreen
                       loading="lazy"
                       referrerPolicy="no-referrer-when-downgrade"
-                      title="Service Area Map - San Bernardino"
+                      title="Service Area Map - Homeland, CA"
                     />
                   </div>
                   <p className="text-sm text-slate-400 mt-3 text-center">
-                    Serving San Bernardino, Riverside, San Diego & Orange Counties
+                    {businessInfo.serviceAreaSummary}
                   </p>
                 </CardContent>
               </Card>

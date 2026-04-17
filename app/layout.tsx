@@ -2,6 +2,7 @@ import type React from "react"
 import type { Metadata } from "next"
 import { Inter, Roboto_Slab } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
+import { businessInfo } from "@/lib/business-info"
 import { ScrollToTop } from "@/components/scroll-to-top"
 import { SiteShell } from "@/components/site-shell"
 import "./globals.css"
@@ -10,21 +11,37 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-sans" })
 const robotoSlab = Roboto_Slab({ subsets: ["latin"], variable: "--font-serif" })
 
 export const metadata: Metadata = {
-  title: "Above All Maintenance & Repair | Licensed General Contractor in Riverside & San Diego",
+  metadataBase: new URL(businessInfo.website),
+  title: {
+    default: `${businessInfo.name} | Homeland, CA Plumbing & Property Repair`,
+    template: "%s | Above All Maintenance & Repair",
+  },
   description:
-    "Premier commercial & residential maintenance services in Southern California. Licensed (#1075924), bonded, and insured. One call does it all.",
+    "Homeland, CA plumbing, maintenance, and repair company serving Riverside County and surrounding Southern California communities.",
   keywords: [
-    "maintenance",
-    "repair",
-    "contractor",
-    "Riverside",
-    "San Diego",
-    "commercial",
-    "residential",
+    "Homeland plumber",
+    "Riverside County plumber",
     "plumbing",
-    "electrical",
-    "construction",
+    "property repair",
+    "maintenance",
+    "emergency plumbing",
+    "drain cleaning",
+    "water heater repair",
+    "commercial plumbing",
+    "residential plumbing",
   ],
+  openGraph: {
+    type: "website",
+    siteName: businessInfo.name,
+    locale: "en_US",
+    title: `${businessInfo.name} | Homeland, CA Plumbing & Property Repair`,
+    description:
+      "Homeland, CA plumbing, maintenance, and repair company serving Riverside County and surrounding Southern California communities.",
+    url: "/",
+  },
+  alternates: {
+    canonical: "/",
+  },
   icons: {
     icon: [
       {
@@ -42,7 +59,6 @@ export const metadata: Metadata = {
     ],
     apple: "/apple-icon.png",
   },
-    generator: 'v0.app'
 }
 
 export default function RootLayout({

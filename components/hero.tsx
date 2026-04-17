@@ -1,7 +1,8 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Zap } from "lucide-react"
+import { ArrowRight, MapPin, ShieldCheck, Wrench } from "lucide-react"
+import { businessInfo } from "@/lib/business-info"
 import Link from "next/link"
 import { useEffect, useState } from "react"
 
@@ -34,101 +35,125 @@ function AnimatedCounter({
 
   return (
     <div className="text-center">
-      <div className="text-4xl md:text-5xl font-bold text-[#C29828] mb-2">
+      <div className="text-4xl font-bold text-[#C29828] md:text-5xl mb-2">
         {noFormatting ? count : count.toLocaleString()}
         {suffix}
       </div>
-      <div className="text-sm md:text-base text-slate-300 font-medium">{label}</div>
+      <div className="text-sm font-medium text-slate-300 md:text-base">{label}</div>
     </div>
   )
 }
 
 export function Hero() {
   return (
-    <>
-      <section className="relative h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative overflow-hidden bg-slate-950">
+      <section className="relative flex min-h-[calc(100svh-5rem)] items-center justify-center overflow-hidden px-4 py-16 md:px-0 md:py-20">
         <div className="absolute inset-0 z-0">
-          <div className="absolute inset-0 bg-slate-950/80 z-10" />
+          <div className="absolute inset-0 z-10 bg-slate-950/80" />
           <img
             src="/modern-construction-site-with-steel-beams-and-indu.jpg"
-            alt="Construction Background"
-            className="w-full h-full object-cover"
+            alt="Plumbing and property repair background"
+            className="h-full w-full object-cover"
           />
         </div>
 
-        <div className="container mx-auto px-4 z-20 text-center">
-          <div className="inline-flex items-center gap-2 bg-red-600/20 border border-red-500/50 rounded-full px-6 py-3 mb-8 pulse-badge">
-            <div className="w-2 h-2 bg-red-500 rounded-full animate-pulse" />
-            <span className="text-red-400 font-bold text-sm md:text-base tracking-wide">
-              🚨 EMERGENCY SERVICES: NIGHTS & WEEKENDS
-            </span>
+        <div className="container z-20 mx-auto px-4 text-center">
+          <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-red-500/50 bg-red-600/20 px-6 py-3 pulse-badge">
+            <div className="h-2 w-2 rounded-full bg-red-500 animate-pulse" />
+            <span className="text-sm font-bold tracking-wide text-red-400 md:text-base">EMERGENCY PLUMBING AVAILABLE</span>
           </div>
 
-          <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black text-white mb-6 text-balance leading-tight tracking-tight">
-            Where Quality
+          <h1 className="mb-6 text-5xl font-black leading-tight tracking-tight text-white text-balance sm:text-6xl md:text-7xl lg:text-8xl">
+            Riverside County Plumbing
             <br />
-            Takes Flight
+            And Property Repair
           </h1>
 
-          <div className="inline-block glass-dark rounded-2xl px-8 py-4 mb-10">
-            <p className="text-lg sm:text-xl md:text-2xl text-slate-200 font-medium text-pretty">
-              Premier Commercial & Residential Maintenance
+          <div className="mb-10 inline-block rounded-2xl glass-dark px-8 py-4">
+            <p className="text-lg font-medium text-slate-200 text-pretty sm:text-xl md:text-2xl">
+              Homeland-based service for homes, rentals, and commercial properties
             </p>
-            <p className="text-base sm:text-lg text-[#C29828] font-semibold mt-2">
-              Specializing in Plumbing, Electrical, and Construction Services
+            <p className="mt-2 text-base font-semibold text-[#C29828] sm:text-lg">
+              Emergency plumbing, drain cleaning, water heaters, leak diagnosis, and broader repair work
             </p>
           </div>
 
-          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16">
+          <p className="mx-auto mb-10 max-w-4xl text-base leading-8 text-slate-300 sm:text-lg">
+            Based in {businessInfo.homeBase}, {businessInfo.name} leads with plumbing while still handling the wider
+            maintenance and repair work that often follows a real property-service call.
+          </p>
+
+          <div className="mb-16 flex flex-col items-center justify-center gap-6 sm:flex-row">
             <Link href="/contact">
               <Button
                 size="lg"
-                className="bg-[#C29828] text-slate-950 hover:bg-[#A67F20] min-w-[220px] h-14 text-lg font-bold transition-all duration-300 hover:scale-110 shadow-xl shadow-[#C29828]/40 hover:shadow-2xl hover:shadow-[#C29828]/60"
+                className="h-14 min-w-[220px] bg-[#C29828] text-lg font-bold text-slate-950 shadow-xl shadow-[#C29828]/40 transition-all duration-300 hover:scale-110 hover:bg-[#A67F20] hover:shadow-2xl hover:shadow-[#C29828]/60"
               >
-                Get a Quote
+                Get Plumbing Help
                 <ArrowRight className="ml-2 h-6 w-6" />
               </Button>
             </Link>
-            <Link href="/services">
+            <Link href="/services/plumbing">
               <Button
                 size="lg"
                 variant="outline"
-                className="border-2 border-[#C29828] text-[#C29828] hover:bg-[#C29828] hover:text-slate-950 min-w-[220px] h-14 text-lg font-bold bg-transparent transition-all duration-300 hover:scale-110 shadow-lg shadow-[#C29828]/20 hover:shadow-2xl hover:shadow-[#C29828]/40"
+                className="h-14 min-w-[220px] border-2 border-[#C29828] bg-transparent text-lg font-bold text-[#C29828] shadow-lg shadow-[#C29828]/20 transition-all duration-300 hover:scale-110 hover:bg-[#C29828] hover:text-slate-950 hover:shadow-2xl hover:shadow-[#C29828]/40"
               >
-                Our Services
+                Plumbing Services
               </Button>
+            </Link>
+          </div>
+
+          <div className="flex flex-wrap items-center justify-center gap-6 text-sm font-semibold text-slate-300">
+            <Link href="/locations/riverside" className="hover:text-white">
+              Riverside plumbing pages
+            </Link>
+            <Link href="/locations/homeland" className="hover:text-white">
+              Homeland plumbing pages
+            </Link>
+            <Link href="/services/plumbing/emergency-plumbing" className="hover:text-white">
+              Emergency plumbing hub
             </Link>
           </div>
         </div>
 
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 animate-bounce">
-          <div className="w-6 h-10 border-2 border-[#C29828]/50 rounded-full flex items-start justify-center p-2">
-            <div className="w-1 h-3 bg-[#C29828] rounded-full"></div>
+        <div className="absolute bottom-8 left-1/2 z-20 -translate-x-1/2 animate-bounce">
+          <div className="flex h-10 w-6 items-start justify-center rounded-full border-2 border-[#C29828]/50 p-2">
+            <div className="h-3 w-1 rounded-full bg-[#C29828]"></div>
           </div>
         </div>
       </section>
 
-      <section className="relative z-30 -mt-20">
+      <section className="relative z-30 -mt-16 bg-slate-950 px-4 pb-16 md:-mt-20 md:px-0 md:pb-20">
         <div className="container mx-auto px-4">
-          <div className="backdrop-blur-xl bg-slate-900/90 border border-slate-700/50 rounded-3xl p-8 md:p-12 shadow-2xl">
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-12">
-              <AnimatedCounter end={1075924} label="Licensed #" suffix="" noFormatting={true} />
-              <AnimatedCounter end={100} label="Bonded" suffix="%" />
+          <div className="rounded-3xl border border-slate-700/50 bg-slate-900/90 p-8 shadow-2xl backdrop-blur-xl md:p-12">
+            <div className="grid grid-cols-1 gap-8 md:grid-cols-4 md:gap-12">
+              <AnimatedCounter end={1075924} label="Licensed #" noFormatting={true} />
               <div className="text-center">
-                <div className="text-4xl md:text-5xl font-bold text-[#C29828] mb-2 flex items-center justify-center gap-2">
-                  <Zap className="h-10 w-10" />
-                  &lt; 60
+                <div className="mb-2 flex items-center justify-center gap-2 text-4xl font-bold text-[#C29828] md:text-5xl">
+                  <ShieldCheck className="h-10 w-10" />
+                  24/7
                 </div>
-                <div className="text-sm md:text-base text-slate-300 font-medium">Min Response Time</div>
+                <div className="text-sm font-medium text-slate-300 md:text-base">Emergency Phone Response</div>
               </div>
               <div className="text-center">
-                <div className="text-4xl md:text-5xl font-bold text-[#C29828] mb-2">SoCal</div>
-                <div className="text-sm md:text-base text-slate-300 font-medium">Serving Southern California</div>
+                <div className="mb-2 flex items-center justify-center gap-2 text-4xl font-bold text-[#C29828] md:text-5xl">
+                  <MapPin className="h-10 w-10" />
+                  RC
+                </div>
+                <div className="text-sm font-medium text-slate-300 md:text-base">Riverside County Focus</div>
+              </div>
+              <div className="text-center">
+                <div className="mb-2 flex items-center justify-center gap-2 text-4xl font-bold text-[#C29828] md:text-5xl">
+                  <Wrench className="h-10 w-10" />
+                  Homeland
+                </div>
+                <div className="text-sm font-medium text-slate-300 md:text-base">Home Base In California</div>
               </div>
             </div>
           </div>
         </div>
       </section>
-    </>
+    </section>
   )
 }

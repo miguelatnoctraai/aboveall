@@ -1,4 +1,5 @@
 import { Shield, CheckCircle, MapPin } from "lucide-react"
+import { businessInfo } from "@/lib/business-info"
 
 export function About() {
   const stats = [
@@ -12,7 +13,7 @@ export function About() {
     },
     {
       icon: MapPin,
-      label: "Serving Southern California",
+      label: "Homeland, CA Home Base",
     },
   ]
 
@@ -37,18 +38,19 @@ export function About() {
           {/* Content */}
           <div>
             <h2 className="text-4xl md:text-5xl font-black text-white mb-6 text-balance leading-tight tracking-tight">
-              More Than Maintenance
+              Plumbing First
               <br />
-              <span className="text-[#C29828]">Your Property Partners</span>
+              <span className="text-[#C29828]">Built For Real Property Calls</span>
             </h2>
             <p className="text-lg text-slate-300 mb-8 leading-relaxed text-pretty">
-              At Above All Maintenance & Repair, we simplify home services and property repair with a single promise:{" "}
-              <span className="text-[#C29828] font-semibold">One call does it all</span>. We are a fully licensed,
-              bonded, and insured general contractor serving San Bernardino, Riverside, San Diego, and Orange Counties.
+              {businessInfo.name} is based in {businessInfo.homeBase}. The home page now leads with plumbing because
+              that is where the strongest local intent lives: emergency service, drain stoppages, water heaters,
+              toilet issues, and leak diagnosis across {businessInfo.primaryCounty}.
             </p>
             <p className="text-lg text-slate-300 mb-8 leading-relaxed text-pretty">
-              Whether it's complex tenant improvements or an urgent residential repair, we bridge the gap between
-              technical expertise and reliable service.
+              The broader business still handles maintenance and repair work when a property issue moves beyond
+              plumbing. That keeps one contractor in the loop instead of forcing the customer to restart the job with a
+              new vendor.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-6">
