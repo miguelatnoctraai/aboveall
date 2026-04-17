@@ -208,7 +208,7 @@ export const plumbingCities: Record<PlumbingCitySlug, CityContent> = {
     detailParagraphs: [
       "Homeland plumbing work often involves ranch-style homes, manufactured homes, and nearby semi-rural properties where the plumbing layout can be less straightforward than a newer suburban tract home.",
       "That can matter when a drain problem may involve a longer run, a toilet issue has been building for a while, or a water heater problem needs a practical repair-versus-replacement decision instead of a rushed guess.",
-      "Customers in Homeland usually want dependable plumbing help, clear recommendations, and a direct path into the exact service they need.",
+      "If you have a plumbing problem in Homeland, we are here to help. We find out what is wrong and tell you exactly what to do next.",
     ],
     commonCallsTitle: "Common Homeland plumbing calls we handle",
     commonCalls: [
@@ -219,7 +219,7 @@ export const plumbingCities: Record<PlumbingCitySlug, CityContent> = {
     ],
     proofTitle: "Why Homeland customers choose Above All",
     proofBody:
-      "Above All provides Homeland customers with clear plumbing recommendations, practical repair guidance, and dependable help when the problem cannot wait.",
+      "Above All Maintenance & Repair provides Homeland customers with clear plumbing recommendations, practical repair guidance, and dependable help when the problem cannot wait.",
     proofPoints: [
       "Licensed plumbing help for Homeland homes, small local businesses, and nearby semi-rural properties",
       "Repair-first guidance with clear next-step recommendations",
