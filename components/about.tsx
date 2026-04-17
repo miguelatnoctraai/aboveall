@@ -38,18 +38,18 @@ export function About() {
           {/* Content */}
           <div>
             <h2 className="text-4xl md:text-5xl font-black text-white mb-6 text-balance leading-tight tracking-tight">
-              Plumbing First
+              Licensed. Local.
               <br />
-              <span className="text-[#C29828]">Built For Real Property Calls</span>
+              <span className="text-[#C29828]">Built for every property call across Riverside County.</span>
             </h2>
             <p className="text-lg text-slate-300 mb-8 leading-relaxed text-pretty">
-              {businessInfo.name} is based in {businessInfo.homeBase} and handles emergency plumbing, drain
-              stoppages, water heaters, toilet issues, leaks, and everyday repair work across{" "}
-              {businessInfo.primaryCounty}.
+              {businessInfo.name} is based in {businessInfo.homeBase} and handles property work across{" "}
+              {businessInfo.primaryCounty}. That includes plumbing, electrical, construction, painting, welding,
+              and parking lot work — all under one company.
             </p>
             <p className="text-lg text-slate-300 mb-8 leading-relaxed text-pretty">
-              When a plumbing problem turns into a broader property repair, the team can also help with related
-              maintenance work so you are not left coordinating the next step alone.
+              Whether it starts as a plumbing call or a full repair job, the team handles it from start to finish
+              so you are not stuck finding the next contractor on your own.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-6">

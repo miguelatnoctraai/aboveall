@@ -1,7 +1,6 @@
 import type { Metadata } from "next"
 import { Hero } from "@/components/hero"
-import { HomePlumbingFocus } from "@/components/home-plumbing-focus"
-import { HomeOtherServices } from "@/components/home-other-services"
+import { HomeServices } from "@/components/home-services"
 import { About } from "@/components/about"
 import { PastWork } from "@/components/past-work"
 import { Testimonials } from "@/components/testimonials"
@@ -86,8 +85,7 @@ export default function Home() {
     <main className="min-h-screen">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       <Hero />
-      <HomePlumbingFocus />
-      <HomeOtherServices />
+      <HomeServices />
       <About />
       <PriceTransparency />
       <PastWork />
