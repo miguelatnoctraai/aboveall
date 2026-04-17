@@ -190,7 +190,7 @@ export const plumbingCities: Record<PlumbingCitySlug, CityContent> = {
     heroSummary:
       "Licensed plumbing support for Homeland homes and local service properties when drain issues, toilet problems, water heater failures, or urgent leaks need a dependable repair plan and clear local guidance.",
     localAngle:
-      "Homeland plumbing calls often come from homes and small local properties where longer runs, older fixtures, or semi-rural layouts make a clear diagnosis especially important.",
+      "Homeland has ranch homes, manufactured homes, and small local businesses. Some properties have longer pipe runs or older fixtures. We take the time to find the real problem before we start any work.",
     nearbyAreas: ["Romoland", "Green Acres", "Nuevo", "Menifee border"],
     propertyTypes: ["Ranch-style homes", "Manufactured homes", "Small local businesses"],
     trustPoints: [
@@ -583,11 +583,11 @@ export const cityServiceOverrides: Record<
         "Fast drain cleaning for Menifee kitchens, bathrooms, laundry lines, and main drains when clogs keep coming back, water starts backing up, or a slow line is turning into a bigger plumbing problem.",
       whyTitle: "Why Menifee customers call us for drain cleaning",
       whyCopy:
-      "Menifee drain calls are often tied to busy households where a slow kitchen sink, shower drain, or main line problem goes from manageable to disruptive fast. Customers usually need help figuring out when this is just a simple clog and when it points to a recurring drain issue that deserves a better diagnosis.",
+        "Menifee homes get heavy daily use. A slow drain can turn into a big problem fast. We help you find out if it is a simple clog or something deeper that keeps coming back.",
       detailTitle: "What drain-cleaning calls look like in Menifee homes",
       detailParagraphs: [
         "In Menifee, drain-cleaning calls are often driven by daily household volume. A family may be dealing with back-to-back kitchen use, repeated bathroom traffic, and a laundry line that is already starting to slow down. By that point, they usually want to know whether the line can be cleared cleanly and whether the clog is likely to come right back.",
-        "That is why Menifee customers need more context than a basic clogged-drain explanation. They need direct guidance on repeat slowdowns, drain odors, gurgling fixtures, and the type of backup symptoms that show up before a true main line problem fully takes over the house.",
+        "If the same drain keeps slowing down, something is wrong deeper in the line. We check for repeat slowdowns, drain odors, gurgling sounds, and backup signs before the problem gets worse.",
         "Above All handles both the immediate clearing work and the deeper diagnostic path when the same drain issue keeps returning. That matters when the customer wants a real answer, not just a temporary opening in the line.",
       ],
       localProblemsIntro: "Common Menifee drain issues include:",
@@ -611,7 +611,7 @@ export const cityServiceOverrides: Record<
       proofBody:
         "Menifee drain calls often come from busy homes, move-ins, and routine maintenance situations where repeated drain issues quickly become a household disruption instead of a minor inconvenience.",
       proofPoints: [
-        "Good fit for active family homes, move-ins, and repeat-use plumbing",
+        "We serve busy family homes, move-ins, and properties with heavy daily use",
         "Explains the difference between a one-time clog and a deeper recurring-line issue",
         "Supports direct scheduling once the customer recognizes the problem",
       ],
@@ -639,12 +639,12 @@ export const cityServiceOverrides: Record<
         "Fix leaking, running, clogged, or outdated toilets in Menifee homes and properties with repair-first guidance, clearer replacement decisions, and clean fixture installs that fit busy household use.",
       whyTitle: "Why Menifee customers call us for toilet work",
       whyCopy:
-      "Menifee toilet calls usually need a fast answer on whether the fixture should be repaired or replaced. Households often want to move quickly from symptom to decision without turning a focused toilet problem into a bigger project than it needs to be.",
+        "When your toilet has a problem, you want a fast answer. Should we fix it or replace it? We give you a straight answer so you can move forward without waiting.",
       detailTitle: "What Menifee toilet-service calls usually have in common",
       detailParagraphs: [
-        "Menifee toilet-service calls often come from active family homes, move-ins, and routine fixture refreshes where the problem is clear enough to be annoying but not always obvious enough to know the right next step. A toilet may still flush but keep running, clog too often, leak at the base, or just feel like it is one failure away from becoming a bigger disruption. Customers usually want to know if the toilet can be fixed cleanly or if replacement is simply the smarter move.",
-        "That is why Menifee customers need stronger decision support than a basic toilet-repair explanation. They are often balancing speed, practicality, and household disruption, and they want a plumber who can explain the difference between a straightforward repair, a clean replacement, and a fixture problem that may involve the shutoff, seal, or connected drain line.",
-        "This kind of work often comes up during move-ins, light refreshes, and household catch-up maintenance. Menifee customers are often not trying to plan a full bathroom remodel. They are trying to get a dependable toilet back in service quickly and make a sensible choice for the property.",
+        "A toilet that keeps running, leaks at the base, or clogs too often is a problem. It might still flush, but it is wearing out. We check the toilet and tell you if a simple repair will hold or if a replacement makes more sense.",
+        "We look at the whole setup — not just the bowl. The shutoff valve, the seal, and the drain line can all be part of the problem. We explain your options clearly so you can pick the right fix.",
+        "This work often comes up during move-ins and home updates. You do not need a full bathroom remodel. You just need a toilet that works reliably again.",
       ],
       localProblemsIntro: "Common Menifee toilet issues include:",
       localProblems: [
@@ -667,7 +667,7 @@ export const cityServiceOverrides: Record<
       proofBody:
         "Menifee properties often need clean toilet repairs, leak fixes, and straightforward replacement work that can be scheduled without a larger remodel. Homeowners usually want a dependable answer quickly and prefer focused plumbing work over drawn-out project language.",
       proofPoints: [
-        "Good fit for busy Menifee households, move-ins, and fixture refresh situations",
+        "We serve busy Menifee households, move-ins, and fixture update jobs",
         "Supports clear repair-versus-replacement decisions without overselling the scope",
         "Helps customers move from a frustrating toilet symptom to a practical service plan fast",
       ],
@@ -695,7 +695,7 @@ export const cityServiceOverrides: Record<
         "Urgent plumbing response for Menifee leaks, backups, shutoff issues, and failures that cannot wait until routine scheduling.",
       whyTitle: "Why Menifee customers call us for emergency plumbing",
       whyCopy:
-        "Menifee emergency calls usually come from customers who already know they need immediate help and want a fast path to the right plumber.",
+        "When something goes wrong with your plumbing, you need help now. We respond fast and work to stop the problem right away.",
       localProblemsIntro: "Common Menifee emergency plumbing calls include:",
       localProblems: [
         "Active leaks under sinks or behind fixtures",
@@ -733,12 +733,12 @@ export const cityServiceOverrides: Record<
         "Repair or replace Menifee water heaters when hot water drops out, the unit starts leaking, recovery can no longer keep up with daily use, or the system is becoming too unreliable to ignore.",
       whyTitle: "Why Menifee customers call us for water heater service",
       whyCopy:
-        "Menifee water heater calls usually come from households that need a quick answer on reliability. Customers usually want to know whether they are dealing with a repairable issue, a unit that is wearing out, or a replacement decision that should be made before the system fails completely.",
+        "If your water heater is acting up, you want a straight answer. Can it be fixed, or does it need to be replaced? We help you decide fast so you are not stuck without hot water.",
       detailTitle: "What water-heater problems look like in Menifee",
       detailParagraphs: [
-        "For many Menifee homes, the water heater issue starts as weak recovery rather than total failure. Hot water runs out sooner, the shower temperature drops inconsistently, or a unit that used to keep up with the household no longer matches daily demand. Those are strong signs because the customer is already feeling the disruption even if the system technically still works.",
-        "The second group of calls comes from visible leak risk. Customers notice moisture around the unit, a leaking fitting, rust signs, or a tank that is clearly becoming less trustworthy. At that point they need clear guidance without oversold panic. The goal is to explain why some water heater issues can be repaired while others need a cleaner replacement path.",
-        "This also matters for customers planning around move-ins, tenant turnover, or proactive home updates. In Menifee, that means helping with both urgent no-hot-water calls and quieter replacement decisions where the customer wants a dependable system in place before it becomes an emergency.",
+        "For many Menifee homes, the problem starts with weak recovery. Hot water runs out faster. The shower temperature drops. The unit still runs but cannot keep up with daily use. These are signs something is wrong even before the heater fully fails.",
+        "Some calls start with a visible leak. You see moisture near the unit, a rusty fitting, or a tank that looks like it is giving out. We give you clear advice without pushing a replacement you do not need. Some issues can be repaired. Others need a new unit. We tell you which.",
+        "This also comes up during move-ins, tenant changeovers, and home updates. Sometimes you want a new unit in place before the old one fails. We handle both urgent calls and planned replacements.",
       ],
       localProblemsIntro: "Common Menifee water heater problems include:",
       localProblems: [
@@ -761,7 +761,7 @@ export const cityServiceOverrides: Record<
       proofBody:
         "Menifee customers often need water heater work that fits busy family routines, move-in timelines, and straightforward replacement decisions where reliability matters more than dragging the system along.",
       proofPoints: [
-        "Good fit for active households with real hot-water demand",
+        "We serve active households, move-ins, and properties with real daily hot-water demand",
         "Covers repair, leak triage, and proactive replacement in one local service",
         "Supports both urgent service calls and cleaner scheduled replacement decisions",
       ],
@@ -791,12 +791,12 @@ export const cityServiceOverrides: Record<
         "Drain cleaning for Riverside homes, apartments, restaurants, and offices when repeat clogs, shared drain symptoms, or deeper line problems need more than a quick unclog.",
       whyTitle: "Why Riverside customers call us for drain cleaning",
       whyCopy:
-      "Riverside drain problems often need more diagnosis before the right fix becomes obvious. Older homes, mixed-use buildings, and heavier day-to-day plumbing demand can turn a \"simple clog\" into a branch-line or main-line decision quickly, so the service needs stronger troubleshooting and line assessment up front.",
+        "Riverside has a lot of older homes and buildings. A drain problem here can be more than a simple clog. We look deeper to find out if it is a branch line or main line issue before we start work.",
       detailTitle: "Why Riverside drain calls often need a sharper diagnosis",
       detailParagraphs: [
-        "Riverside drain-cleaning traffic is different from a city where most calls come from the same type of property. A kitchen sink backup in an older single-family home, a restroom issue in a restaurant, and a repeating clog in an apartment unit can all look similar at first, but they do not point to the same fix. Riverside customers need more than a promise of fast drain clearing.",
-        "Customers here often need help figuring out whether the problem is isolated to one fixture, tied to a heavily used branch line, or part of a larger sewer or main line issue. If multiple drains are reacting at once, if the line was cleared recently and already slowed down again, or if the property has older plumbing, the value is not just clearing the symptom. The value is recognizing what the symptom is trying to say about the line.",
-        "Riverside has enough mixed-age residential and business plumbing that the service needs to support repeat-clog troubleshooting, camera-based next steps, and a cleaner explanation of when hydro jetting or deeper inspection makes sense. That gives customers a more useful answer than a one-size-fits-all drain explanation.",
+        "Riverside has all kinds of properties. An older home, a restaurant, and an apartment building all look different when a drain clogs. The same symptom can mean different things. We look at the whole picture before picking the fix.",
+        "We check if the problem is just one drain, a branch line, or the main sewer line. If more than one drain is slow, or the same drain keeps clogging, that tells us something important. We find out what the drain is trying to tell us about the line.",
+        "Older buildings and mixed-use properties need more careful work. We handle repeat-clog problems, camera inspections, and hydro jetting when the line needs a deeper clean. You get a clear answer about what the drain needs — not a one-size guess.",
       ],
       localProblemsIntro: "Common Riverside drain issues include:",
       localProblems: [
@@ -819,7 +819,7 @@ export const cityServiceOverrides: Record<
       proofBody:
         "Riverside drain calls often involve older lines, heavier commercial use, and repeat clog patterns that are not solved by surface-level unclogging alone. Customers may need clearing, hydro jetting, camera inspection, or a stronger repair plan next.",
       proofPoints: [
-        "Good fit for Riverside homes, rentals, restaurants, and office properties",
+        "We work with Riverside homes, rentals, restaurants, and office properties",
         "Explains when recurring clogs may need a deeper cleaning or sewer camera inspection",
         "Helpful for customers who already know the line problem is not fully solved",
       ],
@@ -847,12 +847,12 @@ export const cityServiceOverrides: Record<
         "Repair or replace toilets in Riverside homes, rentals, restaurants, and offices when leaks, repeat clogs, worn shutoffs, or aging fixtures start creating daily problems that need more than a quick parts swap.",
       whyTitle: "Why Riverside customers call us for toilet work",
       whyCopy:
-      "Riverside toilet calls often need stronger troubleshooting because the fixture problem may overlap with older shutoffs, worn supply components, floor damage risk, or drain-line issues. Customers need to know that Above All can sort out whether the real fix is internal repair, clean replacement, or a deeper plumbing check.",
+        "Riverside has a lot of older homes and buildings. A toilet problem here is not always just the toilet. Old shutoffs, worn supply lines, and drain issues can all be connected. We check everything and give you the right fix.",
       detailTitle: "Why Riverside toilet problems are not always just fixture problems",
       detailParagraphs: [
-        "Riverside toilet-service calls often start with a symptom that seems simple: a toilet keeps running, rocks at the base, clogs too often, or starts leaking around an older fixture. But in mixed-age homes and busier commercial or rental settings, the fixture itself is not always the whole story. A worn angle stop, an aging supply line, a weak flange setup, or a branch-line problem can change what the cleanest fix actually looks like.",
-        "That is why Riverside customers need more than a basic toilet-repair explanation. They should be able to tell that Above All can handle both the straightforward repair-first path and the cases where replacement makes more sense because the toilet is outdated, unreliable, or no longer worth repeated service calls.",
-        "This also matters for rentals, restaurants, and offices where restroom downtime creates immediate friction. Riverside customers in higher-use bathrooms and older properties usually want the most reliable next step with the least wasted effort.",
+        "Most toilet problems seem simple at first. The toilet runs, rocks, clogs too often, or leaks. But in older homes and busy buildings, the toilet is not always the only problem. An old shutoff valve, a worn supply line, or a drain issue can change what the right fix looks like.",
+        "We handle simple repairs and full replacements. If the toilet is old, keeps failing, or is not worth fixing again, we tell you. You get the right answer the first time.",
+        "This matters a lot for rentals, restaurants, and offices. A broken restroom costs time and money. We get it fixed or replaced fast with as little disruption as possible.",
       ],
       localProblemsIntro: "Common Riverside toilet issues include:",
       localProblems: [
@@ -875,7 +875,7 @@ export const cityServiceOverrides: Record<
       proofBody:
         "Riverside properties often need more than a basic parts swap. Older fixtures, higher-use restrooms, and cleaner replacement planning matter when reliability is more important than squeezing one more temporary fix out of the toilet.",
       proofPoints: [
-        "Good fit for older homes, rentals, restaurants, and office restrooms in Riverside",
+        "We serve older homes, rentals, restaurants, and office restrooms in Riverside",
         "Supports repair-versus-replacement decisions without assuming the fixture is the only problem",
         "Helps customers move from a frustrating symptom to the cleanest plumbing recommendation faster",
       ],
@@ -903,12 +903,12 @@ export const cityServiceOverrides: Record<
         "Urgent plumbing response for Riverside leaks, burst pipes, backups, shutoff failures, overflowing fixtures, and other plumbing problems that need fast triage across homes, rentals, and commercial properties.",
       whyTitle: "Why Riverside customers call us for emergency plumbing",
       whyCopy:
-      "Riverside emergency calls often come from mixed-age properties where one visible symptom can point to a larger plumbing problem behind the walls, under the slab, or somewhere deeper in the drain system. The service needs to support urgency without losing the sense of professional triage.",
+        "In Riverside, older homes and mixed buildings mean one leak can hide a bigger problem. We move fast, but we also take time to find out what is really going on behind the walls or under the slab.",
       detailTitle: "What makes Riverside emergency plumbing calls different",
       detailParagraphs: [
-        "Riverside emergency calls come from a wide mix of older homes, apartments, restaurants, and office properties, so one visible symptom can point to very different plumbing failures. A burst supply line in an older home, a restroom overflow in a commercial space, and a drain backup affecting multiple units all create different decision points even if they all feel urgent in the moment.",
-        "That is why Riverside customers need stronger context than a basic after-hours plumbing explanation. They should be able to see that Above All understands how emergency triage works here: stop the immediate damage, isolate the risk, figure out whether the issue is local or system-wide, and then move into the cleanest repair path available.",
-        "Customers also need reassurance that calling now is reasonable even if they are not fully sure what failed. In Riverside, that means explaining what counts as urgent, what can be stabilized, and why older or mixed-use properties often need a sharper diagnostic eye once the immediate danger is under control.",
+        "Riverside has older homes, apartments, restaurants, and offices. One problem can look like another but need a different fix. A burst pipe in an old house is different from a drain backup in an apartment building. We figure out what is actually wrong before we start work.",
+        "We stop the damage first. Then we find out if the problem is just one spot or something bigger. After that, we give you a clear path forward. No guessing.",
+        "If you are not sure whether to call, call anyway. We can help you figure out if it is urgent. Older buildings and mixed-use properties often need a closer look even after the immediate problem is under control.",
       ],
       localProblemsIntro: "Common Riverside emergency plumbing calls include:",
       localProblems: [
@@ -931,7 +931,7 @@ export const cityServiceOverrides: Record<
       proofBody:
         "Riverside emergency calls can involve simple active leaks or larger plumbing failures that need a stronger diagnosis before the full repair path is obvious. Homeowners, property managers, and commercial operators usually need both urgency and competence.",
       proofPoints: [
-        "Good fit for mixed-age homes, rentals, and commercial properties in Riverside",
+        "We serve older homes, rentals, and commercial properties in Riverside",
         "Supports active-leak triage without oversimplifying bigger plumbing failures",
         "Helps customers act quickly even when they know something is wrong but do not yet know exactly where the failure is",
       ],
@@ -959,12 +959,12 @@ export const cityServiceOverrides: Record<
         "Repair or replace Riverside water heaters when aging systems lose recovery, leak, struggle to keep up, or stop delivering dependable hot water in homes, rentals, and commercial spaces.",
       whyTitle: "Why Riverside customers call us for water heater service",
       whyCopy:
-      "Riverside water heater calls often revolve around older units, mixed installation conditions, and replacement planning. Customers need enough detail to judge urgency, understand when repair still makes sense, and move toward a practical next step without guessing.",
+        "Riverside has a lot of older water heaters. We help you figure out if yours can be fixed or if it is time for a new one. You get a straight answer so you can move forward without guessing.",
       detailTitle: "Why Riverside water-heater decisions usually need better context",
       detailParagraphs: [
-        "Riverside water-heater traffic is often tied to aging equipment in older homes, rentals, and commercial spaces where the system may have been limping along for a while before the customer finally searches for help. Sometimes the issue is obvious, such as a leaking tank or full loss of hot water. Other times it shows up as weak recovery, inconsistent temperature, or a unit that still runs but clearly is not dependable anymore.",
-        "That is why Riverside customers need more than a generic repair-or-replace headline. They usually want to know whether the unit is worth saving, whether the leak risk makes waiting a bad idea, and how quickly they can move back into dependable hot water. They also need to understand that the right answer depends on age, failure point, reliability, and the demands of the property.",
-        "This matters even more in mixed-use and higher-demand properties. A family home with an aging tank, a rental turnover with no hot water, and a restaurant or office with unreliable recovery all come in with slightly different pressures. Riverside customers need guidance that fits those real-world decisions instead of a one-size-fits-all water-heater explanation.",
+        "Riverside has a lot of older water heaters in homes, rentals, and businesses. Some have been getting weaker for a long time. Sometimes the problem is clear, like a leak or no hot water at all. Other times the unit still runs but cannot keep up with daily use.",
+        "We look at the age of the unit, where it is failing, and what the property needs. Then we tell you if it is worth repairing or if a new one makes more sense. No generic answers — just the right call for your situation.",
+        "This matters in all kinds of properties. A family home, a rental with no hot water, and a restaurant with weak recovery all need different things. We give you advice that fits your property, not a one-size answer.",
       ],
       localProblemsIntro: "Common Riverside water heater problems include:",
       localProblems: [
@@ -987,7 +987,7 @@ export const cityServiceOverrides: Record<
       proofBody:
         "Riverside water heater calls often involve older equipment, more varied building ages, and customers who want a confident recommendation before they commit. This service supports both repair-minded customers and customers who already suspect the cleanest move is replacement.",
       proofPoints: [
-        "Good fit for older Riverside equipment and mixed residential-commercial demand",
+        "We work with older Riverside water heaters across homes, rentals, and commercial properties",
         "Explains urgency without pushing replacement as the answer to every hot-water problem",
         "Supports faster scheduling when the property needs dependable hot water restored quickly",
       ],
