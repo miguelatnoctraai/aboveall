@@ -263,8 +263,8 @@ export default function PlumbingServicePage() {
               <div className="bg-white rounded-2xl p-8 border-2 border-slate-200">
                 <h2 className="text-4xl font-bold text-slate-950 mb-4">Areas We Serve For Plumbing</h2>
                 <p className="text-lg text-slate-600 leading-8 mb-8">
-                  These city hubs connect local search intent with the right plumbing service page. Start with the city,
-                  then jump into the exact issue.
+                  Browse local plumbing service areas and go straight to the city that matches the job location, then
+                  choose the exact plumbing issue you need help with.
                 </p>
                 <div className="grid md:grid-cols-2 gap-6">
                   {plumbingCitiesList.map((city) => (

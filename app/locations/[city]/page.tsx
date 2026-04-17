@@ -162,7 +162,7 @@ export default async function CityHubPage({ params }: CityPageProps) {
             <div className="rounded-[2rem] border border-slate-200 bg-slate-50 p-8">
               <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#C29828]">Local overview</p>
               <h2 className="mt-4 text-3xl font-black tracking-tight text-slate-950">
-                How this {cityContent.name} plumbing page helps
+                Plumbing help for homes and properties in {cityContent.name}
               </h2>
               <div className="mt-6 space-y-5">
                 {overviewParagraphs.map((paragraph) => (
@@ -260,7 +260,7 @@ export default async function CityHubPage({ params }: CityPageProps) {
               Choose the exact plumbing issue in {cityContent.name}.
             </h2>
             <p className="mt-4 text-lg leading-8 text-slate-600">
-              These service pages go deeper into the exact plumbing problem you are dealing with so you can move to the right next step faster.
+              Each service goes deeper into the plumbing problem you are dealing with so you can choose the right next step faster.
             </p>
           </div>
 

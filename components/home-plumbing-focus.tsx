@@ -6,20 +6,23 @@ import { businessInfo } from "@/lib/business-info"
 const localLinks = [
   {
     href: "/services/plumbing",
-    title: "Plumbing service hub",
-    body: "Start with emergency plumbing, drain cleaning, toilets, and water heater service.",
+    title: "Plumbing Services",
+    body: "Explore emergency plumbing, drain cleaning, toilet repair and installation, and water heater service.",
+    cta: "View plumbing services",
     icon: Droplets,
   },
   {
     href: "/locations/riverside",
     title: "Riverside, CA plumbing services",
-    body: "Use the Riverside city hub when the job needs stronger diagnosis for older homes or mixed-use properties.",
+    body: "Find plumbing help in Riverside for older homes, apartments, restaurants, offices, and mixed-use properties.",
+    cta: "View Riverside services",
     icon: MapPin,
   },
   {
     href: "/locations/homeland",
     title: "Homeland, CA plumbing services",
-    body: "Use the Homeland city hub for the most local fit around the company's home base and nearby communities.",
+    body: "Find plumbing help in Homeland and nearby communities with local service shaped around the company home base.",
+    cta: "View Homeland services",
     icon: ShieldCheck,
   },
 ]
@@ -80,11 +83,11 @@ export function HomePlumbingFocus() {
           <div className="rounded-[2rem] border border-cyan-200 bg-cyan-50 p-8 md:p-10">
             <p className="text-sm font-semibold uppercase tracking-[0.22em] text-cyan-700">Local routing</p>
             <h2 className="mt-4 text-3xl font-black tracking-tight text-slate-950 sm:text-4xl">
-              Start with the page that matches the job and location.
+              Choose the plumbing help that fits the job and area.
             </h2>
             <p className="mt-5 text-base leading-8 text-slate-700">
-              The home page should point directly into the plumbing hub and the two most important local paths:
-              Riverside for broader city-intent searches and Homeland for the company&apos;s real home-base relevance.
+              Start with plumbing services for the main job type, or go straight to Riverside or Homeland for more
+              local service details.
             </p>
 
             <div className="mt-8 space-y-4">
@@ -105,7 +108,7 @@ export function HomePlumbingFocus() {
                         <h3 className="text-xl font-bold text-slate-950">{item.title}</h3>
                         <p className="mt-3 text-sm leading-7 text-slate-600">{item.body}</p>
                         <div className="mt-4 inline-flex items-center gap-2 font-semibold text-cyan-700">
-                          Open this page
+                          {item.cta}
                           <ArrowRight className="h-4 w-4" />
                         </div>
                       </div>

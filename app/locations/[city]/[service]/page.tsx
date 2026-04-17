@@ -67,9 +67,9 @@ export default async function CityServicePage({ params }: CityServicePageProps) 
   const { city: cityContent, service: serviceContent, override, faqs } = getCityServicePageContent(city, service)
   const siblingServices = plumbingServiceSlugs.filter((serviceSlug) => serviceSlug !== service)
   const overviewParagraphs = [
-    `${override.heroSummary} This service page is meant to help ${cityContent.name} property owners move from the symptom to the right next step without extra guesswork.`,
+    `${override.heroSummary} It helps ${cityContent.name} property owners move from the symptom to the right next step without extra guesswork.`,
     `${override.whyCopy} ${override.offerBody}`,
-    `This page is especially relevant for ${cityContent.propertyTypes.slice(0, 2).join(" and ").toLowerCase()} in ${cityContent.name} and nearby areas such as ${cityContent.nearbyAreas.slice(0, 2).join(" and ")}. ${override.proofBody}`,
+    `This service is especially relevant for ${cityContent.propertyTypes.slice(0, 2).join(" and ").toLowerCase()} in ${cityContent.name} and nearby areas such as ${cityContent.nearbyAreas.slice(0, 2).join(" and ")}. ${override.proofBody}`,
   ]
   const pageFitPoints = [
     `Best fit for ${cityContent.propertyTypes[0].toLowerCase()}`,
@@ -236,7 +236,7 @@ export default async function CityServicePage({ params }: CityServicePageProps) 
                 <div className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-lg shadow-slate-200/70">
                   <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#C29828]">Local overview</p>
                   <h2 className="mt-4 text-3xl font-black tracking-tight text-slate-950">
-                    What this service page helps you figure out
+                    What to expect before you schedule
                   </h2>
                   <div className="mt-6 space-y-5">
                     {overviewParagraphs.map((paragraph) => (
@@ -250,7 +250,7 @@ export default async function CityServicePage({ params }: CityServicePageProps) 
                 <div className="rounded-[2rem] border border-cyan-200 bg-cyan-50 p-8">
                   <p className="text-sm font-semibold uppercase tracking-[0.22em] text-cyan-700">Good fit</p>
                   <h2 className="mt-4 text-3xl font-black tracking-tight text-slate-950">
-                    When this service page is the right fit
+                    When this service is the right fit
                   </h2>
                   <div className="mt-6 space-y-4">
                     {pageFitPoints.map((item) => (
@@ -475,7 +475,7 @@ export default async function CityServicePage({ params }: CityServicePageProps) 
                       >
                         <p className="font-semibold text-slate-950">{sibling.name}</p>
                         <p className="mt-2 text-sm leading-6 text-slate-600">
-                          See the {cityContent.name} service page for this plumbing issue.
+                          See how we handle this plumbing issue in {cityContent.name}.
                         </p>
                       </Link>
                     )
