@@ -125,10 +125,10 @@ export const plumbingCities: Record<PlumbingCitySlug, CityContent> = {
     detailTitle: "Why the Riverside plumbing hub needs more depth",
     detailParagraphs: [
       "Riverside is one of the stronger local plumbing opportunities in this site because the city has enough variety in property age and use that a generic county-level page is not a good match. A homeowner dealing with drain issues in an older house, a property manager handling an apartment plumbing problem, and a business owner trying to keep a restroom or break-room line working all arrive with different levels of urgency and different expectations for diagnosis.",
-      "That is why the Riverside hub needs to do more than list services. It should help the visitor recognize the type of problem they are likely dealing with, understand which service page is the right next step, and feel that Above All is equipped for more complex plumbing conditions than a simple city-name swap usually implies. The copy should support both faster triage and better repair planning.",
+      "That is why this Riverside page needs to do more than list services. It should help the visitor recognize the type of problem they are likely dealing with, understand which service page is the right next step, and feel that Above All is equipped for more complex plumbing conditions than a generic location page usually implies. The copy should support both faster triage and better repair planning.",
       "For Riverside specifically, the strongest path is usually to route the visitor into the exact service page with the most relevant local framing. Drain cleaning, toilet repair, emergency plumbing, and water heater work all need slightly different decision support here because older infrastructure and mixed-use properties create more edge cases than a lighter suburban page would need to address.",
     ],
-    commonCallsTitle: "Common Riverside plumbing calls this hub should route well",
+    commonCallsTitle: "Common Riverside plumbing calls we handle",
     commonCalls: [
       "Drain issues in older homes where repeat clogs or shared drain symptoms need more than a quick unclog",
       "Apartment and rental plumbing problems where fixture reliability and clean scheduling matter",
@@ -137,7 +137,7 @@ export const plumbingCities: Record<PlumbingCitySlug, CityContent> = {
     ],
     proofTitle: "Built for mixed-age Riverside plumbing demand",
     proofBody:
-      "The Riverside hub should feel credible to homeowners, property managers, and business operators who know the plumbing issue may not be simple. It is written to support clearer service routing, stronger diagnosis language, and a faster path from local search intent into a real call or quote request.",
+      "This Riverside page should feel credible to homeowners, property managers, and business operators who know the plumbing issue may not be simple. It is written to support clearer service routing, stronger diagnosis language, and a faster path into a real call or quote request.",
     proofPoints: [
       "Written around older homes, rentals, and commercial properties instead of one generic property type",
       "Supports urgent plumbing calls without turning every visit into emergency-only messaging",
@@ -145,7 +145,7 @@ export const plumbingCities: Record<PlumbingCitySlug, CityContent> = {
     ],
     ctaTitle: "Need plumbing service in Riverside?",
     ctaBody:
-      "Use the Riverside city hub to go straight to the plumbing issue you are dealing with, get city-specific context, and move into the right drain, toilet, emergency, or water heater page without wasting steps.",
+      "Use this Riverside plumbing page to go straight to the issue you are dealing with, get city-specific context, and move into the right drain, toilet, emergency, or water heater service without wasting steps.",
   },
   perris: {
     slug: "perris",
@@ -204,13 +204,13 @@ export const plumbingCities: Record<PlumbingCitySlug, CityContent> = {
       "Getting a temporary fix when the real need is a dependable diagnosis and repair plan",
       "Guessing which plumbing page fits the issue when they really want the most direct local path",
     ],
-    detailTitle: "Why the Homeland plumbing hub should feel more grounded",
+    detailTitle: "Why Homeland plumbing service should feel more grounded",
     detailParagraphs: [
       "Homeland is different from a larger city-intent page because many of the strongest local calls come from homeowners who care less about broad service marketing and more about whether the plumber will give them a reliable answer. The local mix of ranch-style homes, manufactured homes, and nearby semi-rural properties means the page should feel practical, calm, and built around real repair planning.",
-      "That matters because plumbing issues in Homeland often come with a little more context. A drain problem may involve a longer run. A toilet or shutoff issue may have been tolerated for too long because the customer wanted to avoid unnecessary work. A water heater problem may be less about urgency language and more about whether the next step is actually worth doing. The hub should make it easier to choose the right page without overselling the situation.",
-      "This is also the company’s home-base territory, so the city hub should carry a stronger sense of local fit than the more generalized county pages. The best version of this page should feel like the starting point for dependable plumbing help in Homeland: direct routing into the exact issue, clearer recommendations, and less fluff between the problem and the call.",
+      "That matters because plumbing issues in Homeland often come with a little more context. A drain problem may involve a longer run. A toilet or shutoff issue may have been tolerated for too long because the customer wanted to avoid unnecessary work. A water heater problem may be less about urgency language and more about whether the next step is actually worth doing. The page should make it easier to choose the right service without overselling the situation.",
+      "This is also the company’s home-base territory, so the Homeland page should carry a stronger sense of local fit than the more generalized county pages. The best version of this page should feel like the starting point for dependable plumbing help in Homeland: direct routing into the exact issue, clearer recommendations, and less fluff between the problem and the call.",
     ],
-    commonCallsTitle: "Common Homeland plumbing calls this hub should route well",
+    commonCallsTitle: "Common Homeland plumbing calls we handle",
     commonCalls: [
       "Drain problems in homes where repeat slowdowns or backups need a better diagnosis before bigger repair decisions",
       "Toilet leaks, clogs, or aging fixtures where the customer wants the cleanest long-term fix",
@@ -219,7 +219,7 @@ export const plumbingCities: Record<PlumbingCitySlug, CityContent> = {
     ],
     proofTitle: "Built for dependable local plumbing decisions",
     proofBody:
-      "The Homeland hub should feel useful to homeowners and small-property operators who want honest direction, a cleaner diagnosis, and the shortest path into the right plumbing page. It is designed around reliability, not inflated urgency, while still supporting direct calls when the issue cannot wait.",
+      "This Homeland page should feel useful to homeowners and small-property operators who want honest direction, a cleaner diagnosis, and the shortest path into the right plumbing service. It is designed around reliability, not inflated urgency, while still supporting direct calls when the issue cannot wait.",
     proofPoints: [
       "Written for Homeland’s home-base relevance and semi-rural property patterns",
       "Supports repair-first conversations without making the visitor dig through broad county copy",
@@ -227,7 +227,7 @@ export const plumbingCities: Record<PlumbingCitySlug, CityContent> = {
     ],
     ctaTitle: "Need a plumber in Homeland?",
     ctaBody:
-      "Use the Homeland city hub to move straight to the plumbing issue you are dealing with, get a more local-fit explanation, and reach the right drain, toilet, emergency, or water heater page without extra browsing.",
+      "Use this Homeland plumbing page to move straight to the issue you are dealing with, get a more local-fit explanation, and reach the right drain, toilet, emergency, or water heater service without extra browsing.",
   },
 }
 
@@ -796,7 +796,7 @@ export const cityServiceOverrides: Record<
       detailParagraphs: [
         "Riverside drain-cleaning traffic is different from a city where most calls come from the same type of property. A kitchen sink backup in an older single-family home, a restroom issue in a restaurant, and a repeating clog in an apartment unit can all look similar at first, but they do not point to the same fix. That is why the Riverside version of this page has to do more than promise fast drain clearing.",
         "Customers here often need help figuring out whether the problem is isolated to one fixture, tied to a heavily used branch line, or part of a larger sewer or main line issue. If multiple drains are reacting at once, if the line was cleared recently and already slowed down again, or if the property has older plumbing, the value is not just clearing the symptom. The value is recognizing what the symptom is trying to say about the line.",
-        "This page should also feel credible to both homeowners and commercial operators. Riverside has enough mixed-age residential and business plumbing that the copy needs to support repeat-clog troubleshooting, camera-based next steps, and a cleaner explanation of when hydro jetting or deeper inspection makes sense. That is what separates a real local drain page from a generic clogged-drain template.",
+        "This page should also feel credible to both homeowners and commercial operators. Riverside has enough mixed-age residential and business plumbing that the copy needs to support repeat-clog troubleshooting, camera-based next steps, and a cleaner explanation of when hydro jetting or deeper inspection makes sense. That gives Riverside customers a more useful answer than a one-size-fits-all clogged-drain pitch.",
       ],
       localProblemsIntro: "Common Riverside drain issues this page is designed around:",
       localProblems: [
@@ -964,7 +964,7 @@ export const cityServiceOverrides: Record<
       detailParagraphs: [
         "Riverside water-heater traffic is often tied to aging equipment in older homes, rentals, and commercial spaces where the system may have been limping along for a while before the customer finally searches for help. Sometimes the issue is obvious, such as a leaking tank or full loss of hot water. Other times it shows up as weak recovery, inconsistent temperature, or a unit that still runs but clearly is not dependable anymore.",
         "That is why this page needs more than a generic repair-or-replace headline. Riverside visitors usually want to know whether the unit is worth saving, whether the leak risk makes waiting a bad idea, and how quickly they can move back into dependable hot water. The copy should help them understand that the right answer depends on age, failure point, reliability, and the demands of the property.",
-        "This matters even more in mixed-use and higher-demand properties. A family home with an aging tank, a rental turnover with no hot water, and a restaurant or office with unreliable recovery all arrive at the same page with slightly different pressures. The Riverside version should feel ready for those real-world decisions instead of reading like a one-size-fits-all water-heater template.",
+        "This matters even more in mixed-use and higher-demand properties. A family home with an aging tank, a rental turnover with no hot water, and a restaurant or office with unreliable recovery all arrive at the same page with slightly different pressures. The Riverside version should feel ready for those real-world decisions instead of reading like a one-size-fits-all water-heater pitch.",
       ],
       localProblemsIntro: "Common Riverside water heater problems include:",
       localProblems: [

@@ -51,15 +51,15 @@ export default async function CityHubPage({ params }: CityPageProps) {
   const commonCalls = cityContent.commonCalls ?? []
   const proofPoints = cityContent.proofPoints ?? []
   const overviewParagraphs = [
-    `${cityContent.name} is set up as a true local plumbing hub, not just a catch-all location page. The goal is to route people from city intent into the exact service they need, whether that is drain cleaning, toilet repair and installation, emergency plumbing, or water heater work.`,
+    `${cityContent.name} property owners usually need a direct path to the right plumbing help, whether that is drain cleaning, toilet repair and installation, emergency plumbing, or water heater work.`,
     cityContent.localAngle,
-    `This matters for ${cityContent.name} because the strongest local pages are the ones that match real property types, real service patterns, and a clear conversion path. For this city, that means speaking directly to ${cityContent.propertyTypes.slice(0, 2).join(" and ").toLowerCase()} while still covering nearby areas like ${cityContent.nearbyAreas.slice(0, 2).join(" and ")}.`,
+    `For ${cityContent.name}, that means speaking directly to ${cityContent.propertyTypes.slice(0, 2).join(" and ").toLowerCase()} while still covering nearby areas like ${cityContent.nearbyAreas.slice(0, 2).join(" and ")}.`,
   ]
 
   const cityHighlights = cityContent.signalPoints ?? [
     `Primary property focus: ${cityContent.propertyTypes[0]}`,
-    `Nearby service relevance: ${cityContent.nearbyAreas.slice(0, 2).join(" and ")}`,
-    `Core conversion path: city hub to service page to direct quote request`,
+    `Nearby areas served: ${cityContent.nearbyAreas.slice(0, 2).join(" and ")}`,
+    `Fast path to the right plumbing service`,
   ]
 
   return (
@@ -95,7 +95,7 @@ export default async function CityHubPage({ params }: CityPageProps) {
                   variant="outline"
                   className="border-cyan-400 text-cyan-300 hover:bg-cyan-400 hover:text-slate-950"
                 >
-                  Plumbing Hub
+                  All Plumbing Services
                 </Button>
               </Link>
             </div>
@@ -107,8 +107,10 @@ export default async function CityHubPage({ params }: CityPageProps) {
         <div className="container mx-auto px-4">
           <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
             <div className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-lg shadow-slate-200/70">
-              <p className="text-sm font-semibold uppercase tracking-[0.22em] text-cyan-600">Local angle</p>
-              <h2 className="mt-4 text-3xl font-black tracking-tight text-slate-950">What this city hub needs to do well</h2>
+              <p className="text-sm font-semibold uppercase tracking-[0.22em] text-cyan-600">Local plumbing fit</p>
+              <h2 className="mt-4 text-3xl font-black tracking-tight text-slate-950">
+                Why plumbing service in {cityContent.name} needs a more local approach
+              </h2>
               <p className="mt-5 text-lg leading-8 text-slate-600">{cityContent.localAngle}</p>
 
               <div className="mt-8 grid gap-4 sm:grid-cols-2">
@@ -158,9 +160,9 @@ export default async function CityHubPage({ params }: CityPageProps) {
         <div className="container mx-auto px-4">
           <div className="grid gap-8 lg:grid-cols-[1.15fr_0.85fr]">
             <div className="rounded-[2rem] border border-slate-200 bg-slate-50 p-8">
-              <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#C29828]">How This Hub Works</p>
+              <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#C29828]">Local overview</p>
               <h2 className="mt-4 text-3xl font-black tracking-tight text-slate-950">
-                Why {cityContent.name} has its own plumbing hub
+                How this {cityContent.name} plumbing page helps
               </h2>
               <div className="mt-6 space-y-5">
                 {overviewParagraphs.map((paragraph) => (
@@ -172,9 +174,9 @@ export default async function CityHubPage({ params }: CityPageProps) {
             </div>
 
             <div className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-lg shadow-slate-200/70">
-              <p className="text-sm font-semibold uppercase tracking-[0.22em] text-cyan-600">City Signals</p>
+              <p className="text-sm font-semibold uppercase tracking-[0.22em] text-cyan-600">Local priorities</p>
               <h2 className="mt-4 text-3xl font-black tracking-tight text-slate-950">
-                {cityContent.signalTitle ?? "What makes this local page set useful"}
+                {cityContent.signalTitle ?? `What matters most for plumbing service in ${cityContent.name}`}
               </h2>
               <div className="mt-6 space-y-4">
                 {cityHighlights.map((item) => (
@@ -195,7 +197,7 @@ export default async function CityHubPage({ params }: CityPageProps) {
             <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
               {detailParagraphs.length > 0 && (
                 <div className="rounded-[2rem] border border-slate-200 bg-slate-50 p-8">
-                  <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#C29828]">Local Detail</p>
+                  <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#C29828]">What to know locally</p>
                   <h2 className="mt-4 text-3xl font-black tracking-tight text-slate-950">
                     {cityContent.detailTitle ?? `What matters most about plumbing service in ${cityContent.name}`}
                   </h2>
@@ -212,7 +214,7 @@ export default async function CityHubPage({ params }: CityPageProps) {
               <div className="space-y-6">
                 {commonCalls.length > 0 && (
                   <div className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-lg shadow-slate-200/70">
-                    <p className="text-sm font-semibold uppercase tracking-[0.22em] text-cyan-600">Common calls</p>
+                    <p className="text-sm font-semibold uppercase tracking-[0.22em] text-cyan-600">Common local calls</p>
                     <h2 className="mt-4 text-2xl font-black tracking-tight text-slate-950">
                       {cityContent.commonCallsTitle ?? `Common plumbing calls in ${cityContent.name}`}
                     </h2>
@@ -253,12 +255,12 @@ export default async function CityHubPage({ params }: CityPageProps) {
       <section className="border-y border-slate-200 bg-white py-16 md:py-20">
         <div className="container mx-auto px-4">
           <div className="mb-10 max-w-3xl">
-            <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#C29828]">City + service pages</p>
+            <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#C29828]">Plumbing services in this area</p>
             <h2 className="mt-4 text-3xl font-black tracking-tight text-slate-950 sm:text-4xl">
               Choose the exact plumbing issue in {cityContent.name}.
             </h2>
             <p className="mt-4 text-lg leading-8 text-slate-600">
-              These are the primary local SEO pages for this city. They pair city-specific copy with a service-specific offer.
+              These service pages go deeper into the exact plumbing problem you are dealing with so you can move to the right next step faster.
             </p>
           </div>
 
