@@ -108,7 +108,7 @@ export const plumbingCities: Record<PlumbingCitySlug, CityContent> = {
     heroSummary:
       "Licensed plumbing support across Riverside for drain problems, toilet issues, water heater failures, and emergency calls where mixed-age plumbing systems often need a sharper diagnosis before the right repair path is obvious.",
     localAngle:
-      "Riverside needs a more diagnosis-heavy approach. Mixed-age plumbing systems, older residential plumbing, apartments, and higher-urgency service calls make clarity and repair planning especially important here.",
+      "Riverside homes, apartments, restaurants, and offices often have mixed-age plumbing systems, so customers usually need a clearer diagnosis before the right repair path is obvious.",
     nearbyAreas: ["Downtown Riverside", "Canyon Crest", "Orangecrest", "Arlington"],
     propertyTypes: ["Older single-family homes", "Apartments and rentals", "Restaurants and offices"],
     trustPoints: [
@@ -116,13 +116,13 @@ export const plumbingCities: Record<PlumbingCitySlug, CityContent> = {
       "Residential and commercial plumbing support",
       "Fast call-first response for active issues and urgent scheduling",
     ],
-    signalTitle: "What Riverside visitors are usually trying to solve",
+    signalTitle: "Common Riverside plumbing concerns",
     signalPoints: [
-      "Whether the symptom points to a simple repair or a deeper plumbing-system issue",
-      "Whether an older home, apartment, or commercial space needs a different level of diagnosis",
-      "Which plumbing service best fits the actual problem without wasting time on broad browsing",
+      "Whether the problem looks like a simple repair or a larger plumbing issue",
+      "Whether an older home, apartment, restaurant, or office needs a different repair approach",
+      "Which plumbing service will solve the problem fastest without extra guesswork",
     ],
-    detailTitle: "What makes plumbing service in Riverside different",
+    detailTitle: "What makes Riverside plumbing jobs different",
     detailParagraphs: [
       "Riverside has enough variety in property age and use that broad county marketing is not a good match. A homeowner dealing with drain issues in an older house, a property manager handling an apartment plumbing problem, and a business owner trying to keep a restroom or break-room line working all arrive with different levels of urgency and different expectations for diagnosis.",
       "That is why Riverside customers need more than a short list of services. They should be able to recognize the type of problem they are likely dealing with, understand which service is the right next step, and feel that Above All is equipped for more complex plumbing conditions than a bare location listing would suggest.",
@@ -135,13 +135,13 @@ export const plumbingCities: Record<PlumbingCitySlug, CityContent> = {
       "Emergency leaks, overflows, and backup conditions that need fast triage before repair planning",
       "Water heater failures in homes or commercial spaces where downtime creates daily disruption",
     ],
-    proofTitle: "Built for mixed-age Riverside plumbing demand",
+    proofTitle: "Why Riverside customers call Above All",
     proofBody:
-      "Riverside homeowners, property managers, and business operators should see that Above All is ready for plumbing issues that may not be simple. That means clearer recommendations, stronger diagnosis language, and a faster path into a real call or quote request.",
+      "Above All helps Riverside homeowners, property managers, and business operators with plumbing problems that are not always straightforward. The focus is clear recommendations, dependable repair planning, and fast access to the right help.",
     proofPoints: [
-      "Written around older homes, rentals, and commercial properties instead of one generic property type",
-      "Supports urgent plumbing calls without turning every visit into emergency-only messaging",
-      "Helps customers move quickly into drain cleaning, toilet work, emergency plumbing, or water heater service",
+      "Licensed plumbing help for older homes, rentals, restaurants, offices, and other local properties",
+      "Clear support for urgent leaks, backups, and everyday plumbing repairs",
+      "Fast access to drain cleaning, toilet repair, emergency plumbing, and water heater service",
     ],
     ctaTitle: "Need plumbing service in Riverside?",
     ctaBody:
@@ -190,7 +190,7 @@ export const plumbingCities: Record<PlumbingCitySlug, CityContent> = {
     heroSummary:
       "Licensed plumbing support for Homeland homes and local service properties when drain issues, toilet problems, water heater failures, or urgent leaks need a dependable repair plan and clear local guidance.",
     localAngle:
-      "Homeland pages should emphasize reliability, complete diagnosis, and plumbing fixes that make sense for semi-rural properties, longer plumbing runs, and homeowners who want the right recommendation the first time.",
+      "Homeland plumbing calls often come from homes and small local properties where longer runs, older fixtures, or semi-rural layouts make a clear diagnosis especially important.",
     nearbyAreas: ["Romoland", "Green Acres", "Nuevo", "Menifee border"],
     propertyTypes: ["Ranch-style homes", "Manufactured homes", "Small local businesses"],
     trustPoints: [
@@ -198,17 +198,17 @@ export const plumbingCities: Record<PlumbingCitySlug, CityContent> = {
       "Residential and commercial plumbing support",
       "Repair-first communication with clear next-step recommendations",
     ],
-    signalTitle: "What Homeland visitors are usually trying to avoid",
+    signalTitle: "Common plumbing concerns in Homeland",
     signalPoints: [
-      "Wasting time on plumbing advice that does not match the property setup",
-      "Getting a temporary fix when the real need is a dependable diagnosis and repair plan",
-      "Guessing which plumbing service fits the issue when they really want the most direct local path",
+      "Getting a dependable diagnosis instead of a quick temporary fix",
+      "Finding the right plumbing service for the property setup",
+      "Knowing whether the next step should be repair, replacement, or deeper inspection",
     ],
-    detailTitle: "Why Homeland plumbing service should feel more grounded",
+    detailTitle: "Why Homeland plumbing jobs often need a closer look",
     detailParagraphs: [
-      "Homeland calls often come from homeowners who care less about broad service marketing and more about whether the plumber will give them a reliable answer. The local mix of ranch-style homes, manufactured homes, and nearby semi-rural properties means the service should feel practical, calm, and built around real repair planning.",
-      "That matters because plumbing issues in Homeland often come with a little more context. A drain problem may involve a longer run. A toilet or shutoff issue may have been tolerated for too long because the customer wanted to avoid unnecessary work. A water heater problem may be less about urgency language and more about whether the next step is actually worth doing. Customers should be able to choose the right service without feeling oversold.",
-      "This is also the company’s home-base territory, so the Homeland service should carry a stronger sense of local fit than broader county marketing. Customers here should feel like they are getting dependable plumbing help, clearer recommendations, and a direct path into the exact issue.",
+      "Homeland plumbing work often involves ranch-style homes, manufactured homes, and nearby semi-rural properties where the plumbing layout can be less straightforward than a newer suburban tract home.",
+      "That can matter when a drain problem may involve a longer run, a toilet issue has been building for a while, or a water heater problem needs a practical repair-versus-replacement decision instead of a rushed guess.",
+      "Customers in Homeland usually want dependable plumbing help, clear recommendations, and a direct path into the exact service they need.",
     ],
     commonCallsTitle: "Common Homeland plumbing calls we handle",
     commonCalls: [
@@ -217,17 +217,17 @@ export const plumbingCities: Record<PlumbingCitySlug, CityContent> = {
       "Emergency leaks and shutoff problems where steady triage matters as much as speed",
       "Water heater issues where reliability and repair-versus-replace guidance matter more than a hard sell",
     ],
-    proofTitle: "Built for dependable local plumbing decisions",
+    proofTitle: "Why Homeland customers choose Above All",
     proofBody:
-      "Homeland homeowners and small-property operators usually want honest direction, a cleaner diagnosis, and the shortest path into the right plumbing service. The approach stays grounded in reliability, not inflated urgency, while still supporting direct calls when the issue cannot wait.",
+      "Above All provides Homeland customers with clear plumbing recommendations, practical repair guidance, and dependable help when the problem cannot wait.",
     proofPoints: [
-      "Written for Homeland’s home-base relevance and semi-rural property patterns",
-      "Supports repair-first conversations without making the visitor dig through broad county marketing",
-      "Helps local customers move into the right drain, toilet, emergency, or water-heater service with less friction",
+      "Licensed plumbing help for Homeland homes, small local businesses, and nearby semi-rural properties",
+      "Repair-first guidance with clear next-step recommendations",
+      "Fast access to drain, toilet, emergency, and water-heater service when the problem needs direct attention",
     ],
     ctaTitle: "Need a plumber in Homeland?",
     ctaBody:
-      "Choose the issue you are dealing with, get a more local-fit explanation, and reach the right drain, toilet, emergency, or water heater service without extra browsing.",
+      "Choose the issue you are dealing with and reach the right drain, toilet, emergency, or water heater service for your Homeland property.",
   },
 }
 
@@ -241,7 +241,7 @@ export const plumbingServices: Record<PlumbingServiceSlug, ServiceContent> = {
     heroSummary:
       "Clear the blockage, diagnose why it keeps coming back, and protect the line before a slow drain turns into a backup. Above All handles fixture drains, branch lines, and main line problems for homes and commercial properties across Southern California.",
     intro:
-      "Drain cleaning should help visitors understand the difference between a simple fixture clog, a recurring line problem, and a main line backup before they decide on the next step. Above All needs to make it clear that the job is not just random snaking. The value is in recognizing the symptom, choosing the right clearing method, and explaining whether the customer needs a maintenance fix, a camera inspection, or a larger repair plan.",
+      "Drain cleaning is for slow drains, backups, recurring clogs, and line problems that need more than a quick surface clearing. Above All helps customers understand whether the next step should be basic clearing, a deeper line cleaning, a camera inspection, or a larger repair plan.",
     image: "/plumber-fixing-pipe-leak-under-sink.jpg",
     capabilities: [
       {
@@ -325,7 +325,7 @@ export const plumbingServices: Record<PlumbingServiceSlug, ServiceContent> = {
     heroSummary:
       "Fix leaking, running, rocking, weak-flushing, or repeatedly clogged toilets and install clean replacement fixtures when repair is no longer the best value. Above All handles residential bathrooms, rentals, and commercial restrooms.",
     intro:
-      "Toilet repair and installation should help visitors quickly figure out whether they are dealing with a basic repair, a leak at the base, a recurring clog problem, or a fixture that is simply ready to be replaced. Customers should feel confident that Above All can handle both the repair-first path and the replacement path without forcing them into a bigger bathroom project than they actually need.",
+      "Toilet repair and installation covers leaking, running, rocking, weak-flushing, and repeatedly clogged toilets, along with clean fixture replacement when repair is no longer the best value. Above All helps customers understand whether the smartest move is repair, replacement, or a closer look at the connected plumbing.",
     image: "/plumber-fixing-pipe-leak-under-sink.jpg",
     capabilities: [
       {
@@ -409,7 +409,7 @@ export const plumbingServices: Record<PlumbingServiceSlug, ServiceContent> = {
     heroSummary:
       "When water is actively leaking, a toilet is overflowing, a drain line is backing up, or a water heater has failed, the goal is simple: stop the damage, stabilize the system, and move into the cleanest repair path as fast as possible.",
     intro:
-      "Emergency plumbing should make it obvious what counts as an actual plumbing emergency, what a customer can safely do before help arrives, and how Above All approaches urgent calls. It should feel immediate and useful, not dramatic for the sake of drama. The value is fast triage, damage control, and a clear path from emergency symptom to repair plan.",
+      "Emergency plumbing is for active leaks, burst pipes, backups, overflows, shutoff problems, and other failures that cannot safely wait. Above All focuses on fast triage, damage control, and a clear path from the emergency symptom to the right repair plan.",
     image: "/emergency-plumbing-service-call.jpg",
     capabilities: [
       {
@@ -493,7 +493,7 @@ export const plumbingServices: Record<PlumbingServiceSlug, ServiceContent> = {
     heroSummary:
       "Restore reliable hot water, stop leaks before they spread, and make the right call on repair versus replacement. Above All handles standard tank units, tankless systems, and installation planning for homes and commercial properties.",
     intro:
-      "Water heater repair and installation should help visitors understand whether they are dealing with a repairable issue, an aging unit that is nearing replacement, or an urgent leak that needs immediate attention. It should feel grounded and practical. Customers are usually looking for a fast answer on how to get reliable hot water back without overpaying for the wrong fix.",
+      "Water heater repair and installation covers no-hot-water calls, weak recovery, leaking units, tankless issues, and replacement planning when the current system is no longer dependable. Above All helps customers figure out whether repair still makes sense or whether replacement is the better long-term answer.",
     image: "/emergency-plumbing-service-call.jpg",
     capabilities: [
       {
@@ -583,12 +583,12 @@ export const cityServiceOverrides: Record<
         "Fast drain cleaning for Menifee kitchens, bathrooms, laundry lines, and main drains when clogs keep coming back, water starts backing up, or a slow line is turning into a bigger plumbing problem.",
       whyTitle: "Why Menifee customers call us for drain cleaning",
       whyCopy:
-      "Menifee drain calls are often tied to busy households where a slow kitchen sink, shower drain, or main line problem goes from manageable to disruptive fast. Customers need help recognizing when this is just a simple clog and when it is a recurring drain issue that deserves a better diagnosis.",
+      "Menifee drain calls are often tied to busy households where a slow kitchen sink, shower drain, or main line problem goes from manageable to disruptive fast. Customers usually need help figuring out when this is just a simple clog and when it points to a recurring drain issue that deserves a better diagnosis.",
       detailTitle: "What drain-cleaning calls look like in Menifee homes",
       detailParagraphs: [
-        "In Menifee, drain-cleaning calls are often driven by daily household volume. A family may be dealing with back-to-back kitchen use, repeated bathroom traffic, and a laundry line that is already starting to slow down. By the time they search for help, they are not really looking for generic plumbing content. They want to know whether the line can be cleared cleanly and whether the clog is likely to come right back.",
+        "In Menifee, drain-cleaning calls are often driven by daily household volume. A family may be dealing with back-to-back kitchen use, repeated bathroom traffic, and a laundry line that is already starting to slow down. By that point, they usually want to know whether the line can be cleared cleanly and whether the clog is likely to come right back.",
         "That is why Menifee customers need more context than a basic clogged-drain explanation. They need direct guidance on repeat slowdowns, drain odors, gurgling fixtures, and the type of backup symptoms that show up before a true main line problem fully takes over the house.",
-        "It should also make clear that Above All handles both the immediate clearing work and the deeper diagnostic path when the same drain issue keeps returning. That matters when the customer wants a real answer, not just a temporary opening in the line.",
+        "Above All handles both the immediate clearing work and the deeper diagnostic path when the same drain issue keeps returning. That matters when the customer wants a real answer, not just a temporary opening in the line.",
       ],
       localProblemsIntro: "Common Menifee drain issues include:",
       localProblems: [
@@ -606,12 +606,12 @@ export const cityServiceOverrides: Record<
       ],
       offerTitle: "Menifee drain-cleaning emphasis",
       offerBody:
-        "Menifee drain service should lean into fast scheduling, recurring-clog diagnosis, and the ability to explain whether the customer needs a simple clearing, hydro jetting, or a camera inspection before the line becomes a bigger repair issue.",
-      proofTitle: "Built for high-use residential plumbing",
+        "Menifee customers often need fast scheduling, recurring-clog diagnosis, and a clear explanation of whether the line needs a simple clearing, hydro jetting, or a camera inspection before the problem turns into a bigger repair.",
+      proofTitle: "A strong fit for busy Menifee homes",
       proofBody:
-        "This service is written for busy homes, move-ins, and routine maintenance situations where repeated drain issues quickly become a household disruption instead of a minor inconvenience.",
+        "Menifee drain calls often come from busy homes, move-ins, and routine maintenance situations where repeated drain issues quickly become a household disruption instead of a minor inconvenience.",
       proofPoints: [
-        "Written around active family-home usage, not generic commercial-only drain copy",
+        "Good fit for active family homes, move-ins, and repeat-use plumbing",
         "Explains the difference between a one-time clog and a deeper recurring-line issue",
         "Supports direct scheduling once the customer recognizes the problem",
       ],
@@ -629,7 +629,7 @@ export const cityServiceOverrides: Record<
         },
       ],
       ctaTitle: "Need drain cleaning in Menifee?",
-      ctaBody: "Call now for direct scheduling and move from symptoms to a real drain-cleaning plan without extra browsing.",
+      ctaBody: "Call now for direct scheduling and a clear drain-cleaning plan for your Menifee property.",
     },
     "toilet-repair-installation": {
       metaDescription:
@@ -639,12 +639,12 @@ export const cityServiceOverrides: Record<
         "Fix leaking, running, clogged, or outdated toilets in Menifee homes and properties with repair-first guidance, clearer replacement decisions, and clean fixture installs that fit busy household use.",
       whyTitle: "Why Menifee customers call us for toilet work",
       whyCopy:
-      "Menifee toilet calls usually need a fast answer on whether the fixture should be repaired or replaced. The service works best when households can move quickly from symptom to decision without turning a focused toilet problem into a bigger project than it needs to be.",
+      "Menifee toilet calls usually need a fast answer on whether the fixture should be repaired or replaced. Households often want to move quickly from symptom to decision without turning a focused toilet problem into a bigger project than it needs to be.",
       detailTitle: "What Menifee toilet-service calls usually have in common",
       detailParagraphs: [
-        "Menifee toilet-service traffic often comes from active family homes, move-ins, and routine fixture refreshes where the problem is clear enough to be annoying but not always obvious enough to know the right next step. A toilet may still flush but keep running, clog too often, leak at the base, or just feel like it is one failure away from becoming a bigger disruption. Visitors usually want to know if the toilet can be fixed cleanly or if replacement is simply the smarter move.",
+        "Menifee toilet-service calls often come from active family homes, move-ins, and routine fixture refreshes where the problem is clear enough to be annoying but not always obvious enough to know the right next step. A toilet may still flush but keep running, clog too often, leak at the base, or just feel like it is one failure away from becoming a bigger disruption. Customers usually want to know if the toilet can be fixed cleanly or if replacement is simply the smarter move.",
         "That is why Menifee customers need stronger decision support than a basic toilet-repair explanation. They are often balancing speed, practicality, and household disruption, and they want a plumber who can explain the difference between a straightforward repair, a clean replacement, and a fixture problem that may involve the shutoff, seal, or connected drain line.",
-        "It also needs to support the kinds of toilet calls that show up during move-ins, light refreshes, and household catch-up maintenance. Menifee visitors are often not trying to plan a full bathroom remodel. They are trying to get a dependable toilet back in service quickly and make a sensible choice for the property.",
+        "This kind of work often comes up during move-ins, light refreshes, and household catch-up maintenance. Menifee customers are often not trying to plan a full bathroom remodel. They are trying to get a dependable toilet back in service quickly and make a sensible choice for the property.",
       ],
       localProblemsIntro: "Common Menifee toilet issues include:",
       localProblems: [
@@ -662,14 +662,14 @@ export const cityServiceOverrides: Record<
       ],
       offerTitle: "Menifee toilet-service emphasis",
       offerBody:
-        "Menifee toilet service puts repair-or-replace clarity first, which fits households that want a practical fix, cleaner scheduling, and less guesswork around whether the existing fixture is still worth dealing with.",
+        "Menifee households often want repair-or-replace clarity, practical scheduling, and less guesswork around whether the existing fixture is still worth dealing with.",
       proofTitle: "Strong fit for fixture refreshes and fast repairs",
       proofBody:
-        "Menifee properties often need clean toilet repairs, leak fixes, and straightforward replacement work that can be scheduled without a larger remodel. It is written for homeowners who want a dependable answer quickly and prefer focused plumbing work over drawn-out project language.",
+        "Menifee properties often need clean toilet repairs, leak fixes, and straightforward replacement work that can be scheduled without a larger remodel. Homeowners usually want a dependable answer quickly and prefer focused plumbing work over drawn-out project language.",
       proofPoints: [
-        "Written for busy Menifee households, move-ins, and fixture refresh situations",
+        "Good fit for busy Menifee households, move-ins, and fixture refresh situations",
         "Supports clear repair-versus-replacement decisions without overselling the scope",
-        "Helps visitors move from a frustrating toilet symptom to a practical service plan fast",
+        "Helps customers move from a frustrating toilet symptom to a practical service plan fast",
       ],
       locationCardBlurb: "Toilet repair and toilet installation for leaks, clogs, and fixture upgrades in Menifee.",
       cityFaqs: [
@@ -695,7 +695,7 @@ export const cityServiceOverrides: Record<
         "Urgent plumbing response for Menifee leaks, backups, shutoff issues, and failures that cannot wait until routine scheduling.",
       whyTitle: "Why Menifee customers call us for emergency plumbing",
       whyCopy:
-        "The Menifee emergency page is written for fast triage. Visitors usually know they need immediate help and want a direct path to the phone number, not a broad service menu.",
+        "Menifee emergency calls usually come from customers who already know they need immediate help and want a fast path to the right plumber.",
       localProblemsIntro: "Common Menifee emergency plumbing calls include:",
       localProblems: [
         "Active leaks under sinks or behind fixtures",
@@ -705,10 +705,10 @@ export const cityServiceOverrides: Record<
       ],
       offerTitle: "Menifee emergency-service emphasis",
       offerBody:
-        "This page stays aggressive on call-first conversion, with city-specific copy tuned to households that need help now and do not want to sort through non-urgent service content.",
-      proofTitle: "Built for urgent home-service decisions",
+        "Menifee emergency customers usually need fast phone-first help for active leaks, backups, overflows, and other plumbing failures that cannot wait.",
+      proofTitle: "Why Menifee customers call Above All for emergencies",
       proofBody:
-        "Menifee emergency visitors are usually making fast decisions from a phone. The page keeps the message direct and centered on immediate plumbing problems.",
+        "Menifee emergency calls are often made from a phone while the problem is still active. Customers usually need quick triage, a clear next step, and reassurance that help is on the way.",
       locationCardBlurb: "Emergency plumbing response for leaks, backups, and urgent failures in Menifee.",
       cityFaqs: [
         {
@@ -733,12 +733,12 @@ export const cityServiceOverrides: Record<
         "Repair or replace Menifee water heaters when hot water drops out, the unit starts leaking, recovery can no longer keep up with daily use, or the system is becoming too unreliable to ignore.",
       whyTitle: "Why Menifee customers call us for water heater service",
       whyCopy:
-        "Menifee water heater calls usually come from households that need a quick answer on reliability. Customers need to understand whether they are dealing with a repairable issue, a unit that is wearing out, or a replacement decision that should be made before the system fails completely.",
+        "Menifee water heater calls usually come from households that need a quick answer on reliability. Customers usually want to know whether they are dealing with a repairable issue, a unit that is wearing out, or a replacement decision that should be made before the system fails completely.",
       detailTitle: "What water-heater problems look like in Menifee",
       detailParagraphs: [
         "For many Menifee homes, the water heater issue starts as weak recovery rather than total failure. Hot water runs out sooner, the shower temperature drops inconsistently, or a unit that used to keep up with the household no longer matches daily demand. Those are strong signs because the customer is already feeling the disruption even if the system technically still works.",
         "The second group of calls comes from visible leak risk. Customers notice moisture around the unit, a leaking fitting, rust signs, or a tank that is clearly becoming less trustworthy. At that point they need clear guidance without oversold panic. The goal is to explain why some water heater issues can be repaired while others need a cleaner replacement path.",
-        "The service also has to work for customers planning around move-ins, tenant turnover, or proactive home updates. In Menifee, that means writing for both urgent no-hot-water calls and the quieter replacement decisions where the customer wants a dependable system in place before it becomes an emergency.",
+        "This also matters for customers planning around move-ins, tenant turnover, or proactive home updates. In Menifee, that means helping with both urgent no-hot-water calls and quieter replacement decisions where the customer wants a dependable system in place before it becomes an emergency.",
       ],
       localProblemsIntro: "Common Menifee water heater problems include:",
       localProblems: [
@@ -756,13 +756,13 @@ export const cityServiceOverrides: Record<
       ],
       offerTitle: "Menifee water-heater emphasis",
       offerBody:
-        "Menifee water heater service puts no-hot-water urgency, leak triage, and repair-versus-replacement clarity front and center so visitors can decide faster and move into scheduling with less uncertainty.",
+        "Menifee customers often need no-hot-water urgency, leak triage, and repair-versus-replacement clarity so they can decide faster and move into scheduling with less uncertainty.",
       proofTitle: "A strong fit for home comfort and turnover timing",
       proofBody:
         "Menifee customers often need water heater work that fits busy family routines, move-in timelines, and straightforward replacement decisions where reliability matters more than dragging the system along.",
       proofPoints: [
-        "Built for real household hot-water demand rather than generic equipment copy",
-        "Speaks to repair, leak triage, and proactive replacement in one local service",
+        "Good fit for active households with real hot-water demand",
+        "Covers repair, leak triage, and proactive replacement in one local service",
         "Supports both urgent service calls and cleaner scheduled replacement decisions",
       ],
       locationCardBlurb: "Water heater repair and replacement for no hot water, leaks, and tankless issues in Menifee.",
@@ -812,16 +812,16 @@ export const cityServiceOverrides: Record<
         "The property has an older drain system and the clog pattern keeps changing rooms",
         "A restaurant, office, or rental unit cannot keep operating normally because the drain issue keeps returning",
       ],
-      offerTitle: "Riverside drain-cleaning emphasis",
+      offerTitle: "Riverside drain-cleaning focus",
       offerBody:
-        "Riverside drain service focuses on stronger diagnosis, recurring-line issues, and commercial as well as residential drain trouble so visitors can move from the symptom to the right cleaning or inspection path faster.",
-      proofTitle: "Built for mixed-age plumbing systems",
+        "Riverside drain customers often need stronger diagnosis, recurring-line troubleshooting, and a clear path from the symptom to the right cleaning or inspection service.",
+      proofTitle: "A strong fit for older and higher-use drain systems",
       proofBody:
-        "Riverside drain service needs to handle older lines, heavier commercial use, and repeat clog patterns that are not solved by surface-level unclogging alone. It is written to support drain decisions where the customer may need clearing, hydro jetting, camera inspection, or a stronger repair conversation next.",
+        "Riverside drain calls often involve older lines, heavier commercial use, and repeat clog patterns that are not solved by surface-level unclogging alone. Customers may need clearing, hydro jetting, camera inspection, or a stronger repair plan next.",
       proofPoints: [
-        "Written for Riverside homes, rentals, restaurants, and office properties instead of one generic property type",
+        "Good fit for Riverside homes, rentals, restaurants, and office properties",
         "Explains when recurring clogs may need a deeper cleaning or sewer camera inspection",
-        "Supports higher-intent visitors who already know the line problem is not fully solved",
+        "Helpful for customers who already know the line problem is not fully solved",
       ],
       locationCardBlurb: "Drain cleaning for older lines, repeat clogs, and sewer troubleshooting in Riverside.",
       cityFaqs: [
@@ -868,16 +868,16 @@ export const cityServiceOverrides: Record<
         "The toilet clogs repeatedly even when usage has not changed much",
         "A restroom in a rental or commercial property cannot stay dependable enough for normal daily use",
       ],
-      offerTitle: "Riverside toilet-service emphasis",
+      offerTitle: "Riverside toilet-service focus",
       offerBody:
-        "Riverside toilet service gives visitors a direct repair-versus-replace path and clearer guidance around older fixtures, shared plumbing variables, and higher-use restroom demands.",
+        "Riverside toilet customers often need a direct repair-versus-replace path and clearer guidance around older fixtures, shared plumbing variables, and higher-use restroom demands.",
       proofTitle: "Strong fit for older homes and active restrooms",
       proofBody:
-        "Riverside properties often need more than a basic parts swap. This service is built to support older fixtures, higher-use restrooms, and cleaner replacement planning when reliability matters more than squeezing one more temporary fix out of the toilet.",
+        "Riverside properties often need more than a basic parts swap. Older fixtures, higher-use restrooms, and cleaner replacement planning matter when reliability is more important than squeezing one more temporary fix out of the toilet.",
       proofPoints: [
-        "Written for older homes, rentals, restaurants, and office restrooms in Riverside",
+        "Good fit for older homes, rentals, restaurants, and office restrooms in Riverside",
         "Supports repair-versus-replacement decisions without assuming the fixture is the only problem",
-        "Helps visitors move from a frustrating symptom to the cleanest plumbing recommendation faster",
+        "Helps customers move from a frustrating symptom to the cleanest plumbing recommendation faster",
       ],
       locationCardBlurb: "Toilet repair and toilet installation for older fixtures, leaks, and restroom upgrades in Riverside.",
       cityFaqs: [
@@ -924,16 +924,16 @@ export const cityServiceOverrides: Record<
         "A shutoff is not behaving the way it should during an active leak",
         "The property cannot use a bathroom, kitchen, or hot-water system safely until the issue is triaged",
       ],
-      offerTitle: "Riverside emergency-service emphasis",
+      offerTitle: "Riverside emergency-service focus",
       offerBody:
-        "Riverside emergency service balances call-first urgency with clearer triage language for visitors who may be dealing with more complex plumbing conditions, older infrastructure, or higher-risk mixed-use properties.",
-      proofTitle: "Built for higher-triage emergency calls",
+        "Riverside emergency customers often need fast help with clear triage when older infrastructure, mixed-use properties, or more complex plumbing conditions make the next step less obvious.",
+      proofTitle: "Why Riverside emergency customers call Above All",
       proofBody:
-        "Riverside emergency service needs to handle both simple active leaks and plumbing failures that require a stronger diagnosis before the full repair path is obvious. It should feel useful to a homeowner, property manager, or commercial operator who needs both urgency and competence.",
+        "Riverside emergency calls can involve simple active leaks or larger plumbing failures that need a stronger diagnosis before the full repair path is obvious. Homeowners, property managers, and commercial operators usually need both urgency and competence.",
       proofPoints: [
-        "Written for mixed-age homes, rentals, and commercial properties in Riverside",
+        "Good fit for mixed-age homes, rentals, and commercial properties in Riverside",
         "Supports active-leak triage without oversimplifying bigger plumbing failures",
-        "Designed to reduce hesitation when the customer knows something is wrong but not yet exactly where the failure is",
+        "Helps customers act quickly even when they know something is wrong but do not yet know exactly where the failure is",
       ],
       locationCardBlurb: "Emergency plumbing response for leaks, burst lines, and urgent backups in Riverside.",
       cityFaqs: [
@@ -983,11 +983,11 @@ export const cityServiceOverrides: Record<
       offerTitle: "Riverside water-heater emphasis",
       offerBody:
         "Riverside customers often need a stronger diagnosis before replacing a unit and want the repair-versus-replace decision spelled out clearly in terms of reliability, urgency, and property demand.",
-      proofTitle: "Built for aging equipment and fast replacement calls",
+      proofTitle: "A strong fit for older equipment and urgent hot-water problems",
       proofBody:
-        "Riverside water heater service needs to speak to older equipment, more varied building ages, and customers who want a confident recommendation before they commit. It is written to support both repair-minded visitors and customers who already suspect the cleanest move is replacement.",
+        "Riverside water heater calls often involve older equipment, more varied building ages, and customers who want a confident recommendation before they commit. This service supports both repair-minded customers and customers who already suspect the cleanest move is replacement.",
       proofPoints: [
-        "Written for older Riverside equipment and mixed residential-commercial service demand",
+        "Good fit for older Riverside equipment and mixed residential-commercial demand",
         "Explains urgency without pushing replacement as the answer to every hot-water problem",
         "Supports faster scheduling when the property needs dependable hot water restored quickly",
       ],

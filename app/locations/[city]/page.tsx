@@ -107,9 +107,9 @@ export default async function CityHubPage({ params }: CityPageProps) {
         <div className="container mx-auto px-4">
           <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
             <div className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-lg shadow-slate-200/70">
-              <p className="text-sm font-semibold uppercase tracking-[0.22em] text-cyan-600">Local plumbing fit</p>
+              <p className="text-sm font-semibold uppercase tracking-[0.22em] text-cyan-600">Local service conditions</p>
               <h2 className="mt-4 text-3xl font-black tracking-tight text-slate-950">
-                Why plumbing service in {cityContent.name} needs a more local approach
+                What plumbing service looks like in {cityContent.name}
               </h2>
               <p className="mt-5 text-lg leading-8 text-slate-600">{cityContent.localAngle}</p>
 
@@ -174,7 +174,7 @@ export default async function CityHubPage({ params }: CityPageProps) {
             </div>
 
             <div className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-lg shadow-slate-200/70">
-              <p className="text-sm font-semibold uppercase tracking-[0.22em] text-cyan-600">Local priorities</p>
+              <p className="text-sm font-semibold uppercase tracking-[0.22em] text-cyan-600">Common concerns</p>
               <h2 className="mt-4 text-3xl font-black tracking-tight text-slate-950">
                 {cityContent.signalTitle ?? `What matters most for plumbing service in ${cityContent.name}`}
               </h2>
@@ -197,7 +197,7 @@ export default async function CityHubPage({ params }: CityPageProps) {
             <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
               {detailParagraphs.length > 0 && (
                 <div className="rounded-[2rem] border border-slate-200 bg-slate-50 p-8">
-                  <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#C29828]">What to know locally</p>
+                  <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#C29828]">Local service details</p>
                   <h2 className="mt-4 text-3xl font-black tracking-tight text-slate-950">
                     {cityContent.detailTitle ?? `What matters most about plumbing service in ${cityContent.name}`}
                   </h2>
@@ -231,7 +231,7 @@ export default async function CityHubPage({ params }: CityPageProps) {
 
                 {cityContent.proofTitle && (
                   <div className="rounded-[2rem] border border-cyan-200 bg-cyan-50 p-8">
-                    <p className="text-sm font-semibold uppercase tracking-[0.22em] text-cyan-700">Local proof and trust</p>
+                    <p className="text-sm font-semibold uppercase tracking-[0.22em] text-cyan-700">Why customers call</p>
                     <h2 className="mt-4 text-2xl font-black tracking-tight text-slate-950">{cityContent.proofTitle}</h2>
                     <p className="mt-5 text-base leading-8 text-slate-700">{cityContent.proofBody}</p>
                     {proofPoints.length > 0 && (

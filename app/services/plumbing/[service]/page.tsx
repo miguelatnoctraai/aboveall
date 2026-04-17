@@ -67,7 +67,7 @@ export default async function PlumbingServiceHubPage({ params }: PlumbingService
               <span>{serviceContent.name}</span>
             </div>
 
-            <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#C29828]">Service hub</p>
+            <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#C29828]">Plumbing service</p>
             <h1 className="mt-4 text-4xl font-black tracking-tight sm:text-5xl lg:text-6xl">{serviceContent.hubTitle}</h1>
             <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-300">{serviceContent.heroSummary}</p>
 
@@ -84,7 +84,7 @@ export default async function PlumbingServiceHubPage({ params }: PlumbingService
                   variant="outline"
                   className="border-cyan-400 text-cyan-300 hover:bg-cyan-400 hover:text-slate-950"
                 >
-                  Main Plumbing Hub
+                  All Plumbing Services
                 </Button>
               </Link>
             </div>
@@ -96,7 +96,7 @@ export default async function PlumbingServiceHubPage({ params }: PlumbingService
         <div className="container mx-auto px-4">
           <div className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-lg shadow-slate-200/70">
             <p className="text-sm font-semibold uppercase tracking-[0.22em] text-cyan-600">Overview</p>
-            <h2 className="mt-4 text-3xl font-black tracking-tight text-slate-950">What this service hub is for</h2>
+            <h2 className="mt-4 text-3xl font-black tracking-tight text-slate-950">What to expect from this service</h2>
             <p className="mt-5 max-w-4xl text-lg leading-8 text-slate-600">{serviceContent.intro}</p>
             <div className="mt-8 grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
               {serviceContent.quickPoints.map((item) => (
@@ -172,12 +172,12 @@ export default async function PlumbingServiceHubPage({ params }: PlumbingService
       <section className="border-y border-slate-200 bg-white py-16 md:py-20">
         <div className="container mx-auto px-4">
           <div className="mb-10 max-w-3xl">
-            <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#C29828]">City pages</p>
+            <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#C29828]">Service areas</p>
             <h2 className="mt-4 text-3xl font-black tracking-tight text-slate-950 sm:text-4xl">
-              Choose the city-specific page for this service.
+              Choose your city for local plumbing help.
             </h2>
             <p className="mt-4 text-lg leading-8 text-slate-600">
-              The service hub explains the work. The city pages add local SEO intent, local trust, and city-specific offer language.
+              Start with your city to see local plumbing details, common call reasons, and service information for this job.
             </p>
           </div>
 
@@ -194,7 +194,7 @@ export default async function PlumbingServiceHubPage({ params }: PlumbingService
                   href={card.href}
                   className="mt-6 inline-flex items-center gap-2 font-semibold text-cyan-600 transition-colors hover:text-cyan-700"
                 >
-                  View {card.name} page
+                  View {card.name} service
                   <ArrowRight className="h-4 w-4" />
                 </Link>
               </article>
@@ -228,12 +228,12 @@ export default async function PlumbingServiceHubPage({ params }: PlumbingService
 
             <div className="rounded-[2rem] border border-slate-200 bg-slate-950 p-8 text-white shadow-2xl shadow-slate-900/20">
               <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#C29828]">Trust</p>
-              <h2 className="mt-4 text-3xl font-black tracking-tight">Licensed plumbing service with local routing built in.</h2>
+              <h2 className="mt-4 text-3xl font-black tracking-tight">Licensed plumbing help across local service areas.</h2>
               <div className="mt-8 space-y-4">
                 {[
-                  "Main plumbing hub plus city-specific service pages",
-                  "Direct parent links back to the service hub and city hub",
-                  "Local-intent pages for Menifee, Riverside, Perris, Moreno Valley, and Homeland",
+                  "Direct access to this service and related plumbing work",
+                  "Local plumbing help for Menifee, Riverside, Perris, Moreno Valley, and Homeland",
+                  "Clear next steps for scheduling the right plumbing help",
                 ].map((item) => (
                   <div key={item} className="flex items-start gap-3">
                     <CheckCircle2 className="mt-1 h-5 w-5 shrink-0 text-[#C29828]" />
