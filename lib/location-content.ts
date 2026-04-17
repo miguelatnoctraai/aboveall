@@ -588,7 +588,7 @@ export const cityServiceOverrides: Record<
       detailParagraphs: [
         "Busy homes in Menifee use a lot of water every day. Kitchen sinks, bathroom drains, and laundry lines can all slow down at once. When that happens, you want to know if the drain can be fixed and if it will stay clear.",
         "If the same drain keeps slowing down, something is wrong deeper in the line. We check for repeat slowdowns, drain odors, gurgling sounds, and backup signs before the problem gets worse.",
-        "Above All handles both the immediate clearing work and the deeper diagnostic path when the same drain issue keeps returning. That matters when the customer wants a real answer, not just a temporary opening in the line.",
+        "Above All Maintenance & Repair clears the drain and figures out why it keeps clogging. You get a real fix, not just a temporary one.",
       ],
       localProblemsIntro: "Common Menifee drain issues include:",
       localProblems: [
@@ -604,16 +604,16 @@ export const cityServiceOverrides: Record<
         "There is standing water, bubbling, or odor coming back after a temporary clearing",
         "A toilet flush starts affecting a nearby shower, tub, or sink",
       ],
-      offerTitle: "Menifee drain-cleaning emphasis",
+      offerTitle: "Drain cleaning in Menifee",
       offerBody:
-        "Menifee customers often need fast scheduling, recurring-clog diagnosis, and a clear explanation of whether the line needs a simple clearing, hydro jetting, or a camera inspection before the problem turns into a bigger repair.",
-      proofTitle: "A strong fit for busy Menifee homes",
+        "We schedule fast. We tell you if the drain needs a simple clear, a deep clean, or a camera inspection. No surprises.",
+      proofTitle: "Why Menifee homeowners call Above All Maintenance & Repair",
       proofBody:
-        "Menifee drain calls often come from busy homes, move-ins, and routine maintenance situations where repeated drain issues quickly become a household disruption instead of a minor inconvenience.",
+        "We work with busy Menifee homes, move-ins, and properties where a slow drain can quickly turn into a real problem.",
       proofPoints: [
         "We serve busy family homes, move-ins, and properties with heavy daily use",
-        "Explains the difference between a one-time clog and a deeper recurring-line issue",
-        "Supports direct scheduling once the customer recognizes the problem",
+        "We explain the difference between a one-time clog and a deeper line problem",
+        "Call us when you are ready and we get you scheduled fast",
       ],
       locationCardBlurb: "Drain cleaning for repeat clogs, slow drains, and main line backups in Menifee.",
       cityFaqs: [

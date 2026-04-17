@@ -67,20 +67,20 @@ export default async function CityServicePage({ params }: CityServicePageProps) 
   const { city: cityContent, service: serviceContent, override, faqs } = getCityServicePageContent(city, service)
   const siblingServices = plumbingServiceSlugs.filter((serviceSlug) => serviceSlug !== service)
   const overviewParagraphs = [
-    `${override.heroSummary} It helps ${cityContent.name} property owners move from the symptom to the right next step without extra guesswork.`,
+    override.heroSummary,
     `${override.whyCopy} ${override.offerBody}`,
-    `This service is especially relevant for ${cityContent.propertyTypes.slice(0, 2).join(" and ").toLowerCase()} in ${cityContent.name} and nearby areas such as ${cityContent.nearbyAreas.slice(0, 2).join(" and ")}. ${override.proofBody}`,
+    `We work with ${cityContent.propertyTypes.slice(0, 2).join(" and ").toLowerCase()} in ${cityContent.name} and nearby areas including ${cityContent.nearbyAreas.slice(0, 2).join(" and ")}. ${override.proofBody}`,
   ]
   const pageFitPoints = [
-    `Best fit for ${cityContent.propertyTypes[0].toLowerCase()}`,
-    `Built around ${serviceContent.quickPoints[0].toLowerCase()}`,
-    `Nearby coverage around ${cityContent.nearbyAreas.slice(0, 2).join(" and ")}`,
-    `Fast path to scheduling help`,
+    `We work with ${cityContent.propertyTypes[0].toLowerCase()}`,
+    serviceContent.quickPoints[0],
+    `We serve ${cityContent.nearbyAreas.slice(0, 2).join(", ")} and nearby areas`,
+    `Fast scheduling available`,
   ]
   const decisionPoints = [
     "Whether the problem is isolated or part of a larger plumbing issue",
     "Whether this needs repair, replacement, or a deeper diagnostic step",
-    `How the service fits the property types most common in ${cityContent.name}`,
+    `Whether this service fits your property in ${cityContent.name}`,
   ]
   const detailParagraphs = override.detailParagraphs ?? []
   const warningSigns = override.warningSigns ?? []
@@ -400,7 +400,7 @@ export default async function CityServicePage({ params }: CityServicePageProps) 
                   Nearby areas around {cityContent.name}
                 </h2>
                 <p className="mt-5 text-base leading-8 text-slate-600">
-                  Service is centered on {cityContent.name} while still reflecting nearby communities and the plumbing needs that show up around this part of {cityContent.county}.
+                  We serve {cityContent.name} and the surrounding communities in {cityContent.county}.
                 </p>
                 <div className="mt-6 flex flex-wrap gap-3">
                   {cityContent.nearbyAreas.map((item) => (
