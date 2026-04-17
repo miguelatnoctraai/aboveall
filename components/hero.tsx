@@ -128,16 +128,16 @@ export function Hero() {
               <div className="text-center">
                 <div className="mb-2 flex items-center justify-center gap-2 text-4xl font-bold text-[#C29828] md:text-5xl">
                   <MapPin className="h-10 w-10" />
-                  RC
+                  6+
                 </div>
-                <div className="text-sm font-medium text-slate-300 md:text-base">Riverside County Focus</div>
+                <div className="text-sm font-medium text-slate-300 md:text-base">Trades Covered</div>
               </div>
               <div className="text-center">
                 <div className="mb-2 flex items-center justify-center gap-2 text-4xl font-bold text-[#C29828] md:text-5xl">
                   <Wrench className="h-10 w-10" />
-                  Homeland
+                  CA
                 </div>
-                <div className="text-sm font-medium text-slate-300 md:text-base">Home Base In California</div>
+                <div className="text-sm font-medium text-slate-300 md:text-base">Licensed in California</div>
               </div>
             </div>
           </div>
