@@ -31,7 +31,7 @@ const quickPoints = [
   "Emergency plumbing and active leak response",
   "Drain cleaning, stoppage diagnosis, and sewer troubleshooting",
   "Water heater repair, replacement, and installation",
-  "General maintenance and repair when the scope expands beyond plumbing",
+  "Related maintenance and repair when the job turns into a larger property issue",
 ]
 
 export function HomePlumbingFocus() {
@@ -47,13 +47,14 @@ export function HomePlumbingFocus() {
               Homeland-based plumbers for calls that need a clean fix, not guesswork.
             </h2>
             <p className="mt-5 max-w-3xl text-lg leading-8 text-slate-300">
-              {businessInfo.name} is based in {businessInfo.homeBase}. The homepage now leads with plumbing because
-              that is the strongest local search intent: emergency calls, drain problems, water heaters, leak
-              diagnosis, and repair work across {businessInfo.primaryCounty} homes, rentals, and commercial properties.
+              {businessInfo.name} is based in {businessInfo.homeBase} and handles plumbing calls across{" "}
+              {businessInfo.primaryCounty} homes, rentals, restaurants, offices, and other local properties. That
+              includes emergency leaks, drain problems, toilet repairs, water heater issues, and everyday plumbing
+              work that needs a licensed pro.
             </p>
             <p className="mt-5 max-w-3xl text-base leading-8 text-slate-400">
-              When the scope grows beyond plumbing, the team can also support broader maintenance and repair work so a
-              property owner does not have to coordinate multiple vendors for one problem chain.
+              If the plumbing problem turns into a larger repair situation, the team can also help with related
+              maintenance work instead of leaving you to sort out the next contractor on your own.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-4">
@@ -81,7 +82,7 @@ export function HomePlumbingFocus() {
           </div>
 
           <div className="rounded-[2rem] border border-cyan-200 bg-cyan-50 p-8 md:p-10">
-            <p className="text-sm font-semibold uppercase tracking-[0.22em] text-cyan-700">Local routing</p>
+            <p className="text-sm font-semibold uppercase tracking-[0.22em] text-cyan-700">Start Here</p>
             <h2 className="mt-4 text-3xl font-black tracking-tight text-slate-950 sm:text-4xl">
               Choose the plumbing help that fits the job and area.
             </h2>

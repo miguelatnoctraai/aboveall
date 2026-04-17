@@ -43,14 +43,13 @@ export function About() {
               <span className="text-[#C29828]">Built For Real Property Calls</span>
             </h2>
             <p className="text-lg text-slate-300 mb-8 leading-relaxed text-pretty">
-              {businessInfo.name} is based in {businessInfo.homeBase}. The home page now leads with plumbing because
-              that is where the strongest local intent lives: emergency service, drain stoppages, water heaters,
-              toilet issues, and leak diagnosis across {businessInfo.primaryCounty}.
+              {businessInfo.name} is based in {businessInfo.homeBase} and handles emergency plumbing, drain
+              stoppages, water heaters, toilet issues, leaks, and everyday repair work across{" "}
+              {businessInfo.primaryCounty}.
             </p>
             <p className="text-lg text-slate-300 mb-8 leading-relaxed text-pretty">
-              The broader business still handles maintenance and repair work when a property issue moves beyond
-              plumbing. That keeps one contractor in the loop instead of forcing the customer to restart the job with a
-              new vendor.
+              When a plumbing problem turns into a broader property repair, the team can also help with related
+              maintenance work so you are not left coordinating the next step alone.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-6">

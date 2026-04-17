@@ -79,8 +79,9 @@ export function Hero() {
           </div>
 
           <p className="mx-auto mb-10 max-w-4xl text-base leading-8 text-slate-300 sm:text-lg">
-            Based in {businessInfo.homeBase}, {businessInfo.name} leads with plumbing while still handling the wider
-            maintenance and repair work that often follows a real property-service call.
+            Based in {businessInfo.homeBase}, {businessInfo.name} handles plumbing for homes, rentals, and commercial
+            properties across Riverside County, with related maintenance and repair help available when the job grows
+            beyond the pipe, fixture, or leak itself.
           </p>
 
           <div className="mb-16 flex flex-col items-center justify-center gap-6 sm:flex-row">
