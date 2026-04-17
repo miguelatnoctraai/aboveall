@@ -25,10 +25,10 @@ This file tracks the plumbing location rollout so content work stays visible and
 ## City hubs
 
 - `templated` `/locations/menifee`
-- `templated` `/locations/riverside`
+- `done` `/locations/riverside`
 - `templated` `/locations/perris`
 - `templated` `/locations/moreno-valley`
-- `templated` `/locations/homeland`
+- `done` `/locations/homeland`
 
 ## City-service pages
 
@@ -40,10 +40,10 @@ This file tracks the plumbing location rollout so content work stays visible and
 
 ### Priority 2
 
-- `next` `/locations/riverside/drain-cleaning`
-- `next` `/locations/menifee/toilet-repair-installation`
-- `next` `/locations/riverside/toilet-repair-installation`
-- `next` `/locations/riverside/water-heater-installation-repair`
+- `done` `/locations/riverside/drain-cleaning`
+- `done` `/locations/riverside/toilet-repair-installation`
+- `done` `/locations/riverside/water-heater-installation-repair`
+- `done` `/locations/menifee/toilet-repair-installation`
 
 ### Remaining templated pages
 
@@ -56,8 +56,6 @@ This file tracks the plumbing location rollout so content work stays visible and
 - `templated` `/locations/moreno-valley/toilet-repair-installation`
 - `templated` `/locations/moreno-valley/emergency-plumbing`
 - `templated` `/locations/moreno-valley/water-heater-installation-repair`
-- `templated` `/locations/homeland/drain-cleaning`
-- `templated` `/locations/homeland/toilet-repair-installation`
 - `templated` `/locations/homeland/emergency-plumbing`
 - `templated` `/locations/homeland/water-heater-installation-repair`
 

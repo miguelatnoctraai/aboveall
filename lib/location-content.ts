@@ -31,6 +31,15 @@ export type CityContent = {
   nearbyAreas: string[]
   propertyTypes: string[]
   trustPoints: string[]
+  signalTitle?: string
+  signalPoints?: string[]
+  detailTitle?: string
+  detailParagraphs?: string[]
+  commonCallsTitle?: string
+  commonCalls?: string[]
+  proofTitle?: string
+  proofBody?: string
+  proofPoints?: string[]
   ctaTitle: string
   ctaBody: string
 }
@@ -95,17 +104,48 @@ export const plumbingCities: Record<PlumbingCitySlug, CityContent> = {
     name: "Riverside",
     county: "Riverside County",
     shortDescription:
-      "Local plumbing pages for Riverside property owners who need stronger diagnosis, faster triage, and service copy tuned to mixed-age buildings.",
+      "Plumbing services in Riverside, CA for older homes, apartments, restaurants, offices, and local properties that need stronger diagnosis and cleaner service routing.",
     heroSummary:
-      "Licensed plumbing support across Riverside for older homes, apartments, restaurants, offices, and urgent plumbing repair calls.",
+      "Licensed plumbing support across Riverside for drain problems, toilet issues, water heater failures, and emergency calls where mixed-age plumbing systems often need a sharper diagnosis before the right repair path is obvious.",
     localAngle:
-      "Riverside needs a more diagnosis-heavy message. Mixed-age plumbing systems and higher urgency service calls make clarity and repair planning important here.",
+      "Riverside needs a more diagnosis-heavy message. Mixed-age plumbing systems, older residential plumbing, apartments, and higher-urgency service calls make clarity and repair planning more important here than a generic city hub would suggest.",
     nearbyAreas: ["Downtown Riverside", "Canyon Crest", "Orangecrest", "Arlington"],
     propertyTypes: ["Older single-family homes", "Apartments and rentals", "Restaurants and offices"],
-    trustPoints: ["California License #1075924", "Residential and commercial plumbing", "Fast call-first response"],
+    trustPoints: [
+      "California License #1075924",
+      "Residential and commercial plumbing support",
+      "Fast call-first response for active issues and urgent scheduling",
+    ],
+    signalTitle: "What Riverside visitors are usually trying to solve",
+    signalPoints: [
+      "Whether the symptom points to a simple repair or a deeper plumbing-system issue",
+      "Whether an older home, apartment, or commercial space needs a different level of diagnosis",
+      "Which service page best fits the actual problem without wasting time on broad browsing",
+    ],
+    detailTitle: "Why the Riverside plumbing hub needs more depth",
+    detailParagraphs: [
+      "Riverside is one of the stronger local plumbing opportunities in this site because the city has enough variety in property age and use that a generic county-level page is not a good match. A homeowner dealing with drain issues in an older house, a property manager handling an apartment plumbing problem, and a business owner trying to keep a restroom or break-room line working all arrive with different levels of urgency and different expectations for diagnosis.",
+      "That is why the Riverside hub needs to do more than list services. It should help the visitor recognize the type of problem they are likely dealing with, understand which service page is the right next step, and feel that Above All is equipped for more complex plumbing conditions than a simple city-name swap usually implies. The copy should support both faster triage and better repair planning.",
+      "For Riverside specifically, the strongest path is usually to route the visitor into the exact service page with the most relevant local framing. Drain cleaning, toilet repair, emergency plumbing, and water heater work all need slightly different decision support here because older infrastructure and mixed-use properties create more edge cases than a lighter suburban page would need to address.",
+    ],
+    commonCallsTitle: "Common Riverside plumbing calls this hub should route well",
+    commonCalls: [
+      "Drain issues in older homes where repeat clogs or shared drain symptoms need more than a quick unclog",
+      "Apartment and rental plumbing problems where fixture reliability and clean scheduling matter",
+      "Emergency leaks, overflows, and backup conditions that need fast triage before repair planning",
+      "Water heater failures in homes or commercial spaces where downtime creates daily disruption",
+    ],
+    proofTitle: "Built for mixed-age Riverside plumbing demand",
+    proofBody:
+      "The Riverside hub should feel credible to homeowners, property managers, and business operators who know the plumbing issue may not be simple. It is written to support clearer service routing, stronger diagnosis language, and a faster path from local search intent into a real call or quote request.",
+    proofPoints: [
+      "Written around older homes, rentals, and commercial properties instead of one generic property type",
+      "Supports urgent plumbing calls without turning every visit into emergency-only messaging",
+      "Routes visitors into the most relevant city-service page instead of forcing them through broad service copy first",
+    ],
     ctaTitle: "Need plumbing service in Riverside?",
     ctaBody:
-      "Use the Riverside city hub to go straight to the plumbing issue you are dealing with and skip broad service-page browsing.",
+      "Use the Riverside city hub to go straight to the plumbing issue you are dealing with, get city-specific context, and move into the right drain, toilet, emergency, or water heater page without wasting steps.",
   },
   perris: {
     slug: "perris",
@@ -146,17 +186,48 @@ export const plumbingCities: Record<PlumbingCitySlug, CityContent> = {
     name: "Homeland",
     county: "Riverside County",
     shortDescription:
-      "Local plumbing pages for Homeland customers who need dependable service pages built around semi-rural properties, reliability, and clean repair planning.",
+      "Plumbing services in Homeland, CA for homes and local properties that need dependable diagnosis, practical repairs, and city-specific plumbing guidance built around the company’s home base.",
     heroSummary:
-      "Licensed plumbing support for Homeland homes and service properties that need dependable repairs, clear recommendations, and no wasted steps.",
+      "Licensed plumbing support for Homeland homes and local service properties when drain issues, toilet problems, water heater failures, or urgent leaks need a dependable repair plan instead of generic plumbing copy.",
     localAngle:
-      "Homeland pages should emphasize reliability, complete diagnosis, and plumbing fixes that make sense for semi-rural properties and longer plumbing runs.",
+      "Homeland pages should emphasize reliability, complete diagnosis, and plumbing fixes that make sense for semi-rural properties, longer plumbing runs, and homeowners who want the right recommendation the first time.",
     nearbyAreas: ["Romoland", "Green Acres", "Nuevo", "Menifee border"],
     propertyTypes: ["Ranch-style homes", "Manufactured homes", "Small local businesses"],
-    trustPoints: ["California License #1075924", "Residential and commercial plumbing", "Repair-first communication"],
+    trustPoints: [
+      "California License #1075924",
+      "Residential and commercial plumbing support",
+      "Repair-first communication with clear next-step recommendations",
+    ],
+    signalTitle: "What Homeland visitors are usually trying to avoid",
+    signalPoints: [
+      "Wasting time on generic plumbing pages that do not match the property setup",
+      "Getting a temporary fix when the real need is a dependable diagnosis and repair plan",
+      "Guessing which plumbing page fits the issue when they really want the most direct local path",
+    ],
+    detailTitle: "Why the Homeland plumbing hub should feel more grounded",
+    detailParagraphs: [
+      "Homeland is different from a larger city-intent page because many of the strongest local calls come from homeowners who care less about broad service marketing and more about whether the plumber will give them a reliable answer. The local mix of ranch-style homes, manufactured homes, and nearby semi-rural properties means the page should feel practical, calm, and built around real repair planning.",
+      "That matters because plumbing issues in Homeland often come with a little more context. A drain problem may involve a longer run. A toilet or shutoff issue may have been tolerated for too long because the customer wanted to avoid unnecessary work. A water heater problem may be less about urgency language and more about whether the next step is actually worth doing. The hub should make it easier to choose the right page without overselling the situation.",
+      "This is also the company’s home-base territory, so the city hub should carry a stronger sense of local fit than the more generalized county pages. The best version of this page should feel like the starting point for dependable plumbing help in Homeland: direct routing into the exact issue, clearer recommendations, and less fluff between the problem and the call.",
+    ],
+    commonCallsTitle: "Common Homeland plumbing calls this hub should route well",
+    commonCalls: [
+      "Drain problems in homes where repeat slowdowns or backups need a better diagnosis before bigger repair decisions",
+      "Toilet leaks, clogs, or aging fixtures where the customer wants the cleanest long-term fix",
+      "Emergency leaks and shutoff problems where steady triage matters as much as speed",
+      "Water heater issues where reliability and repair-versus-replace guidance matter more than a hard sell",
+    ],
+    proofTitle: "Built for dependable local plumbing decisions",
+    proofBody:
+      "The Homeland hub should feel useful to homeowners and small-property operators who want honest direction, a cleaner diagnosis, and the shortest path into the right plumbing page. It is designed around reliability, not inflated urgency, while still supporting direct calls when the issue cannot wait.",
+    proofPoints: [
+      "Written for Homeland’s home-base relevance and semi-rural property patterns",
+      "Supports repair-first conversations without making the visitor dig through broad county copy",
+      "Routes local traffic into the right drain, toilet, emergency, or water-heater page with less friction",
+    ],
     ctaTitle: "Need a plumber in Homeland?",
     ctaBody:
-      "Use the Homeland city hub to move straight to drain, toilet, emergency, or water heater service without digging through generic copy.",
+      "Use the Homeland city hub to move straight to the plumbing issue you are dealing with, get a more local-fit explanation, and reach the right drain, toilet, emergency, or water heater page without extra browsing.",
   },
 }
 
@@ -565,10 +636,16 @@ export const cityServiceOverrides: Record<
         "Toilet repair and installation in Menifee, CA for leaks, weak flushes, clog issues, fixture upgrades, and replacements.",
       heroTitle: "Toilet Repair & Installation in Menifee, CA",
       heroSummary:
-        "Fix leaking, running, clogged, or outdated toilets in Menifee homes and properties with repair-first guidance and clean replacement options.",
+        "Fix leaking, running, clogged, or outdated toilets in Menifee homes and properties with repair-first guidance, clearer replacement decisions, and clean fixture installs that fit busy household use.",
       whyTitle: "Why Menifee customers call us for toilet work",
       whyCopy:
-        "Menifee toilet calls usually need a fast answer on whether the fixture should be repaired or replaced. This page is built to make that decision clear quickly.",
+        "Menifee toilet calls usually need a fast answer on whether the fixture should be repaired or replaced. The page works best when it helps households move quickly from symptom to decision without turning a focused toilet problem into a bigger project than it needs to be.",
+      detailTitle: "What Menifee toilet-service calls usually have in common",
+      detailParagraphs: [
+        "Menifee toilet-service traffic often comes from active family homes, move-ins, and routine fixture refreshes where the problem is clear enough to be annoying but not always obvious enough to know the right next step. A toilet may still flush but keep running, clog too often, leak at the base, or just feel like it is one failure away from becoming a bigger disruption. Visitors usually want to know if the toilet can be fixed cleanly or if replacement is simply the smarter move.",
+        "That is why the Menifee version of this page needs stronger decision support than a generic toilet-repair page. The local customer is often balancing speed, practicality, and household disruption. They want to solve the problem without overcomplicating it, and they want a plumber who can explain the difference between a straightforward repair, a clean replacement, and a fixture problem that may involve the shutoff, seal, or connected drain line.",
+        "The page should also support the kinds of toilet calls that show up during move-ins, light refreshes, and household catch-up maintenance. Menifee visitors are often not trying to plan a full bathroom remodel. They are trying to get a dependable toilet back in service quickly and make a sensible choice for the property.",
+      ],
       localProblemsIntro: "Common Menifee toilet issues this page is designed for:",
       localProblems: [
         "Running toilets that quietly waste water every day",
@@ -576,12 +653,24 @@ export const cityServiceOverrides: Record<
         "Repeated toilet clogs in busy family homes",
         "Move-in replacement needs when older fixtures are ready to go",
       ],
+      warningSignsTitle: "When a Menifee toilet issue usually needs service instead of more waiting",
+      warningSigns: [
+        "The toilet still works, but it keeps running, leaking, or clogging often enough to disrupt the household",
+        "The fixture looks worn out and the customer is already considering a practical replacement",
+        "Water is showing up around the base or the toilet no longer feels solid and dependable",
+        "A move-in, tenant turnover, or home refresh needs a clean fixture decision without dragging out the work",
+      ],
       offerTitle: "Menifee toilet-service emphasis",
       offerBody:
-        "This page puts repair-or-replace clarity first, which fits Menifee households that want a practical fix without turning a simple toilet issue into a long project.",
+        "This page puts repair-or-replace clarity first, which fits Menifee households that want a practical fix, cleaner scheduling, and less guesswork around whether the existing fixture is still worth dealing with.",
       proofTitle: "Strong fit for fixture refreshes and fast repairs",
       proofBody:
-        "Menifee properties often need clean toilet repairs, leak fixes, and straightforward replacement work that can be scheduled without a larger remodel.",
+        "Menifee properties often need clean toilet repairs, leak fixes, and straightforward replacement work that can be scheduled without a larger remodel. The page is written for homeowners who want a dependable answer quickly and prefer focused plumbing work over drawn-out project language.",
+      proofPoints: [
+        "Written for busy Menifee households, move-ins, and fixture refresh situations",
+        "Supports clear repair-versus-replacement decisions without overselling the scope",
+        "Helps visitors move from a frustrating toilet symptom to a practical service plan fast",
+      ],
       locationCardBlurb: "Toilet repair and toilet installation for leaks, clogs, and fixture upgrades in Menifee.",
       cityFaqs: [
         {
@@ -699,10 +788,16 @@ export const cityServiceOverrides: Record<
         "Drain cleaning in Riverside, CA for clogged drains, slow lines, hydro jetting, sewer camera inspections, and recurring backups.",
       heroTitle: "Drain Cleaning in Riverside, CA",
       heroSummary:
-        "Drain cleaning for Riverside homes, apartments, restaurants, and offices dealing with repeat clogs, backups, or drain lines that need real diagnosis.",
+        "Drain cleaning for Riverside homes, apartments, restaurants, and offices when repeat clogs, shared drain symptoms, or deeper line problems need more than a quick unclog.",
       whyTitle: "Why Riverside customers call us for drain cleaning",
       whyCopy:
-        "Riverside drain problems often need more diagnosis before the right fix becomes obvious. This page puts recurring-clog troubleshooting and line assessment up front.",
+        "Riverside drain problems often need more diagnosis before the right fix becomes obvious. Older homes, mixed-use buildings, and heavier day-to-day plumbing demand can turn a \"simple clog\" into a branch-line or main-line decision quickly, so the page needs to lead with stronger troubleshooting and line assessment.",
+      detailTitle: "Why Riverside drain calls often need a sharper diagnosis",
+      detailParagraphs: [
+        "Riverside drain-cleaning traffic is different from a city where most calls come from the same type of property. A kitchen sink backup in an older single-family home, a restroom issue in a restaurant, and a repeating clog in an apartment unit can all look similar at first, but they do not point to the same fix. That is why the Riverside version of this page has to do more than promise fast drain clearing.",
+        "Customers here often need help figuring out whether the problem is isolated to one fixture, tied to a heavily used branch line, or part of a larger sewer or main line issue. If multiple drains are reacting at once, if the line was cleared recently and already slowed down again, or if the property has older plumbing, the value is not just clearing the symptom. The value is recognizing what the symptom is trying to say about the line.",
+        "This page should also feel credible to both homeowners and commercial operators. Riverside has enough mixed-age residential and business plumbing that the copy needs to support repeat-clog troubleshooting, camera-based next steps, and a cleaner explanation of when hydro jetting or deeper inspection makes sense. That is what separates a real local drain page from a generic clogged-drain template.",
+      ],
       localProblemsIntro: "Common Riverside drain issues this page is designed around:",
       localProblems: [
         "Older drain lines that clog again after basic clearing",
@@ -710,12 +805,24 @@ export const cityServiceOverrides: Record<
         "Multiple fixtures backing up in mixed-age properties",
         "Main line problems that need camera verification before repair planning",
       ],
+      warningSignsTitle: "When Riverside drain symptoms usually point to a bigger line issue",
+      warningSigns: [
+        "A sink, tub, or floor drain was cleared recently but is already slowing down again",
+        "More than one drain is gurgling, backing up, or reacting when another fixture is used",
+        "The property has an older drain system and the clog pattern keeps changing rooms",
+        "A restaurant, office, or rental unit cannot keep operating normally because the drain issue keeps returning",
+      ],
       offerTitle: "Riverside drain-cleaning emphasis",
       offerBody:
-        "This page focuses on stronger diagnosis, recurring-line issues, and commercial as well as residential drain trouble so Riverside visitors can reach the right path faster.",
+        "This page focuses on stronger diagnosis, recurring-line issues, and commercial as well as residential drain trouble so Riverside visitors can move from the symptom to the right cleaning or inspection path faster.",
       proofTitle: "Built for mixed-age plumbing systems",
       proofBody:
-        "Riverside service copy needs to handle older lines, heavier commercial use, and repeat clog patterns that are not solved by surface-level unclogging alone.",
+        "Riverside service copy needs to handle older lines, heavier commercial use, and repeat clog patterns that are not solved by surface-level unclogging alone. The page is written to support drain decisions where the customer may need clearing, hydro jetting, camera inspection, or a stronger repair conversation next.",
+      proofPoints: [
+        "Written for Riverside homes, rentals, restaurants, and office properties instead of one generic property type",
+        "Explains when recurring clogs may need a deeper cleaning or sewer camera inspection",
+        "Supports higher-intent visitors who already know the line problem is not fully solved",
+      ],
       locationCardBlurb: "Drain cleaning for older lines, repeat clogs, and sewer troubleshooting in Riverside.",
       cityFaqs: [
         {
@@ -737,10 +844,16 @@ export const cityServiceOverrides: Record<
         "Toilet repair and installation in Riverside, CA for leaks, running toilets, repeated clogs, and restroom fixture replacement.",
       heroTitle: "Toilet Repair & Installation in Riverside, CA",
       heroSummary:
-        "Repair or replace toilets in Riverside homes, rentals, restaurants, and offices when leaks, clogs, or worn fixtures start creating daily problems.",
+        "Repair or replace toilets in Riverside homes, rentals, restaurants, and offices when leaks, repeat clogs, worn shutoffs, or aging fixtures start creating daily problems that need more than a quick parts swap.",
       whyTitle: "Why Riverside customers call us for toilet work",
       whyCopy:
-        "Riverside toilet calls often need stronger troubleshooting because the fixture problem may overlap with older shutoffs, worn supply components, or drain-line issues.",
+        "Riverside toilet calls often need stronger troubleshooting because the fixture problem may overlap with older shutoffs, worn supply components, floor damage risk, or drain-line issues. The page needs to make it clear that Above All can sort out whether the real fix is internal repair, clean replacement, or a deeper plumbing check.",
+      detailTitle: "Why Riverside toilet problems are not always just fixture problems",
+      detailParagraphs: [
+        "Riverside toilet-service calls often start with a symptom that seems simple: a toilet keeps running, rocks at the base, clogs too often, or starts leaking around an older fixture. But in mixed-age homes and busier commercial or rental settings, the fixture itself is not always the whole story. A worn angle stop, an aging supply line, a weak flange setup, or a branch-line problem can change what the cleanest fix actually looks like.",
+        "That is why this page needs more depth than a generic toilet-repair landing page. Riverside visitors should be able to tell that Above All can handle both the straightforward repair-first path and the cases where replacement makes more sense because the toilet is outdated, unreliable, or no longer worth repeated service calls. The message should support a better decision, not just a faster click.",
+        "This also matters for rentals, restaurants, and offices where restroom downtime creates immediate friction. A toilet page for Riverside needs to speak to higher-use bathrooms, older fixtures, and cases where the customer wants the most reliable next step with the least wasted effort.",
+      ],
       localProblemsIntro: "Common Riverside toilet issues this page is built for:",
       localProblems: [
         "Older fixtures with recurring internal tank failures",
@@ -748,12 +861,24 @@ export const cityServiceOverrides: Record<
         "Commercial restroom units that need replacement with minimal downtime",
         "Repeated clogs where the branch line may be part of the issue",
       ],
+      warningSignsTitle: "When a Riverside toilet issue usually needs more than a quick repair guess",
+      warningSigns: [
+        "The toilet has already been repaired once or twice but keeps failing in a similar way",
+        "There is water at the base, movement in the fixture, or visible wear around older flooring",
+        "The toilet clogs repeatedly even when usage has not changed much",
+        "A restroom in a rental or commercial property cannot stay dependable enough for normal daily use",
+      ],
       offerTitle: "Riverside toilet-service emphasis",
       offerBody:
-        "This page gives Riverside visitors a direct repair-versus-replace path and clearer copy around older fixtures and multi-use restroom demands.",
+        "This page gives Riverside visitors a direct repair-versus-replace path and clearer copy around older fixtures, shared plumbing variables, and higher-use restroom demands.",
       proofTitle: "Strong fit for older homes and active restrooms",
       proofBody:
-        "Riverside properties often need more than a basic parts swap. The page is built to support older fixtures, higher-use restrooms, and cleaner replacement planning.",
+        "Riverside properties often need more than a basic parts swap. The page is built to support older fixtures, higher-use restrooms, and cleaner replacement planning when reliability matters more than squeezing one more temporary fix out of the toilet.",
+      proofPoints: [
+        "Written for older homes, rentals, restaurants, and office restrooms in Riverside",
+        "Supports repair-versus-replacement decisions without assuming the fixture is the only problem",
+        "Helps visitors move from a frustrating symptom to the cleanest plumbing recommendation faster",
+      ],
       locationCardBlurb: "Toilet repair and toilet installation for older fixtures, leaks, and restroom upgrades in Riverside.",
       cityFaqs: [
         {
@@ -831,10 +956,16 @@ export const cityServiceOverrides: Record<
         "Water heater repair and installation in Riverside, CA for no hot water, leaking tanks, weak recovery, and tankless system issues.",
       heroTitle: "Water Heater Installation & Repair in Riverside, CA",
       heroSummary:
-        "Repair or replace Riverside water heaters when aging systems lose recovery, leak, or stop delivering dependable hot water.",
+        "Repair or replace Riverside water heaters when aging systems lose recovery, leak, struggle to keep up, or stop delivering dependable hot water in homes, rentals, and commercial spaces.",
       whyTitle: "Why Riverside customers call us for water heater service",
       whyCopy:
-        "Riverside water heater calls often revolve around older units and replacement planning. This page keeps the copy focused on condition, urgency, and practical next steps.",
+        "Riverside water heater calls often revolve around older units, mixed installation conditions, and replacement planning. The page needs to help visitors judge urgency, understand when repair still makes sense, and move toward a practical next step without guessing.",
+      detailTitle: "Why Riverside water-heater decisions usually need better context",
+      detailParagraphs: [
+        "Riverside water-heater traffic is often tied to aging equipment in older homes, rentals, and commercial spaces where the system may have been limping along for a while before the customer finally searches for help. Sometimes the issue is obvious, such as a leaking tank or full loss of hot water. Other times it shows up as weak recovery, inconsistent temperature, or a unit that still runs but clearly is not dependable anymore.",
+        "That is why this page needs more than a generic repair-or-replace headline. Riverside visitors usually want to know whether the unit is worth saving, whether the leak risk makes waiting a bad idea, and how quickly they can move back into dependable hot water. The copy should help them understand that the right answer depends on age, failure point, reliability, and the demands of the property.",
+        "This matters even more in mixed-use and higher-demand properties. A family home with an aging tank, a rental turnover with no hot water, and a restaurant or office with unreliable recovery all arrive at the same page with slightly different pressures. The Riverside version should feel ready for those real-world decisions instead of reading like a one-size-fits-all water-heater template.",
+      ],
       localProblemsIntro: "Common Riverside water heater problems include:",
       localProblems: [
         "Older tanks with declining recovery or visible wear",
@@ -842,12 +973,24 @@ export const cityServiceOverrides: Record<
         "Tankless performance issues in higher-demand properties",
         "Replacement decisions where customers want a clear recommendation instead of guesswork",
       ],
+      warningSignsTitle: "Signs a Riverside water heater problem is moving past a minor repair question",
+      warningSigns: [
+        "Hot water is still available, but it does not last long enough for normal use anymore",
+        "The unit is older, showing wear, and now has a leak or repeated reliability issue",
+        "A rental or commercial property cannot afford more downtime while the decision drags on",
+        "The customer is not just asking how to fix it, but whether the unit is still worth trusting",
+      ],
       offerTitle: "Riverside water-heater emphasis",
       offerBody:
-        "This page is built for Riverside customers who need a stronger diagnosis before replacing a unit and want the repair-versus-replace decision spelled out clearly.",
+        "This page is built for Riverside customers who need a stronger diagnosis before replacing a unit and want the repair-versus-replace decision spelled out clearly in terms of reliability, urgency, and property demand.",
       proofTitle: "Built for aging equipment and fast replacement calls",
       proofBody:
-        "Riverside service copy needs to speak to older water heaters, more varied building ages, and customers who want a confident recommendation before they commit.",
+        "Riverside service copy needs to speak to older water heaters, more varied building ages, and customers who want a confident recommendation before they commit. The page is written to support both repair-minded visitors and customers who already suspect the cleanest move is replacement.",
+      proofPoints: [
+        "Written for older Riverside equipment and mixed residential-commercial service demand",
+        "Explains urgency without pushing replacement as the answer to every hot-water problem",
+        "Supports faster scheduling when the property needs dependable hot water restored quickly",
+      ],
       locationCardBlurb: "Water heater repair and replacement for older units, leaks, and no-hot-water calls in Riverside.",
       cityFaqs: [
         {
@@ -1179,10 +1322,16 @@ export const cityServiceOverrides: Record<
         "Drain cleaning in Homeland, CA for slow drains, recurring clogs, backups, hydro jetting, and line troubleshooting.",
       heroTitle: "Drain Cleaning in Homeland, CA",
       heroSummary:
-        "Drain cleaning for Homeland homes and local properties when clogs return, drains slow down, or main line symptoms start affecting more than one fixture.",
+        "Drain cleaning for Homeland homes and local properties when clogs return, drains slow down, or main line symptoms start affecting more than one fixture and the customer wants a dependable answer instead of a temporary unclog.",
       whyTitle: "Why Homeland customers call us for drain cleaning",
       whyCopy:
-        "Homeland drain-service pages need to emphasize dependable diagnosis and practical repair planning. Visitors here usually want the right answer, not just the fastest generic pitch.",
+        "Homeland drain-service pages need to emphasize dependable diagnosis and practical repair planning. Visitors here usually want the right answer, not just the fastest generic pitch, especially when the property setup or longer drain runs make the next step less obvious.",
+      detailTitle: "Why Homeland drain calls need a steadier message",
+      detailParagraphs: [
+        "Homeland drain-cleaning traffic often comes from customers who have already tried to wait out the symptom or have seen the same slowdown return more than once. In this area, the strongest message is not a hard-sell emergency pitch. It is a calmer explanation of whether the issue looks like a simple fixture clog, a longer run that needs better clearing, or a line problem that should be watched more closely before it turns into a larger repair.",
+        "That matters because Homeland properties can have different layouts and plumbing conditions than tighter city lots. A recurring bathroom clog, a kitchen line that takes too long to clear fully, or a main line symptom that affects more than one fixture may need a little more diagnostic discipline. The page should make visitors feel that Above All will explain what is happening and not just rush through a temporary drain opening.",
+        "This page also benefits from stronger home-base credibility. Homeland customers should feel like this is local plumbing help written for the realities of their area: practical repair planning, dependable line clearing, and clear next-step recommendations when the drain problem points to more than one possible cause.",
+      ],
       localProblemsIntro: "Common Homeland drain issues this page addresses:",
       localProblems: [
         "Slow drains that keep coming back after temporary clearing",
@@ -1190,12 +1339,24 @@ export const cityServiceOverrides: Record<
         "Main line symptoms that need a clearer diagnosis before bigger repair decisions",
         "Drain issues where reliability matters more than a temporary fix",
       ],
+      warningSignsTitle: "When a Homeland drain issue usually needs more than a basic unclog",
+      warningSigns: [
+        "The same sink, shower, or toilet keeps slowing down again after a recent clearing",
+        "A drain problem seems isolated at first but starts affecting another nearby fixture",
+        "There is a backup, odor, or gurgling pattern that suggests the line is not clearing cleanly",
+        "The customer wants to know what the line actually needs before approving bigger work",
+      ],
       offerTitle: "Homeland drain-cleaning emphasis",
       offerBody:
-        "This page leans into dependable diagnosis, line clearing, and next-step planning for customers who want the problem explained clearly and solved cleanly.",
+        "This page leans into dependable diagnosis, line clearing, and next-step planning for customers who want the problem explained clearly and solved cleanly without inflated urgency.",
       proofTitle: "Built for reliability-focused drain service",
       proofBody:
-        "Homeland visitors often want a steadier service message with less fluff and more clarity around what is happening in the line and what comes next.",
+        "Homeland visitors often want a steadier service message with less fluff and more clarity around what is happening in the line and what comes next. The page is designed for customers who value a trustworthy recommendation as much as the immediate clearing work.",
+      proofPoints: [
+        "Written for Homeland homes and local properties where dependable diagnosis matters",
+        "Supports longer-run and repeat-clog conversations without overcomplicating the message",
+        "Helps local visitors move from a recurring symptom to a clearer drain-service plan",
+      ],
       locationCardBlurb: "Drain cleaning for slow drains, recurring clogs, and main line problems in Homeland.",
       cityFaqs: [
         {
@@ -1217,10 +1378,16 @@ export const cityServiceOverrides: Record<
         "Toilet repair and installation in Homeland, CA for leaks, clogs, weak flushes, fixture replacements, and toilet upgrades.",
       heroTitle: "Toilet Repair & Installation in Homeland, CA",
       heroSummary:
-        "Repair or replace Homeland toilets when leaks, clogs, or aging fixtures start causing repeat frustration and daily disruption.",
+        "Repair or replace Homeland toilets when leaks, clogs, weak operation, or aging fixtures start causing repeat frustration and the customer wants the cleanest long-term fix.",
       whyTitle: "Why Homeland customers call us for toilet work",
       whyCopy:
-        "Homeland toilet-service pages work best when they emphasize reliability and clear recommendations. Visitors usually want to know the cleanest long-term fix.",
+        "Homeland toilet-service pages work best when they emphasize reliability and clear recommendations. Visitors usually want to know the cleanest long-term fix, not just whether one more quick repair might hold for a little while.",
+      detailTitle: "Why Homeland toilet pages should feel more recommendation-driven",
+      detailParagraphs: [
+        "Homeland toilet-service traffic often comes from homeowners who are less interested in rushing to the cheapest short-term fix and more interested in whether the fixture can be made dependable again. A toilet may run constantly, leak around the base, clog repeatedly, or simply feel worn out enough that the customer wants a straight answer on whether replacement is the cleaner choice.",
+        "That is why this page needs a steadier tone than a generic repair page. Homeland visitors usually want the recommendation explained clearly: repair it because the failure is isolated, or replace it because the fixture, seal, or repeated performance issues no longer justify more patchwork. The page should reduce uncertainty and help the customer feel confident that the next step actually makes sense.",
+        "This also fits the broader local pattern around Homeland plumbing pages. The strongest message is not inflated urgency. It is dependable plumbing judgment. A toilet-service page here should feel like it is written for someone who wants the issue handled correctly, kept simple, and not turned into a bigger project unless it truly needs to be.",
+      ],
       localProblemsIntro: "Common Homeland toilet issues this page is built for:",
       localProblems: [
         "Running toilets that waste water over time",
@@ -1228,12 +1395,24 @@ export const cityServiceOverrides: Record<
         "Repeated clogs where a simple plunger fix is no longer enough",
         "Fixture replacements when the existing toilet has become unreliable",
       ],
+      warningSignsTitle: "When a Homeland toilet problem usually deserves a firmer recommendation",
+      warningSigns: [
+        "The toilet has become unreliable enough that the customer no longer trusts it day to day",
+        "Leaks, rocking, or repeated clogs keep returning after smaller fixes",
+        "The fixture is older and the customer wants to know if replacement is the cleaner long-term move",
+        "The goal is not just to stop the symptom, but to avoid revisiting the same toilet problem again soon",
+      ],
       offerTitle: "Homeland toilet-service emphasis",
       offerBody:
-        "This page focuses on dependable repair work and clear replacement guidance for customers who want the fixture fixed properly and kept that way.",
+        "This page focuses on dependable repair work and clear replacement guidance for customers who want the fixture fixed properly, explained clearly, and kept reliable instead of patched repeatedly.",
       proofTitle: "Built for reliability-first fixture decisions",
       proofBody:
-        "Homeland visitors often want a steadier message around durability, proper installation, and whether the toilet is still worth repairing.",
+        "Homeland visitors often want a steadier message around durability, proper installation, and whether the toilet is still worth repairing. The page is designed for customers who value a trustworthy recommendation more than a fast generic pitch.",
+      proofPoints: [
+        "Written for Homeland homeowners who want clear repair-versus-replace guidance",
+        "Supports reliability-first toilet decisions without pushing extra scope",
+        "Helps visitors understand when a focused repair is enough and when replacement is the better long-term answer",
+      ],
       locationCardBlurb: "Toilet repair and installation for leaks, clogs, and fixture replacements in Homeland.",
       cityFaqs: [
         {

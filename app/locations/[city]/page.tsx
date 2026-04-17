@@ -47,13 +47,16 @@ export default async function CityHubPage({ params }: CityPageProps) {
 
   const cityContent = plumbingCities[city]
   const serviceCards = getCityServiceCards(city)
+  const detailParagraphs = cityContent.detailParagraphs ?? []
+  const commonCalls = cityContent.commonCalls ?? []
+  const proofPoints = cityContent.proofPoints ?? []
   const overviewParagraphs = [
     `${cityContent.name} is set up as a true local plumbing hub, not just a catch-all location page. The goal is to route people from city intent into the exact service they need, whether that is drain cleaning, toilet repair and installation, emergency plumbing, or water heater work.`,
     cityContent.localAngle,
     `This matters for ${cityContent.name} because the strongest local pages are the ones that match real property types, real service patterns, and a clear conversion path. For this city, that means speaking directly to ${cityContent.propertyTypes.slice(0, 2).join(" and ").toLowerCase()} while still covering nearby areas like ${cityContent.nearbyAreas.slice(0, 2).join(" and ")}.`,
   ]
 
-  const cityHighlights = [
+  const cityHighlights = cityContent.signalPoints ?? [
     `Primary property focus: ${cityContent.propertyTypes[0]}`,
     `Nearby service relevance: ${cityContent.nearbyAreas.slice(0, 2).join(" and ")}`,
     `Core conversion path: city hub to service page to direct quote request`,
@@ -171,7 +174,7 @@ export default async function CityHubPage({ params }: CityPageProps) {
             <div className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-lg shadow-slate-200/70">
               <p className="text-sm font-semibold uppercase tracking-[0.22em] text-cyan-600">City Signals</p>
               <h2 className="mt-4 text-3xl font-black tracking-tight text-slate-950">
-                What makes this local page set useful
+                {cityContent.signalTitle ?? "What makes this local page set useful"}
               </h2>
               <div className="mt-6 space-y-4">
                 {cityHighlights.map((item) => (
@@ -185,6 +188,67 @@ export default async function CityHubPage({ params }: CityPageProps) {
           </div>
         </div>
       </section>
+
+      {(detailParagraphs.length > 0 || commonCalls.length > 0 || cityContent.proofTitle) && (
+        <section className="border-y border-slate-200 bg-white py-16 md:py-20">
+          <div className="container mx-auto px-4">
+            <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
+              {detailParagraphs.length > 0 && (
+                <div className="rounded-[2rem] border border-slate-200 bg-slate-50 p-8">
+                  <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#C29828]">Local Detail</p>
+                  <h2 className="mt-4 text-3xl font-black tracking-tight text-slate-950">
+                    {cityContent.detailTitle ?? `What matters most about plumbing service in ${cityContent.name}`}
+                  </h2>
+                  <div className="mt-6 space-y-5">
+                    {detailParagraphs.map((paragraph) => (
+                      <p key={paragraph} className="text-base leading-8 text-slate-600">
+                        {paragraph}
+                      </p>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              <div className="space-y-6">
+                {commonCalls.length > 0 && (
+                  <div className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-lg shadow-slate-200/70">
+                    <p className="text-sm font-semibold uppercase tracking-[0.22em] text-cyan-600">Common calls</p>
+                    <h2 className="mt-4 text-2xl font-black tracking-tight text-slate-950">
+                      {cityContent.commonCallsTitle ?? `Common plumbing calls in ${cityContent.name}`}
+                    </h2>
+                    <div className="mt-6 space-y-4">
+                      {commonCalls.map((item) => (
+                        <div key={item} className="flex items-start gap-3 rounded-2xl bg-slate-50 px-5 py-4">
+                          <CheckCircle2 className="mt-1 h-5 w-5 shrink-0 text-cyan-600" />
+                          <p className="text-base leading-7 text-slate-700">{item}</p>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
+
+                {cityContent.proofTitle && (
+                  <div className="rounded-[2rem] border border-cyan-200 bg-cyan-50 p-8">
+                    <p className="text-sm font-semibold uppercase tracking-[0.22em] text-cyan-700">Local proof and trust</p>
+                    <h2 className="mt-4 text-2xl font-black tracking-tight text-slate-950">{cityContent.proofTitle}</h2>
+                    <p className="mt-5 text-base leading-8 text-slate-700">{cityContent.proofBody}</p>
+                    {proofPoints.length > 0 && (
+                      <div className="mt-6 space-y-3">
+                        {proofPoints.map((item) => (
+                          <div key={item} className="flex items-start gap-3 rounded-2xl bg-white px-5 py-4 shadow-sm">
+                            <CheckCircle2 className="mt-1 h-5 w-5 shrink-0 text-cyan-600" />
+                            <p className="text-sm leading-7 text-slate-700">{item}</p>
+                          </div>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                )}
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
 
       <section className="border-y border-slate-200 bg-white py-16 md:py-20">
         <div className="container mx-auto px-4">
