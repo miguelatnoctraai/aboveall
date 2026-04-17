@@ -137,7 +137,7 @@ export const plumbingCities: Record<PlumbingCitySlug, CityContent> = {
     ],
     proofTitle: "Why Riverside customers call Above All",
     proofBody:
-      "Above All helps Riverside homeowners, property managers, and business operators with plumbing problems that are not always straightforward. The focus is clear recommendations, dependable repair planning, and fast access to the right help.",
+      "Above All Maintenance & Repair helps Riverside homeowners, property managers, and business operators with plumbing problems that are not always straightforward. The focus is clear recommendations, dependable repair planning, and fast access to the right help.",
     proofPoints: [
       "Licensed plumbing help for older homes, rentals, restaurants, offices, and other local properties",
       "Clear support for urgent leaks, backups, and everyday plumbing repairs",
@@ -145,7 +145,7 @@ export const plumbingCities: Record<PlumbingCitySlug, CityContent> = {
     ],
     ctaTitle: "Need plumbing service in Riverside?",
     ctaBody:
-      "Choose the issue you are dealing with, get Riverside-specific context, and move into the right drain, toilet, emergency, or water heater service without wasting steps.",
+      "Call now or pick the service you need. We will get you to the right help fast.",
   },
   perris: {
     slug: "perris",

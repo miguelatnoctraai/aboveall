@@ -51,9 +51,9 @@ export default async function CityHubPage({ params }: CityPageProps) {
   const commonCalls = cityContent.commonCalls ?? []
   const proofPoints = cityContent.proofPoints ?? []
   const overviewParagraphs = [
-    `${cityContent.name} property owners usually need a direct path to the right plumbing help, whether that is drain cleaning, toilet repair and installation, emergency plumbing, or water heater work.`,
+    `Above All Maintenance & Repair handles drain cleaning, toilet repair, emergency plumbing, and water heater work in ${cityContent.name}.`,
     cityContent.localAngle,
-    `For ${cityContent.name}, that means speaking directly to ${cityContent.propertyTypes.slice(0, 2).join(" and ").toLowerCase()} while still covering nearby areas like ${cityContent.nearbyAreas.slice(0, 2).join(" and ")}.`,
+    `We work with ${cityContent.propertyTypes.slice(0, 2).join(" and ").toLowerCase()} across ${cityContent.name} and nearby areas like ${cityContent.nearbyAreas.slice(0, 2).join(" and ")}.`,
   ]
 
   const cityHighlights = cityContent.signalPoints ?? [
@@ -128,7 +128,7 @@ export default async function CityHubPage({ params }: CityPageProps) {
                   <ShieldCheck className="h-7 w-7" />
                 </div>
                 <div>
-                  <p className="text-sm font-semibold uppercase tracking-[0.18em] text-cyan-700">Trust markers</p>
+                  <p className="text-sm font-semibold uppercase tracking-[0.18em] text-cyan-700">Licensed & local</p>
                   <h2 className="text-2xl font-bold text-slate-950">{cityContent.name} plumbing support</h2>
                 </div>
               </div>
