@@ -108,7 +108,7 @@ export const plumbingCities: Record<PlumbingCitySlug, CityContent> = {
     heroSummary:
       "Licensed plumbing support across Riverside for drain problems, toilet issues, water heater failures, and emergency calls where mixed-age plumbing systems often need a sharper diagnosis before the right repair path is obvious.",
     localAngle:
-      "Riverside homes, apartments, restaurants, and offices often have mixed-age plumbing systems, so customers usually need a clearer diagnosis before the right repair path is obvious.",
+      "Riverside has a lot of older homes, apartments, and businesses. Older plumbing can be hard to figure out. We take a close look so you get the right fix the first time.",
     nearbyAreas: ["Downtown Riverside", "Canyon Crest", "Orangecrest", "Arlington"],
     propertyTypes: ["Older single-family homes", "Apartments and rentals", "Restaurants and offices"],
     trustPoints: [
@@ -124,9 +124,9 @@ export const plumbingCities: Record<PlumbingCitySlug, CityContent> = {
     ],
     detailTitle: "What makes Riverside plumbing jobs different",
     detailParagraphs: [
-      "Riverside has enough variety in property age and use that broad county marketing is not a good match. A homeowner dealing with drain issues in an older house, a property manager handling an apartment plumbing problem, and a business owner trying to keep a restroom or break-room line working all arrive with different levels of urgency and different expectations for diagnosis.",
-      "That is why Riverside customers need more than a short list of services. They should be able to recognize the type of problem they are likely dealing with, understand which service is the right next step, and feel that Above All is equipped for more complex plumbing conditions than a bare location listing would suggest.",
-      "Drain cleaning, toilet repair, emergency plumbing, and water heater work all need slightly different decision support here because older infrastructure and mixed-use properties create more edge cases than a lighter suburban area would need to address.",
+      "Riverside has old houses, apartments, restaurants, and offices. Each one can have different plumbing problems. What works for a new home may not work for an older building.",
+      "That is why we help you figure out what is wrong before we start any work. If we know how big the problem is, we can pick the right fix. That saves you time and money.",
+      "Drain cleaning, toilet repair, emergency plumbing, and water heater work can all look different in Riverside. Older pipes and mixed buildings often need more careful work than newer areas.",
     ],
     commonCallsTitle: "Common Riverside plumbing calls we handle",
     commonCalls: [
