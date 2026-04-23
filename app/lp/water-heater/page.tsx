@@ -310,17 +310,6 @@ export default function WaterHeaterLandingPage() {
                 Call 951-330-6963
               </a>
             </Button>
-            <Button
-              asChild
-              size="lg"
-              variant="outline"
-              className="h-14 border-slate-950/30 bg-transparent px-10 text-base text-slate-950 hover:bg-slate-950/10"
-            >
-              <a href="mailto:frank@aboveallmaintenancerepair.com">
-                <Mail className="h-5 w-5" />
-                Email Us
-              </a>
-            </Button>
           </div>
         </div>
       </section>
