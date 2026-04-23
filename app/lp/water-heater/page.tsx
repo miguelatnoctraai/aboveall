@@ -69,13 +69,6 @@ export default function WaterHeaterLandingPage() {
   return (
     <main className="min-h-screen bg-slate-950 text-white">
       <Script
-        id="ghl-chat-widget"
-        src="https://widgets.leadconnectorhq.com/loader.js"
-        strategy="afterInteractive"
-        data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js"
-        data-widget-id="69df0ad89f3b6f4b27afdf6a"
-      />
-      <Script
         id="ghl-form-embed"
         src="https://link.msgsndr.com/js/form_embed.js"
         strategy="afterInteractive"
