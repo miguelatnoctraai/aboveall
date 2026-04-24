@@ -4,14 +4,10 @@ import Link from "next/link"
 import Script from "next/script"
 import { Button } from "@/components/ui/button"
 import {
-  ArrowRight,
   BadgeCheck,
   Clock3,
   Droplets,
-  Mail,
-  MessageSquare,
   Phone,
-  ShieldCheck,
   Sparkles,
   Wrench,
 } from "lucide-react"
@@ -53,8 +49,8 @@ const proofPoints = [
 
 const processSteps = [
   {
-    title: "Call or email us",
-    description: "Use the number or email below while the GHL widget is being added to this page.",
+    title: "Submit the form",
+    description: "Fill out the form on this page and our team will reach out to confirm your service.",
   },
   {
     title: "Get a real diagnosis",
@@ -85,29 +81,17 @@ export default function PlumbingLandingPage() {
   return (
     <main className="min-h-screen bg-slate-950 text-white">
       <Script
-        id="ghl-chat-widget"
-        src="https://widgets.leadconnectorhq.com/loader.js"
+        id="ghl-form-embed"
+        src="https://link.msgsndr.com/js/form_embed.js"
         strategy="afterInteractive"
-        data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js"
-        data-widget-id="69df0ad89f3b6f4b27afdf6a"
       />
 
       <div className="fixed inset-x-0 bottom-0 z-50 border-t border-slate-700/80 bg-slate-950/95 px-4 py-3 backdrop-blur md:hidden">
-        <div className="mx-auto flex max-w-md gap-3">
-          <Button asChild className="h-12 flex-1 bg-[#C29828] text-slate-950 hover:bg-[#A67F20]">
+        <div className="mx-auto max-w-md">
+          <Button asChild className="h-12 w-full bg-[#C29828] text-slate-950 hover:bg-[#A67F20]">
             <a href="tel:951-330-6963">
               <Phone className="h-4 w-4" />
-              Call Now
-            </a>
-          </Button>
-          <Button
-            asChild
-            variant="outline"
-            className="h-12 flex-1 border-[#C29828]/40 bg-transparent text-white hover:bg-white/10"
-          >
-            <a href="mailto:frank@aboveallmaintenancerepair.com">
-              <Mail className="h-4 w-4" />
-              Email Us
+              Call Now — 951-330-6963
             </a>
           </Button>
         </div>
@@ -148,9 +132,6 @@ export default function PlumbingLandingPage() {
                 <div className="rounded-full border border-slate-700 bg-white/5 px-4 py-2 text-sm text-slate-200">
                   951-330-6963
                 </div>
-                <div className="rounded-full border border-slate-700 bg-white/5 px-4 py-2 text-sm text-slate-200">
-                  frank@aboveallmaintenancerepair.com
-                </div>
               </div>
             </div>
           </div>
@@ -171,25 +152,14 @@ export default function PlumbingLandingPage() {
 
                 <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-300 md:text-xl">
                   Clear communication, premium workmanship, and service built for homes, rentals, and commercial
-                  properties. If you need a licensed plumber, call now or email our team for scheduling.
+                  properties. Call now or fill out the form to get started.
                 </p>
 
-                <div className="mt-8 flex flex-col gap-4 sm:flex-row">
+                <div className="mt-8">
                   <Button asChild size="lg" className="h-14 bg-[#C29828] px-8 text-base text-slate-950 hover:bg-[#A67F20]">
                     <a href="tel:951-330-6963">
                       <Phone className="h-5 w-5" />
                       Call 951-330-6963
-                    </a>
-                  </Button>
-                  <Button
-                    asChild
-                    size="lg"
-                    variant="outline"
-                    className="h-14 border-[#C29828]/40 bg-white/5 px-8 text-base text-white hover:bg-white/10"
-                  >
-                    <a href="#booking-ready">
-                      Contact Options
-                      <ArrowRight className="h-5 w-5" />
                     </a>
                   </Button>
                 </div>
@@ -207,43 +177,29 @@ export default function PlumbingLandingPage() {
                 </div>
               </div>
 
-              <div className="rounded-[2rem] border border-slate-800/70 bg-slate-900/75 p-8 shadow-2xl shadow-black/40 backdrop-blur">
-                <div className="mb-6 flex items-center gap-3">
-                  <div className="rounded-2xl bg-[#C29828]/15 p-3">
-                    <ShieldCheck className="h-8 w-8 text-[#C29828]" />
-                  </div>
-                  <div>
-                    <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#C29828]">Talk To Our Team</p>
-                    <h2 className="text-2xl font-bold text-white">Call now or email for scheduling</h2>
-                  </div>
+              {/* GHL Form */}
+              <div className="overflow-hidden rounded-[2rem] border border-slate-800/70 bg-slate-900/75 shadow-2xl shadow-black/40">
+                <div className="border-b border-slate-800/70 px-8 py-5">
+                  <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#C29828]">Request Service</p>
+                  <h2 className="mt-1 text-xl font-bold text-white">Fill out the form and we'll be in touch fast</h2>
                 </div>
-
-                <div className="space-y-4">
-                  <div className="rounded-2xl border border-slate-800 bg-slate-950/70 p-5">
-                    <p className="text-sm text-slate-400">Primary number</p>
-                    <a href="tel:951-330-6963" className="mt-2 block text-2xl font-bold text-white hover:text-[#C29828]">
-                      951-330-6963
-                    </a>
-                  </div>
-
-                  <div className="rounded-2xl border border-slate-800 bg-slate-950/70 p-5">
-                    <p className="text-sm text-slate-400">Email</p>
-                    <a
-                      href="mailto:frank@aboveallmaintenancerepair.com"
-                      className="mt-2 block break-all text-lg font-semibold text-white hover:text-[#C29828]"
-                    >
-                      frank@aboveallmaintenancerepair.com
-                    </a>
-                  </div>
-                </div>
-
-                <div className="mt-6 rounded-2xl border border-dashed border-[#C29828]/35 bg-[#C29828]/8 p-5">
-                  <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#C29828]">Online Scheduling</p>
-                  <p className="mt-3 text-sm leading-7 text-slate-300">
-                    This area is ready for your booking widget so the page can stay call-first now and gain self-serve
-                    scheduling later.
-                  </p>
-                </div>
+                <iframe
+                  src="https://api.leadconnectorhq.com/widget/form/fU31IPixYtg76UwQQmu7"
+                  style={{ width: "100%", height: "551px", border: "none" }}
+                  id="inline-fU31IPixYtg76UwQQmu7"
+                  data-layout='{"id":"INLINE"}'
+                  data-trigger-type="alwaysShow"
+                  data-trigger-value=""
+                  data-activation-type="alwaysActivated"
+                  data-activation-value=""
+                  data-deactivation-type="neverDeactivate"
+                  data-deactivation-value=""
+                  data-form-name="Marketing Form - Claim Offer"
+                  data-height="551"
+                  data-layout-iframe-id="inline-fU31IPixYtg76UwQQmu7"
+                  data-form-id="fU31IPixYtg76UwQQmu7"
+                  title="Marketing Form - Claim Offer"
+                />
               </div>
             </div>
           </div>
@@ -356,65 +312,26 @@ export default function PlumbingLandingPage() {
         </div>
       </section>
 
-      <section id="booking-ready" className="bg-slate-50 py-20 text-slate-950">
-        <div className="container mx-auto px-4">
-          <div className="grid gap-10 lg:grid-cols-[1fr_1fr]">
-            <div>
-              <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#C29828]">Contact us</p>
-              <h2 className="mt-4 text-4xl font-black tracking-tight sm:text-5xl">Call now, or email us to schedule service.</h2>
-              <p className="mt-5 text-lg leading-8 text-slate-600">
-                Call for the fastest response, email if needed, or use the live chat on this page to start the
-                conversation without leaving the landing page.
-              </p>
-
-              <div className="mt-8 space-y-4">
-                <div className="flex items-center gap-4 rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
-                  <Phone className="h-5 w-5 text-[#C29828]" />
-                  <div>
-                    <p className="text-sm text-slate-500">Call now</p>
-                    <a href="tel:951-330-6963" className="text-xl font-bold text-slate-950 hover:text-[#A67F20]">
-                      951-330-6963
-                    </a>
-                  </div>
-                </div>
-
-                <div className="flex items-center gap-4 rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
-                  <Mail className="h-5 w-5 text-[#C29828]" />
-                  <div>
-                    <p className="text-sm text-slate-500">Email</p>
-                    <a
-                      href="mailto:frank@aboveallmaintenancerepair.com"
-                      className="text-lg font-semibold text-slate-950 hover:text-[#A67F20]"
-                    >
-                      frank@aboveallmaintenancerepair.com
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="rounded-[2rem] border border-[#C29828]/25 bg-slate-950 p-8 text-white">
-              <div className="flex items-center gap-3">
-                <div className="rounded-2xl bg-[#C29828]/15 p-3">
-                  <MessageSquare className="h-7 w-7 text-[#C29828]" />
-                </div>
-                <div>
-                  <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#C29828]">Live Chat</p>
-                  <h3 className="text-2xl font-bold">Use the chat widget in the bottom corner</h3>
-                </div>
-              </div>
-
-              <div className="mt-8 rounded-[1.5rem] border border-slate-800 bg-slate-900/70 p-8">
-                <p className="text-base leading-8 text-slate-300">
-                  The GHL chat widget is live on this page. Visitors can use it to ask questions, request service, and
-                  start scheduling without navigating away.
-                </p>
-                <div className="mt-6 grid gap-3 text-sm text-slate-300 sm:grid-cols-2">
-                  <div className="rounded-xl border border-slate-800 bg-slate-950/60 p-4">Ask about leaks, drains, or water heaters</div>
-                  <div className="rounded-xl border border-slate-800 bg-slate-950/60 p-4">Request a callback or next available appointment</div>
-                </div>
-              </div>
-            </div>
+      <section className="bg-[#C29828] py-16 text-slate-950">
+        <div className="container mx-auto px-4 text-center">
+          <p className="text-sm font-bold uppercase tracking-[0.22em]">Licensed plumbing service</p>
+          <h2 className="mt-3 text-4xl font-black tracking-tight sm:text-5xl">
+            Ready to fix it? Call now.
+          </h2>
+          <p className="mx-auto mt-4 max-w-xl text-lg font-medium text-slate-800">
+            Licensed, bonded, and insured — serving Southern California residential and commercial properties.
+          </p>
+          <div className="mt-8 flex justify-center">
+            <Button
+              asChild
+              size="lg"
+              className="h-14 bg-slate-950 px-10 text-base text-white hover:bg-slate-800"
+            >
+              <a href="tel:951-330-6963">
+                <Phone className="h-5 w-5" />
+                Call 951-330-6963
+              </a>
+            </Button>
           </div>
         </div>
       </section>
