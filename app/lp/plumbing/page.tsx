@@ -85,6 +85,26 @@ export default function PlumbingLandingPage() {
         src="https://link.msgsndr.com/js/form_embed.js"
         strategy="afterInteractive"
       />
+      <Script
+        id="ghl-form-redirect"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.addEventListener('message', function(event) {
+              if (event.origin !== 'https://api.leadconnectorhq.com') return;
+              var data = event.data;
+              if (typeof data === 'string') {
+                try { data = JSON.parse(data); } catch(e) { return; }
+              }
+              if (!data || typeof data !== 'object') return;
+              var type = (data.type || data.event || '').toLowerCase();
+              if (type.includes('submit') || type.includes('form_submitted') || type.includes('form-submitted')) {
+                window.location.href = '/lp/plumbing/thank-you';
+              }
+            });
+          `,
+        }}
+      />
 
       <div className="fixed inset-x-0 bottom-0 z-50 border-t border-slate-700/80 bg-slate-950/95 px-4 py-3 backdrop-blur md:hidden">
         <div className="mx-auto max-w-md">
