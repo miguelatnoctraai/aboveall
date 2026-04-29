@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import type { ReactNode } from "react"
 import Link from "next/link"
 import { notFound } from "next/navigation"
 import { ArrowRight, CheckCircle2, MapPin, Phone, ShieldCheck } from "lucide-react"
@@ -6,6 +7,8 @@ import { Button } from "@/components/ui/button"
 import {
   getCityServiceCards,
   isPlumbingCitySlug,
+  type PlumbingCitySlug,
+  type PlumbingServiceSlug,
   plumbingCities,
   plumbingCitySlugs,
   plumbingServices,
@@ -16,6 +19,93 @@ export const dynamicParams = false
 
 type CityPageProps = {
   params: Promise<{ city: string }>
+}
+
+const serviceLinkLabels: Partial<
+  Record<PlumbingCitySlug, Array<{ text: string; service: PlumbingServiceSlug }>>
+> = {
+  homeland: [
+    { text: "drain issues", service: "drain-cleaning" },
+    { text: "drain problem", service: "drain-cleaning" },
+    { text: "Drain problems", service: "drain-cleaning" },
+    { text: "repeat slowdowns or backups", service: "drain-cleaning" },
+    { text: "toilet problems", service: "toilet-repair-installation" },
+    { text: "toilet issue", service: "toilet-repair-installation" },
+    { text: "Toilet leaks, clogs, or aging fixtures", service: "toilet-repair-installation" },
+    { text: "water heater failures", service: "water-heater-installation-repair" },
+    { text: "water heater problem", service: "water-heater-installation-repair" },
+    { text: "Water heater issues", service: "water-heater-installation-repair" },
+    { text: "urgent leaks", service: "emergency-plumbing" },
+    { text: "Emergency leaks and shutoff problems", service: "emergency-plumbing" },
+  ],
+  menifee: [
+    { text: "slow drain", service: "drain-cleaning" },
+    { text: "Slow drains or repeat backups", service: "drain-cleaning" },
+    { text: "drain cleaning", service: "drain-cleaning" },
+    { text: "toilet that will not stay reliable", service: "toilet-repair-installation" },
+    { text: "Running, leaking, or unreliable toilets", service: "toilet-repair-installation" },
+    { text: "toilet repair", service: "toilet-repair-installation" },
+    { text: "no hot water", service: "water-heater-installation-repair" },
+    { text: "No hot water or leaking water heaters", service: "water-heater-installation-repair" },
+    { text: "water heater service", service: "water-heater-installation-repair" },
+    { text: "leak that needs attention before it spreads", service: "emergency-plumbing" },
+    { text: "Active leaks or plumbing problems that cannot wait", service: "emergency-plumbing" },
+    { text: "emergency plumbing", service: "emergency-plumbing" },
+  ],
+}
+
+function renderLinkedText(text: string, city: PlumbingCitySlug) {
+  const links = serviceLinkLabels[city] ?? []
+
+  return links.reduce<ReactNode[]>((nodes, link, linkIndex) => {
+    return nodes.flatMap((node, nodeIndex) => {
+      if (typeof node !== "string" || !node.includes(link.text)) {
+        return [node]
+      }
+
+      const parts = node.split(link.text)
+      return parts.flatMap((part, partIndex) => {
+        const result: ReactNode[] = []
+
+        if (part) {
+          result.push(part)
+        }
+
+        if (partIndex < parts.length - 1) {
+          result.push(
+            <Link
+              key={`${link.text}-${linkIndex}-${nodeIndex}-${partIndex}`}
+              href={`/locations/${city}/${link.service}`}
+              className="font-semibold text-cyan-700 underline underline-offset-4 transition-colors hover:text-cyan-800"
+            >
+              {link.text}
+            </Link>,
+          )
+        }
+
+        return result
+      })
+    })
+  }, [text])
+}
+
+function ServiceInlineLink({
+  city,
+  service,
+  children,
+}: {
+  city: PlumbingCitySlug
+  service: PlumbingServiceSlug
+  children: ReactNode
+}) {
+  return (
+    <Link
+      href={`/locations/${city}/${service}`}
+      className="font-semibold text-cyan-700 underline underline-offset-4 transition-colors hover:text-cyan-800"
+    >
+      {children}
+    </Link>
+  )
 }
 
 export function generateStaticParams() {
@@ -171,7 +261,7 @@ export default async function CityHubPage({ params }: CityPageProps) {
               <div className="mt-6 space-y-5">
                 {overviewParagraphs.map((paragraph) => (
                   <p key={paragraph} className="text-base leading-8 text-slate-600">
-                    {paragraph}
+                    {renderLinkedText(paragraph, city)}
                   </p>
                 ))}
               </div>
@@ -208,7 +298,7 @@ export default async function CityHubPage({ params }: CityPageProps) {
                   <div className="mt-6 space-y-5">
                     {detailParagraphs.map((paragraph) => (
                       <p key={paragraph} className="text-base leading-8 text-slate-600">
-                        {paragraph}
+                        {renderLinkedText(paragraph, city)}
                       </p>
                     ))}
                   </div>
@@ -226,7 +316,7 @@ export default async function CityHubPage({ params }: CityPageProps) {
                       {commonCalls.map((item) => (
                         <div key={item} className="flex items-start gap-3 rounded-2xl bg-slate-50 px-5 py-4">
                           <CheckCircle2 className="mt-1 h-5 w-5 shrink-0 text-cyan-600" />
-                          <p className="text-base leading-7 text-slate-700">{item}</p>
+                          <p className="text-base leading-7 text-slate-700">{renderLinkedText(item, city)}</p>
                         </div>
                       ))}
                     </div>
@@ -266,6 +356,27 @@ export default async function CityHubPage({ params }: CityPageProps) {
             <p className="mt-4 text-lg leading-8 text-slate-600">
               Each service goes deeper into the plumbing problem you are dealing with so you can choose the right next step faster.
             </p>
+            {(city === "homeland" || city === "menifee") && (
+              <p className="mt-4 text-base leading-8 text-slate-600">
+                If you already know what you need, start with{" "}
+                <ServiceInlineLink city={city} service="drain-cleaning">
+                  drain cleaning
+                </ServiceInlineLink>
+                ,{" "}
+                <ServiceInlineLink city={city} service="toilet-repair-installation">
+                  toilet repair
+                </ServiceInlineLink>
+                ,{" "}
+                <ServiceInlineLink city={city} service="emergency-plumbing">
+                  emergency plumbing
+                </ServiceInlineLink>
+                , or{" "}
+                <ServiceInlineLink city={city} service="water-heater-installation-repair">
+                  water heater service
+                </ServiceInlineLink>{" "}
+                in {cityContent.name}.
+              </p>
+            )}
           </div>
 
           <div className="grid gap-6 md:grid-cols-2">

@@ -91,10 +91,28 @@ export const plumbingCities: Record<PlumbingCitySlug, CityContent> = {
     heroSummary:
       "Licensed plumbing support for fast-growing Menifee neighborhoods, busy households, and property managers who need clear next steps.",
     localAngle:
-      "Menifee pages should feel practical and scheduling-friendly. The strongest local angle is fast problem recognition for active homes, move-ins, and repeat maintenance work.",
+      "Menifee homes, rentals, 55+ communities, and local businesses often need quick answers when plumbing starts slowing down daily routines. We help customers sort out whether the next step is a focused repair, a replacement, or urgent service that should not wait.",
     nearbyAreas: ["Sun City", "Romoland", "Winchester", "Quail Valley"],
     propertyTypes: ["Single-family neighborhoods", "55+ communities", "Retail and office suites"],
     trustPoints: ["California License #1075924", "Residential and commercial plumbing", "Phone-first scheduling"],
+    signalTitle: "Common plumbing concerns in Menifee",
+    signalPoints: [
+      "Slow drains or repeat backups in busy households and move-ins",
+      "Running, leaking, or unreliable toilets in homes, rentals, and 55+ communities",
+      "No hot water, leaking water heaters, or active plumbing problems that cannot wait",
+    ],
+    detailTitle: "Why Menifee plumbing calls need a clear next step",
+    detailParagraphs: [
+      "A Menifee plumbing call may start with a slow drain, a toilet that will not stay reliable, no hot water, or a leak that needs attention before it spreads. The faster the problem is sorted into the right service path, the easier it is to schedule the correct work.",
+      "That matters for active family homes, rental turnovers, 55+ communities, and retail or office spaces where plumbing downtime interrupts the day. We focus on the actual symptom first, then explain whether the issue points to drain cleaning, toilet repair, emergency plumbing, or water heater service.",
+    ],
+    commonCallsTitle: "Common Menifee plumbing calls we handle",
+    commonCalls: [
+      "Slow drains or repeat backups in kitchens, bathrooms, laundry areas, or main lines",
+      "Running, leaking, or unreliable toilets that need repair or replacement guidance",
+      "Active leaks or plumbing problems that cannot wait for routine scheduling",
+      "No hot water or leaking water heaters that need a repair-versus-replacement answer",
+    ],
     ctaTitle: "Need plumbing help in Menifee?",
     ctaBody:
       "Use the Menifee city hub to jump straight into drain cleaning, toilet work, emergency plumbing, or water heater service.",
