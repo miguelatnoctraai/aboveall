@@ -10,6 +10,7 @@ import {
   plumbingServiceSlugs,
   plumbingServices,
 } from "@/lib/location-content"
+import { businessInfo } from "@/lib/business-info"
 
 export const dynamicParams = false
 
@@ -35,6 +36,9 @@ export async function generateMetadata({ params }: PlumbingServicePageProps): Pr
   return {
     title: `${serviceContent.hubTitle} | Above All Maintenance & Repair`,
     description: serviceContent.hubDescription,
+    alternates: {
+      canonical: `${businessInfo.website}/services/plumbing/${service}`,
+    },
   }
 }
 

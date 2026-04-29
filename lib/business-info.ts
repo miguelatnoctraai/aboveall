@@ -5,6 +5,8 @@ export const businessInfo = {
   phone: "951-330-6963",
   phoneDisplay: "(951) 330-6963",
   license: "1075924",
+  cslbUrl: "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1075924",
+  logoPath: "/images/aam-20logo-20.png",
   homeBase: "Homeland, CA",
   homeBaseCity: "Homeland",
   homeBaseState: "CA",

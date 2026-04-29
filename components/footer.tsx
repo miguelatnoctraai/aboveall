@@ -52,80 +52,29 @@ export function Footer() {
     },
   ]
 
-  const industryLinks = [
+  const publicResourceLinks = [
     {
-      category: "Licensing & Compliance",
+      category: "Licensing",
       links: [
+        { name: "Verify CSLB License", href: businessInfo.cslbUrl },
         { name: "CSLB License Lookup", href: "https://www.cslb.ca.gov/" },
-        { name: "Better Business Bureau", href: "https://www.bbb.org/" },
-        { name: "DIR Contractor Lookup", href: "https://www.dir.ca.gov/" },
-        { name: "CA Contractors License", href: "https://www.cslb.ca.gov/About_Us/Library/Licensing_Classifications/" },
-        { name: "CA Building Standards", href: "https://www.dgs.ca.gov/BSC" },
       ],
     },
     {
-      category: "Plumbing Associations",
+      category: "Public Standards",
       links: [
-        { name: "PHCC National", href: "https://www.phccweb.org/" },
-        { name: "IAPMO", href: "https://www.iapmo.org/" },
-        { name: "ASPE", href: "https://www.aspe.org/" },
-        { name: "Plumbing Manufacturers Intl", href: "https://www.safeplumbing.org/" },
-        { name: "World Plumbing Council", href: "https://www.worldplumbing.org/" },
-        { name: "UA Plumbers Union", href: "https://www.ua.org/" },
-      ],
-    },
-    {
-      category: "Trade Associations",
-      links: [
-        { name: "NECA", href: "https://www.necanet.org/" },
-        { name: "Associated Builders", href: "https://www.abc.org/" },
-        { name: "MCAA", href: "https://www.mcaa.org/" },
-        { name: "AGC of America", href: "https://www.agc.org/" },
-        { name: "NAHB", href: "https://www.nahb.org/" },
-        { name: "NARI", href: "https://www.nari.org/" },
-      ],
-    },
-    {
-      category: "Safety & Standards",
-      links: [
-        { name: "OSHA", href: "https://www.osha.gov/" },
         { name: "EPA WaterSense", href: "https://www.epa.gov/watersense" },
-        { name: "ICC Codes", href: "https://www.iccsafe.org/" },
-        { name: "NSF International", href: "https://www.nsf.org/" },
-        { name: "ANSI Standards", href: "https://www.ansi.org/" },
-        { name: "ASSE International", href: "https://www.asse-plumbing.org/" },
-      ],
-    },
-    {
-      category: "Plumbing Manufacturers",
-      links: [
-        { name: "Kohler", href: "https://www.kohler.com/" },
-        { name: "Moen", href: "https://www.moen.com/" },
-        { name: "Delta Faucet", href: "https://www.deltafaucet.com/" },
-        { name: "American Standard", href: "https://www.americanstandard.com/" },
-        { name: "Rheem Water Heaters", href: "https://www.rheem.com/" },
-        { name: "A.O. Smith", href: "https://www.hotwater.com/" },
-      ],
-    },
-    {
-      category: "Tools & Equipment",
-      links: [
-        { name: "Milwaukee Tools", href: "https://www.milwaukeetool.com/" },
-        { name: "RIDGID Tools", href: "https://www.ridgid.com/" },
-        { name: "DeWalt", href: "https://www.dewalt.com/" },
-        { name: "Makita", href: "https://www.makitatools.com/" },
-        { name: "Viega", href: "https://www.viega.us/" },
+        { name: "California Building Standards", href: "https://www.dgs.ca.gov/BSC" },
       ],
     },
     {
       category: "Local Resources",
       links: [
-        { name: "San Bernardino County", href: "https://www.sbcounty.gov/" },
         { name: "Riverside County", href: "https://www.rivco.org/" },
-        { name: "San Diego County", href: "https://www.sandiegocounty.gov/" },
+        { name: "San Bernardino County", href: "https://www.sbcounty.gov/" },
         { name: "Orange County", href: "https://www.ocgov.com/" },
+        { name: "San Diego County", href: "https://www.sandiegocounty.gov/" },
         { name: "SoCal Water District", href: "https://www.mwdh2o.com/" },
-        { name: "Cal Water", href: "https://www.calwater.com/" },
       ],
     },
   ]
@@ -185,13 +134,13 @@ export function Footer() {
 
               <div className="pt-4">
                 <a
-                  href={`https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=${businessInfo.license}`}
+                  href={businessInfo.cslbUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-block hover:opacity-80 transition-opacity"
                 >
                   <p className="text-[#C29828] font-bold text-lg hover:underline">License #{businessInfo.license}</p>
-                  <p className="text-slate-400 text-sm">Bonded & Insured (Click to Verify)</p>
+                  <p className="text-slate-400 text-sm">Verify on the CSLB website</p>
                 </a>
               </div>
             </div>
@@ -264,9 +213,9 @@ export function Footer() {
         </div>
 
         <div className="border-t border-slate-800/50 pt-12 pb-8">
-          <h3 className="text-white font-bold text-lg mb-6">Industry Resources & Associations</h3>
-          <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8">
-            {industryLinks.map((section) => (
+          <h3 className="text-white font-bold text-lg mb-6">Public Resources</h3>
+          <div className="grid md:grid-cols-3 gap-8">
+            {publicResourceLinks.map((section) => (
               <div key={section.category}>
                 <h4 className="text-[#C29828] font-semibold text-sm mb-3">{section.category}</h4>
                 <ul className="space-y-2">
@@ -299,58 +248,6 @@ export function Footer() {
                 {link.name}
               </Link>
             ))}
-          </div>
-          <div className="mb-4 flex flex-wrap items-center justify-center gap-3 text-xs text-slate-500">
-            <span>Member of:</span>
-            <a href="https://www.cslb.ca.gov/" target="_blank" rel="noopener noreferrer" className="hover:text-[#C29828] transition-colors">
-              CSLB Licensed
-            </a>
-            <span>&bull;</span>
-            <a href="https://www.bbb.org/" target="_blank" rel="noopener noreferrer" className="hover:text-[#C29828] transition-colors">
-              BBB
-            </a>
-            <span>&bull;</span>
-            <a href="https://www.phccweb.org/" target="_blank" rel="noopener noreferrer" className="hover:text-[#C29828] transition-colors">
-              PHCC
-            </a>
-            <span>&bull;</span>
-            <a href="https://www.necanet.org/" target="_blank" rel="noopener noreferrer" className="hover:text-[#C29828] transition-colors">
-              NECA
-            </a>
-            <span>&bull;</span>
-            <a href="https://www.iapmo.org/" target="_blank" rel="noopener noreferrer" className="hover:text-[#C29828] transition-colors">
-              IAPMO
-            </a>
-            <span>&bull;</span>
-            <a href="https://www.aspe.org/" target="_blank" rel="noopener noreferrer" className="hover:text-[#C29828] transition-colors">
-              ASPE
-            </a>
-          </div>
-          <div className="flex flex-wrap justify-center items-center gap-3 text-xs text-slate-500">
-            <span>Trusted Partners:</span>
-            <a href="https://www.kohler.com/" target="_blank" rel="noopener noreferrer" className="hover:text-[#C29828] transition-colors">
-              Kohler
-            </a>
-            <span>&bull;</span>
-            <a href="https://www.moen.com/" target="_blank" rel="noopener noreferrer" className="hover:text-[#C29828] transition-colors">
-              Moen
-            </a>
-            <span>&bull;</span>
-            <a href="https://www.rheem.com/" target="_blank" rel="noopener noreferrer" className="hover:text-[#C29828] transition-colors">
-              Rheem
-            </a>
-            <span>&bull;</span>
-            <a href="https://www.milwaukeetool.com/" target="_blank" rel="noopener noreferrer" className="hover:text-[#C29828] transition-colors">
-              Milwaukee
-            </a>
-            <span>&bull;</span>
-            <a href="https://www.ridgid.com/" target="_blank" rel="noopener noreferrer" className="hover:text-[#C29828] transition-colors">
-              RIDGID
-            </a>
-            <span>&bull;</span>
-            <a href="https://www.deltafaucet.com/" target="_blank" rel="noopener noreferrer" className="hover:text-[#C29828] transition-colors">
-              Delta
-            </a>
           </div>
         </div>
       </div>

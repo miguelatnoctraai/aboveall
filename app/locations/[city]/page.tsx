@@ -10,6 +10,7 @@ import {
   plumbingCitySlugs,
   plumbingServices,
 } from "@/lib/location-content"
+import { businessInfo } from "@/lib/business-info"
 
 export const dynamicParams = false
 
@@ -35,6 +36,9 @@ export async function generateMetadata({ params }: CityPageProps): Promise<Metad
   return {
     title: `Plumbing Services in ${cityContent.name}, CA | Above All Maintenance & Repair`,
     description: cityContent.shortDescription,
+    alternates: {
+      canonical: `${businessInfo.website}/locations/${city}`,
+    },
   }
 }
 

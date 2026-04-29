@@ -21,6 +21,7 @@ import {
   plumbingCitySlugs,
   plumbingServiceSlugs,
 } from "@/lib/location-content"
+import { businessInfo } from "@/lib/business-info"
 
 export const dynamicParams = false
 
@@ -48,6 +49,9 @@ export async function generateMetadata({ params }: CityServicePageProps): Promis
   return {
     title: `${override.heroTitle} | Above All Maintenance & Repair`,
     description: override.metaDescription,
+    alternates: {
+      canonical: `${businessInfo.website}/locations/${city}/${service}`,
+    },
     keywords: [
       `${serviceContent.name} ${cityContent.name}`,
       `${serviceContent.name} ${cityContent.name} CA`,
@@ -85,36 +89,64 @@ export default async function CityServicePage({ params }: CityServicePageProps) 
   const detailParagraphs = override.detailParagraphs ?? []
   const warningSigns = override.warningSigns ?? []
   const proofPoints = override.proofPoints ?? []
+  const businessId = `${businessInfo.website}/#business`
+  const cityServiceUrl = `${businessInfo.website}/locations/${cityContent.slug}/${serviceContent.slug}`
+  const logoUrl = `${businessInfo.website}${businessInfo.logoPath}`
 
   const schema = {
     "@context": "https://schema.org",
     "@graph": [
       {
         "@type": "Plumber",
-        name: "Above All Maintenance & Repair",
-        telephone: "951-330-6963",
-        areaServed: {
-          "@type": "City",
-          name: cityContent.name,
+        "@id": businessId,
+        name: businessInfo.name,
+        url: businessInfo.website,
+        telephone: businessInfo.phone,
+        email: businessInfo.email,
+        image: logoUrl,
+        logo: logoUrl,
+        sameAs: businessInfo.socialLinks,
+        identifier: {
+          "@type": "PropertyValue",
+          name: "California Contractor License",
+          value: businessInfo.license,
         },
-        addressRegion: "CA",
+        address: {
+          "@type": "PostalAddress",
+          addressLocality: businessInfo.homeBaseCity,
+          addressRegion: businessInfo.homeBaseState,
+          addressCountry: "US",
+        },
+        areaServed: [
+          {
+            "@type": "City",
+            name: cityContent.name,
+          },
+          ...businessInfo.counties.map((county) => ({
+            "@type": "AdministrativeArea",
+            name: `${county}, CA`,
+          })),
+        ],
       },
       {
         "@type": "Service",
+        "@id": `${cityServiceUrl}#service`,
         name: `${serviceContent.name} in ${cityContent.name}, CA`,
         serviceType: serviceContent.name,
+        url: cityServiceUrl,
         areaServed: {
           "@type": "City",
           name: cityContent.name,
         },
         provider: {
           "@type": "Plumber",
-          name: "Above All Maintenance & Repair",
+          "@id": businessId,
         },
         description: override.metaDescription,
       },
       {
         "@type": "FAQPage",
+        "@id": `${cityServiceUrl}#faq`,
         mainEntity: faqs.map((faq) => ({
           "@type": "Question",
           name: faq.question,

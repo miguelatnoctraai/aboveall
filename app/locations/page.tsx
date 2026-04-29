@@ -2,12 +2,16 @@ import type { Metadata } from "next"
 import Link from "next/link"
 import { ArrowRight, MapPin, Phone, ShieldCheck } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { businessInfo } from "@/lib/business-info"
 import { plumbingCities, plumbingCitySlugs, plumbingServiceSlugs, plumbingServices } from "@/lib/location-content"
 
 export const metadata: Metadata = {
   title: "Plumbing Service Areas | Above All Maintenance & Repair",
   description:
     "Browse plumbing service areas for Menifee, Riverside, Perris, Moreno Valley, and Homeland. Find city-specific drain, toilet, emergency, and water heater pages.",
+  alternates: {
+    canonical: `${businessInfo.website}/locations`,
+  },
 }
 
 export default function LocationsIndexPage() {
@@ -19,11 +23,11 @@ export default function LocationsIndexPage() {
           <div className="max-w-4xl">
             <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#C29828]">Locations</p>
             <h1 className="mt-4 text-4xl font-black tracking-tight sm:text-5xl lg:text-6xl">
-              Plumbing service pages built around local intent, not generic county copy.
+              Plumbing service across Homeland, Riverside County, and nearby communities.
             </h1>
             <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-300">
-              Start with a city hub, then move into the exact plumbing service page that matches the issue. Each page is
-              structured for local search intent and direct conversion.
+              Choose your city, then pick the plumbing issue you need handled. Above All helps local homeowners,
+              property managers, and businesses get to the right service path quickly.
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
               <Link href="/services/plumbing">
@@ -117,10 +121,11 @@ export default function LocationsIndexPage() {
           <div className="mb-8 max-w-3xl">
             <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#C29828]">Plumbing services</p>
             <h2 className="mt-4 text-3xl font-black tracking-tight text-slate-950 sm:text-4xl">
-              The service layer stays separate from the location layer.
+              Start with the service when the problem matters more than the city.
             </h2>
             <p className="mt-4 text-lg leading-8 text-slate-600">
-              These service hubs explain the work itself. The city pages handle local intent, local trust, and location-specific offers.
+              These plumbing pages explain the work itself, from drain cleaning and toilet repair to emergency
+              plumbing and water heater service. City pages add local details for the areas we serve most often.
             </p>
           </div>
 
