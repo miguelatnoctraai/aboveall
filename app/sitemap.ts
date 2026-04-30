@@ -24,6 +24,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/contact",
     "/careers",
     "/locations",
+    "/blog/7-signs-your-menifee-water-heater-needs-service",
     "/privacy-policy",
     "/terms-of-service",
   ]
