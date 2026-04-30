@@ -212,6 +212,38 @@ export function Footer() {
           </div>
         </div>
 
+        <div className="border-t border-slate-800/50 py-12">
+          <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
+            <div>
+              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#C29828]">Google Business Profile</p>
+              <h3 className="mt-3 text-2xl font-bold text-white">Find Above All on Google Maps</h3>
+              <p className="mt-4 text-sm leading-7 text-slate-300">
+                Above All Maintenance & Repair has a {businessInfo.googleRating} Google rating based on{" "}
+                {businessInfo.googleReviewCount} customer reviews.
+              </p>
+              <div className="mt-5 inline-flex items-center gap-3 rounded-lg border border-[#C29828]/30 bg-[#C29828]/10 px-4 py-3 text-sm text-slate-200">
+                <span className="font-bold text-[#C29828]">{businessInfo.googleRating}</span>
+                <span>Google rating</span>
+                <span className="text-slate-500">|</span>
+                <span>{businessInfo.googleReviewCount} reviews</span>
+              </div>
+            </div>
+            <div className="overflow-hidden rounded-xl border border-slate-800 bg-slate-950">
+              <iframe
+                src={businessInfo.googleMapsEmbedUrl}
+                title={`${businessInfo.name} Google Business Profile map`}
+                width="600"
+                height="450"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                className="h-[320px] w-full"
+              />
+            </div>
+          </div>
+        </div>
+
         <div className="border-t border-slate-800/50 pt-12 pb-8">
           <h3 className="text-white font-bold text-lg mb-6">Public Resources</h3>
           <div className="grid md:grid-cols-3 gap-8">

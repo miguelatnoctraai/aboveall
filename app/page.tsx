@@ -59,6 +59,13 @@ export default function Home() {
           addressRegion: businessInfo.homeBaseState,
           addressCountry: "US",
         },
+        aggregateRating: {
+          "@type": "AggregateRating",
+          ratingValue: businessInfo.googleRating,
+          reviewCount: businessInfo.googleReviewCount,
+          bestRating: "5",
+          worstRating: "1",
+        },
         sameAs: businessInfo.socialLinks,
         serviceType: [
           "Emergency plumbing",
