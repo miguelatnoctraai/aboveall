@@ -25,6 +25,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/careers",
     "/locations",
     "/blog/7-signs-your-menifee-water-heater-needs-service",
+    "/blog/top-10-interesting-facts-about-perris-ca",
     "/privacy-policy",
     "/terms-of-service",
   ]
