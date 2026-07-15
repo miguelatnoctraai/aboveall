@@ -7,6 +7,7 @@ This file tracks the plumbing location rollout so content work stays visible and
 - Service hubs: `/services/plumbing/{service}`
 - City hubs: `/locations/{city}`
 - City-service pages: `/locations/{city}/{service}`
+- Neighborhood-service pages: `/locations/{city}/{service}/{neighborhood}`
 
 ## Status key
 
@@ -66,3 +67,7 @@ This file tracks the plumbing location rollout so content work stays visible and
 - More specific warning signs or common-call triggers
 - Stronger CTA language tied to the actual service
 - Enough variation that the page reads like a real local landing page, not a city-name swap
+
+## Neighborhood-service pages
+
+- `optimizing` `/locations/menifee/drain-cleaning/sun-city` — pilot page with Sun City-specific context, local reference points, weather/use context, fast facts, and unique FAQs.

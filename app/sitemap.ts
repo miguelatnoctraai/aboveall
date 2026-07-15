@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next"
 import { businessInfo } from "@/lib/business-info"
 import { plumbingCitySlugs, plumbingServiceSlugs } from "@/lib/location-content"
+import { neighborhoodServicePages } from "@/lib/neighborhood-content"
 
 const baseUrl = businessInfo.website
 
@@ -35,8 +36,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const cityServicePaths = plumbingCitySlugs.flatMap((city) =>
     plumbingServiceSlugs.map((service) => `/locations/${city}/${service}`),
   )
+  const neighborhoodServicePaths = neighborhoodServicePages.map(
+    ({ city, service, slug }) => `/locations/${city}/${service}/${slug}`,
+  )
 
-  return [...staticPaths, ...plumbingServicePaths, ...cityPaths, ...cityServicePaths].map((path) => ({
+  return [...staticPaths, ...plumbingServicePaths, ...cityPaths, ...cityServicePaths, ...neighborhoodServicePaths].map((path) => ({
     url: absoluteUrl(path),
     lastModified: now,
     changeFrequency: path === "/" ? "weekly" : "monthly",
