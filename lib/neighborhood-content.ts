@@ -1,8 +1,9 @@
 export type NeighborhoodServicePage = {
   city: "menifee"
   service: "drain-cleaning"
-  slug: "sun-city"
-  name: "Sun City"
+  slug: "sun-city" | "menifee-lakes"
+  urlSlug: "sun-city-drain-cleaning" | "menifee-lakes-drain-cleaning"
+  name: string
   metaDescription: string
   heroTitle: string
   heroSummary: string
@@ -18,6 +19,7 @@ export const neighborhoodServicePages: NeighborhoodServicePage[] = [
     city: "menifee",
     service: "drain-cleaning",
     slug: "sun-city",
+    urlSlug: "sun-city-drain-cleaning",
     name: "Sun City",
     metaDescription:
       "Drain clearing in Sun City, Menifee for slow kitchen, shower, laundry, and main drains. Licensed local help for recurring clogs and backups.",
@@ -73,10 +75,53 @@ export const neighborhoodServicePages: NeighborhoodServicePage[] = [
       },
     ],
   },
+  {
+    city: "menifee",
+    service: "drain-cleaning",
+    slug: "menifee-lakes",
+    urlSlug: "menifee-lakes-drain-cleaning",
+    name: "Menifee Lakes",
+    metaDescription:
+      "Drain clearing in Menifee Lakes for slow kitchen, shower, laundry, and main drains. Licensed local help for repeat clogs and backups.",
+    heroTitle: "Drain Clearing in Menifee Lakes",
+    heroSummary:
+      "A slow kitchen sink, shower, laundry line, or toilet in Menifee Lakes can be a minor clog—or an early sign that a larger drain line needs attention. We help homeowners move from the symptom to a practical clearing plan.",
+    localContext: [
+      "Menifee Lakes is a recognizable master-planned Menifee community, developed around a lake, golf course, homes, parks, schools, and commercial areas. In day-to-day homes, the drain problem still comes down to what is happening at the fixture and whether another part of the plumbing system is showing the same symptom.",
+      "A kitchen drain that slows after meal cleanup, a shower that holds water, or a laundry drain that struggles when the washer empties should be looked at in context. If only one fixture is affected, the issue may be local. If a toilet affects a nearby tub or more than one drain is slowing, the line may need more than a quick reset.",
+      "Warm Menifee weather often means showers, laundry, and cooking are spread across the day. That use does not cause a clog by itself, but it makes a drain with an existing buildup or restriction more noticeable. We focus on the actual drainage pattern and recommend the right next step without making assumptions from the neighborhood name alone.",
+    ],
+    fastFacts: [
+      { label: "A planned Menifee community", detail: "The City of Menifee identifies Menifee Lakes as one of its planned developments." },
+      { label: "Established in the late 1980s", detail: "Menifee Lakes was developed in 1989 and helped drive the area's residential growth." },
+      { label: "Built around a lake and golf course", detail: "The original community was developed around a 45-acre artificial lake and golf course." },
+    ],
+    commonProblems: [
+      "Kitchen drains that keep slowing after food preparation and cleanup",
+      "Shower and tub drains that pool water or gurgle after use",
+      "Laundry drains that struggle when a washing machine discharges",
+      "Multiple fixtures showing symptoms at the same time, which calls for a closer look at the drain line",
+    ],
+    warningSigns: [
+      "The same drain returns to a slow or clogged state soon after a temporary fix",
+      "Flushing a toilet changes the water level in a nearby shower, tub, or sink",
+      "Water backs up, bubbles, or produces a persistent drain odor",
+      "A single-fixture problem starts affecting normal use of more than one room",
+    ],
+    faqs: [
+      { question: "Can you help with recurring kitchen or shower drain clogs in Menifee Lakes?", answer: "Yes. We look at the affected fixture, how often the problem returns, and whether other drains are involved to determine the appropriate level of cleaning or diagnosis." },
+      { question: "Do multiple slow drains mean I have a main-line problem?", answer: "Not always, but multiple affected fixtures are a reason to look beyond a single sink or shower drain. We can assess the symptoms and recommend the right next step." },
+      { question: "Should I keep using a chemical drain cleaner while I wait?", answer: "Repeated chemical use is not a reliable answer for a recurring clog and can complicate service. Call us with the symptoms so we can help you choose a safer next step." },
+    ],
+  },
 ]
 
 export function getNeighborhoodServicePage(city: string, service: string, neighborhood: string) {
   return neighborhoodServicePages.find(
     (page) => page.city === city && page.service === service && page.slug === neighborhood,
   )
+}
+
+export function getNeighborhoodServicePageByUrl(city: string, urlSlug: string) {
+  return neighborhoodServicePages.find((page) => page.city === city && page.urlSlug === urlSlug)
 }

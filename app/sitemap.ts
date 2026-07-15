@@ -37,7 +37,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     plumbingServiceSlugs.map((service) => `/locations/${city}/${service}`),
   )
   const neighborhoodServicePaths = neighborhoodServicePages.map(
-    ({ city, service, slug }) => `/locations/${city}/${service}/${slug}`,
+    ({ city, urlSlug }) => `/locations/${city}/${urlSlug}`,
   )
 
   return [...staticPaths, ...plumbingServicePaths, ...cityPaths, ...cityServicePaths, ...neighborhoodServicePaths].map((path) => ({
