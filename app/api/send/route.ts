@@ -6,6 +6,34 @@ const FROM_EMAIL = "Above All Maintenance <noreply@aboveallmaintenancerepair.com
 const REPLY_TO_EMAIL = "frank@aboveallmaintenancerepair.com"
 const PHYSICAL_ADDRESS = "San Bernardino County, CA | License #1075924"
 
+const PROMO_IP_LIMIT = 3
+const PROMO_IP_WINDOW_MS = 10 * 60 * 1000
+const PROMO_EMAIL_LIMIT = 1
+const PROMO_EMAIL_WINDOW_MS = 30 * 24 * 60 * 60 * 1000
+const promoAttempts = new Map<string, number[]>()
+
+function isRateLimited(key: string, limit: number, windowMs: number) {
+  const now = Date.now()
+  const attempts = (promoAttempts.get(key) ?? []).filter((timestamp) => now - timestamp < windowMs)
+
+  if (attempts.length >= limit) {
+    promoAttempts.set(key, attempts)
+    return true
+  }
+
+  attempts.push(now)
+  promoAttempts.set(key, attempts)
+  return false
+}
+
+function getClientIp(request: Request) {
+  return request.headers.get("x-forwarded-for")?.split(",")[0]?.trim() || request.headers.get("x-real-ip") || "unknown"
+}
+
+function isValidEmail(email: string) {
+  return email.length <= 254 && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
+}
+
 // Email footer for CAN-SPAM compliance
 const getEmailFooter = (includeUnsubscribe = false) => `
   <div style="margin-top: 40px; padding: 20px; border-top: 1px solid #e0e0e0; background: #f9f9f9; text-align: center;">
@@ -135,10 +163,44 @@ export async function POST(request: Request) {
 
     // Case B: Promo Popup Subscription
     if (type === "promo") {
-      const { email } = body
+      const { email: submittedEmail, website, formStartedAt } = body
+      const email = typeof submittedEmail === "string" ? submittedEmail.trim().toLowerCase() : ""
 
-      if (!email) {
-        return NextResponse.json({ success: false, message: "Email address is required" }, { status: 400 })
+      // Quietly accept bot submissions without sending an email. Real visitors
+      // never see or fill this hidden field, and they need a brief amount of
+      // time to complete the visible form.
+      const submittedAt = typeof formStartedAt === "number" ? formStartedAt : Number.NaN
+      const formAgeMs = Date.now() - submittedAt
+      if (
+        (typeof website === "string" && website.trim()) ||
+        !Number.isFinite(submittedAt) ||
+        formAgeMs < 1200 ||
+        formAgeMs > 60 * 60 * 1000
+      ) {
+        return NextResponse.json(
+          {
+            success: true,
+            message: "Success! Check your email for your discount code.",
+          },
+        )
+      }
+
+      if (!isValidEmail(email)) {
+        return NextResponse.json({ success: false, message: "Enter a valid email address" }, { status: 400 })
+      }
+
+      const clientIp = getClientIp(request)
+      const emailRateLimited = isRateLimited(`email:${email}`, PROMO_EMAIL_LIMIT, PROMO_EMAIL_WINDOW_MS)
+      const ipRateLimited = clientIp !== "unknown" && isRateLimited(`ip:${clientIp}`, PROMO_IP_LIMIT, PROMO_IP_WINDOW_MS)
+
+      if (emailRateLimited || ipRateLimited) {
+        return NextResponse.json(
+          {
+            success: false,
+            message: "This offer has already been claimed. Please check your inbox or try again later.",
+          },
+          { status: 429 },
+        )
       }
 
       // Calculate expiration date (30 days from now)

@@ -2,18 +2,20 @@
 
 import type React from "react"
 
-import { useState, useEffect } from "react"
+import { useState, useEffect, useRef } from "react"
 import { X, Gift, Mail, Loader2, AlertCircle } from "lucide-react"
 import { SimpleToast } from "@/components/simple-toast"
 
 export function PromoPopup() {
   const [isVisible, setIsVisible] = useState(false)
   const [email, setEmail] = useState("")
+  const [website, setWebsite] = useState("")
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [isSubmitted, setIsSubmitted] = useState(false)
   const [errorMessage, setErrorMessage] = useState("")
   const [alreadySubscribed, setAlreadySubscribed] = useState(false)
   const [toast, setToast] = useState({ isVisible: false, message: "", type: "success" as "success" | "error" })
+  const formStartedAt = useRef<number | null>(null)
 
   useEffect(() => {
     const urlParams = new URLSearchParams(window.location.search)
@@ -29,6 +31,7 @@ export function PromoPopup() {
 
     if (!hasSeenOffer || forceShow) {
       const timer = setTimeout(() => {
+        formStartedAt.current = Date.now()
         setIsVisible(true)
       }, 2000)
 
@@ -60,7 +63,7 @@ export function PromoPopup() {
       const response = await fetch("/api/send", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ type: "promo", email }),
+        body: JSON.stringify({ type: "promo", email, website, formStartedAt: formStartedAt.current }),
       })
 
       const data = await response.json()
@@ -172,6 +175,18 @@ export function PromoPopup() {
 
                       {/* Form */}
                       <form onSubmit={handleSubmit} className="space-y-4">
+                        <div className="absolute -left-[9999px] h-px w-px overflow-hidden" aria-hidden="true">
+                          <label htmlFor="website">Website</label>
+                          <input
+                            id="website"
+                            name="website"
+                            type="text"
+                            value={website}
+                            onChange={(e) => setWebsite(e.target.value)}
+                            autoComplete="off"
+                            tabIndex={-1}
+                          />
+                        </div>
                         <div className="relative">
                           <Mail className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-slate-500" />
                           <input
