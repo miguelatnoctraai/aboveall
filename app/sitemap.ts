@@ -27,6 +27,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/locations",
     "/blog/7-signs-your-menifee-water-heater-needs-service",
     "/blog/top-10-interesting-facts-about-perris-ca",
+    "/blog/fix-clogged-drain-near-me-riverside-perris-homeland",
     "/privacy-policy",
     "/terms-of-service",
   ]
@@ -47,3 +48,4 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: path === "/" ? 1 : path.startsWith("/locations") || path.startsWith("/services/plumbing") ? 0.8 : 0.6,
   }))
 }
+
